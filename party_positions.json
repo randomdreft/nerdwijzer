@@ -1,0 +1,1747 @@
+{
+  "party_positions": {
+    "1": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Besteedt geen aandacht aan digitalisering of een minister van Digitale Zaken in het verkiezingsprogramma.",
+          "source": "https://ibestuur.nl/artikel/grote-winnaar-pvv-heeft-weinig-ambities-op-gebied-van-digitalisering/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Pleiten expliciet voor een Ministerie van Digitale Zaken met duidelijke regie over digitalisering.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering"
+        },
+        "VVD": {
+          "score": 2,
+          "explanation": "Noemt geen nieuwe minister van Digitalisering en accepteerde in de formatie het schrappen van die post.",
+          "source": "https://www.bnr.nl/nieuws/politiek/10548788/geen-minister-van-digitalisering-in-nieuw-kabinet"
+        },
+        "NSC": {
+          "score": 5,
+          "explanation": "Wil digitale regie centraliseren met een structurele bestuurslaag voor digitalisering.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Wil een Minister van Digitale Zaken met eigen portefeuille opnemen in het kabinet.",
+          "source": "https://www.security.nl/posting/818859/De%2Bverkiezingsprogramma%27s%2Bdoorgelicht%3A%2Bwat%2Bwillen%2Bpolitieke%2Bpartijen%2Bmet%2Bdigitalisering%3F"
+        },
+        "BBB": {
+          "score": 5,
+          "explanation": "Wil een Minister van Digitalisering die zicht houdt op een humane en toegankelijke digitale overheid.",
+          "source": "https://www.nldigital.nl/nieuws/nieuwkomers-bbb-en-volt-hebben-sterkste-programma-op-gebied-van-digitalisering/"
+        },
+        "CDA": {
+          "score": 2,
+          "explanation": "Benoemt digitale grondrechten maar geen eigen minister.",
+          "source": "https://www.security.nl/posting/818859/De%2Bverkiezingsprogramma%27s%2Bdoorgelicht%3A%2Bwat%2Bwillen%2Bpolitieke%2Bpartijen%2Bmet%2Bdigitalisering%3F"
+        },
+        "SP": {
+          "score": 2,
+          "explanation": "Zet in op meer democratische controle over digitalisering, niet op een aparte ministerspost.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering"
+        },
+        "Denk": {
+          "score": 2,
+          "explanation": "Richt zich op algoritmeregels en privacyrechten, zonder voorstel voor een digitale minister.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/22/naar-de-stembus-hoe-staan-partijen-tegenover-digitale-zaken/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Ondersteunt een specifieke bewindspersoon voor digitalisering als centrale regierol.",
+          "source": "https://www.nldigital.nl/nieuws/nieuwkomers-bbb-en-volt-hebben-sterkste-programma-op-gebied-van-digitalisering/"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Wil geen extra bestuurslaag of ministerie op digitaal gebied en pleit voor minder overheidsbemoeienis.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Pleiten voor morele kaders rond digitalisering maar noemen geen aparte minister.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "Steunde eerder voorstellen voor regie op digitalisering, maar maakt dit geen speerpunt in 2025.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Noemt expliciet een ministerie van Digitale Zaken als oplossing voor digitale versnippering.",
+          "source": "https://www.nldigital.nl/nieuws/nieuwkomers-bbb-en-volt-hebben-sterkste-programma-op-gebied-van-digitalisering/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Richt zich op minder overheid en wil geen minister Digitale Zaken benoemen.",
+          "source": "https://www.nldigital.nl/nieuws/verkiezingen-2025-zo-denken-partijen-over-digitalisering/"
+        }
+      }
+    },
+    "2": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Geen expliciete steun voor \"open source tenzij\"; programma heeft nauwelijks digitale voorstellen.",
+          "source": "https://www.binnenlandsbestuur.nl/digitaal/informatiehuishouding/verkiezingsprogramma-s-vol-ict-ambities"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Ondertekende het Digitale Stembusakkoord; daarin staat verplichte open broncode/open standaarden voor (semi)overheid.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "BoF signaleert dat VVD aandacht heeft voor open-source-alternatieven, maar geen \"verplichte\" lijn.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/22/naar-de-stembus-hoe-staan-partijen-tegenover-digitale-zaken/"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Vindt zich inhoudelijk in het Digitale Stembusakkoord, maar tekent niet; dus wel richting \"open source tenzij\", terughoudend met harde verplichting.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Zegt expliciet: \"Open-source software vormt het uitgangspunt bij de overheid\"; software met publiek geld wordt onder open-source licentie gepubliceerd.",
+          "source": "https://d66.nl/standpunten/ondernemen-en-innoveren/"
+        },
+        "BBB": {
+          "score": 3,
+          "explanation": "BoF: BBB besteedt aandacht aan open source/alternatief digitaal ecosysteem, maar zonder harde \"tenzij\"-verplichting.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/22/naar-de-stembus-hoe-staan-partijen-tegenover-digitale-zaken/"
+        },
+        "CDA": {
+          "score": 2,
+          "explanation": "Wel digitaliseringsparagraaf, maar geen duidelijke \"open source tenzij\"-lijn terug te vinden.",
+          "source": "https://stadszaken.nl/artikel/5417/smart-city-deels-erkend-verkiezingsprogramma-s-onder-de-loep"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Steunt gebruik van opensourcesoftware en open standaarden door de overheid.",
+          "source": "https://tweakers.net/reviews/11336/17/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid-sp.html"
+        },
+        "Denk": {
+          "score": 5,
+          "explanation": "DENK tekende het Digitale Stembusakkoord met \"open broncode verplicht\".",
+          "source": "https://www.bitsoffreedom.nl/2023/11/22/naar-de-stembus-hoe-staan-partijen-tegenover-digitale-zaken/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Pleiten dat overheid open standaarden en opensourcesoftware \"stimuleert en waar mogelijk gebruikt\".",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Geen steun of plannen richting \"open source tenzij\" in de relevante overzichten/programma's.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Focust op privacy/analoge toegang; geen \"open source tenzij\"-lijn.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "CU": {
+          "score": 5,
+          "explanation": "Ondertekende het Digitale Stembusakkoord met verplichting open broncode/open standaarden voor (semi)overheid.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Wil zo snel mogelijk overschakelen naar open standaarden; sterke pro-open-source lijn in programma.",
+          "source": "https://voltnederland.org/storage/doc/voltnederland_verkiezingsprogramma_2023.pdf"
+        },
+        "JA21": {
+          "score": 2,
+          "explanation": "Programma noemt geen \"open source tenzij\"; geen expliciete steun.",
+          "source": "https://ja21.nl/fileadmin/user_upload/Verkiezingsprogramma_TK_23_A4_v2.pdf"
+        }
+      }
+    },
+    "3": {
+      "positions": {
+        "PVV": {
+          "score": 4,
+          "explanation": "Er is grote afhankelijkheid van Amerikaanse clouds, maar er wordt niet gepleit voor een volledig 'nee', eerder voor strategisch inkopen.",
+          "source": "https://www.ad.nl/politiek/kamerleden-willen-tempo-van-kabinet-overheid-blijft-onze-gegevens-vrolijk-op-amerikaanse-cloud-gooien~a3b5fcaa/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Stelt dat essentiële overheidsdata niet in Amerikaanse clouds thuishoren en wil minimaal 30% van de clouddiensten van Nederlandse of EU-leveranciers.",
+          "source": "https://groenlinkspvda.nl/nieuws/initiatiefnota-nederlandse-cloud/"
+        },
+        "VVD": {
+          "score": 4,
+          "explanation": "'Gewone' overheidsdata mogen in Amerikaanse clouds, maar gevoelige data horen binnen de EU te blijven.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "NSC": {
+          "score": 5,
+          "explanation": "Waarschuwt voor afhankelijkheid van Amerikaanse tech en pleit voor digitale autonomie met prioriteit voor Europese opties.",
+          "source": "https://groenlinkspvda.nl/nieuws/initiatiefnota-nederlandse-cloud/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Wil dat kritieke overheidsdata binnen de EU opgeslagen worden en dat overheidsclouds op Europees grondgebied komen.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "BBB": {
+          "score": 4,
+          "explanation": "Zet in op eigen regie over kritieke ICT en wil Europese of Nederlandse cloudoplossingen stimuleren.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "CDA": {
+          "score": 4,
+          "explanation": "Waarschuwt over de risico's van Amerikaanse afhankelijkheid en pleit voor Europese cloudalternatieven.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Wil publieke data alleen in Nederlandse datacenters bewaren en de afhankelijkheid van Amerikaanse platforms beëindigen.",
+          "source": "https://www.nos.nl/artikel/2569392-overheid-leunt-veel-meer-op-amerikaanse-clouds-dan-bekend-meelezen-is-makkelijk"
+        },
+        "Denk": {
+          "score": 4,
+          "explanation": "Steunt moties voor digitale soevereiniteit en wil dat gevoelige data binnen de EU blijven opgeslagen.",
+          "source": "https://www.nos.nl/artikel/2569392-overheid-leunt-veel-meer-op-amerikaanse-clouds-dan-bekend-meelezen-is-makkelijk"
+        },
+        "PvdD": {
+          "score": 4,
+          "explanation": "Benadrukt bescherming van persoonsgegevens en vermindering van Big Tech-afhankelijkheid via opslag in EU.",
+          "source": "https://www.nos.nl/artikel/2569392-overheid-leunt-veel-meer-op-amerikaanse-clouds-dan-bekend-meelezen-is-makkelijk"
+        },
+        "FvD": {
+          "score": 2,
+          "explanation": "Stemde tegen moties om EU-leveranciers te bevoordelen, toont weinig actie richting een Amerika-vrije oplossing.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "Zet in op privacy en kaders, maar toont terughoudendheid bij harde dataopslagverplichtingen binnen de EU.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "CU": {
+          "score": 5,
+          "explanation": "Steunde moties voor digitale autonomie en wil dat overheidsdata alleen in Europa wordt gestald.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Waarschuwt voor geopolitieke risico's bij Amerikaanse clouds en wil volledige EU-opslag van kritieke data.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        },
+        "JA21": {
+          "score": 2,
+          "explanation": "Is sceptisch over EU-ingrijpen en verzet zich tegen verplichte Europese opslag van data.",
+          "source": "https://www.computable.nl/2025/03/17/d-day-voor-cloudbeleid-overheid/"
+        }
+      }
+    },
+    "4": {
+      "positions": {
+        "PVV": {
+          "score": 2,
+          "explanation": "PVV noemt Big Tech weinig en pleit niet voor opsplitsing; zware regulering krijgt geen accent.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "GL/PvdA wil Big Tech hard aanpakken en sluit opsplitsing expliciet niet uit bij aanhoudende marktmacht.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "VVD zet vooral in op EU-regels en handhaving (DMA/DSA) en zegt niets over opsplitsen.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "NSC benadrukt minder afhankelijkheid van Amerikaanse tech en sterkere Europese alternatieven.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "D66 steunt stevige EU-regulering en wil Big Tech desnoods opsplitsen als regels onvoldoende werken.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "BBB": {
+          "score": 2,
+          "explanation": "BBB focust op digitale inclusie en bereikbaarheid; geen agenda voor harde Big-Techregulering of opsplitsing.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "CDA": {
+          "score": 3,
+          "explanation": "CDA wil burgers beschermen tegen datamisbruik en privacy schenden, maar spreekt niet over opsplitsing.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "SP": {
+          "score": 4,
+          "explanation": "SP wil de macht van techreuzen fors inperken met strenge regels en publieke alternatieven.",
+          "source": "https://tweakers.net/reviews/11336/17/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid-sp.html"
+        },
+        "Denk": {
+          "score": 3,
+          "explanation": "DENK legt nadruk op toezicht op algoritmen en gelijke behandeling; weinig over opsplitsen van Big Tech.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "PvdD": {
+          "score": 4,
+          "explanation": "PvdD wil het datagedreven verdienmodel van Big Tech aan banden leggen en privacywaakhond versterken.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "FvD verzet zich tegen EU-bemoeienis en richt zich op vrijheid online, niet op strenge Big-Techregulering.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "SGP wil strikte kaders voor data en AI, maar geen expliciet pleidooi voor opsplitsen van Big Tech.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "ChristenUnie wil stevige regulering en meer toezicht om de macht van grote techbedrijven te beperken.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "Volt": {
+          "score": 4,
+          "explanation": "Volt pleit voor harde EU-handhaving tegen poortwachters en Europese alternatieven, opsplitsen niet centraal.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        },
+        "JA21": {
+          "score": 2,
+          "explanation": "JA21 legt de nadruk op veiligheid en minder EU-regulering; geen koers richting opsplitsing van Big Tech.",
+          "source": "https://tweakers.net/reviews/11336/wat-zeggen-politieke-partijen-over-tech-en-duurzaamheid.html"
+        }
+      }
+    },
+    "5": {
+      "positions": {
+        "PVV": {
+          "score": 4,
+          "explanation": "De PVV steunt forse bezuinigingen op externe inhuur bij de overheid, maar heeft niet expliciet gepleit voor uitbreiding van interne teams.",
+          "source": "https://www.binnenlandsbestuur.nl/digitaal/rekenkamer/zorgen-en-onduidelijkheid-over-grote-it-projecten-na"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "GroenLinks-PvdA wil de afhankelijkheid van dure externe consultants fors verminderen en de eigen overheidskennis versterken (maximaal 10% externe inhuur, daarna stapsgewijs omlaag).",
+          "source": "https://overheidzzp.nl/groenlinks-pvda-verkiezingsprogramma-2025-wat-betekent-het-voor-zelfstandigen-2-15/"
+        },
+        "VVD": {
+          "score": 5,
+          "explanation": "De VVD belooft dat de overheid veel minder consultants inhuurt en zelf toptalent aantrekt in vaste dienst (bijvoorbeeld door hogere salarissen voor ICT-experts) om de afhankelijkheid van externen te verkleinen.",
+          "source": "https://overheidzzp.nl/vvd-verkiezingsprogramma-2025-wat-betekent-het-voor-zelfstandigen-1-15/"
+        },
+        "NSC": {
+          "score": 5,
+          "explanation": "Nieuw Sociaal Contract wil een 'stevige rem' op externe inhuur zetten en flexwerkers waar nodig in vaste dienst nemen, zodat deskundigheid en ervaring binnen de overheid behouden blijven.",
+          "source": "https://overheidzzp.nl/nsc-verkiezingsprogramma-2025-wat-betekent-het-voor-zelfstandigen-4-15/"
+        },
+        "D66": {
+          "score": 4,
+          "explanation": "D66 benadrukt dat de overheid taken weer meer zelf ter hand moet nemen in plaats van die uit te besteden, maar het partijprogramma noemt geen harde norm of kwantitatief doel voor het beperken van externe inhuur.",
+          "source": "https://d66.nl/vanmierlostichting/overheid-doe-het-zelf-en-doe-het-goed/"
+        },
+        "BBB": {
+          "score": 5,
+          "explanation": "BBB wil een eenvoudiger, dienstbaar bestuur en wil structureel het Haagse ambtenarenapparaat (behalve de uitvoering) verkleinen én de afhankelijkheid van extern ingehuurde krachten terugdringen.",
+          "source": "https://overheidzzp.nl/bbb-verkiezingsprogramma-2025-wat-betekent-het-voor-zelfstandigen-3-15/"
+        },
+        "CDA": {
+          "score": 4,
+          "explanation": "Het CDA vindt dat de overheid haar kerntaken vooral zelf moet uitvoeren en minder een beroep moet doen op dure externe adviseurs, al legt de partij in haar programma geen specifieke quota vast.",
+          "source": "https://www.nporadio1.nl/nieuws/binnenland/1fba78bd-c7cc-4d73-89fa-4665a06b0600/ambtenaren-wegbezuinigen-zoals-ja21-wil-de-slager-van-den-haag-deed-het-al"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "De SP pleit al jaren voor veel minder externe inhuur van consultants; overheden moeten hun taken zelf uitvoeren en niet afhankelijk zijn van overbetaalde externen, aldus de partij.",
+          "source": "https://www.sp.nl/nieuws/de-sp-maakt-wet-om-dure-externe-inhuur-tegen-te-gaan"
+        },
+        "Denk": {
+          "score": 4,
+          "explanation": "DENK heeft geen uitgebreid plan over dit punt, maar steunt het principe dat de overheid minder moet uitbesteden aan externen en meer met eigen personeel moet doen (zie de Kamerbreed gesteunde Roemernorm van 10% externe inhuur).",
+          "source": "https://nos.nl/nieuwsuur/artikel/2568144-overheid-betaalde-recordbedrag-voor-extern-personeel-waar-ze-juist-op-wil-bezuinigen"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "De Partij voor de Dieren wil dat de overheid minder externen inhuurt en meer eigen expertise opbouwt; de partij steunde eerder ook het streven om externe inhuur tot hooguit 10% van de personeelskosten te beperken.",
+          "source": "https://nos.nl/nieuwsuur/artikel/2568144-overheid-betaalde-recordbedrag-voor-extern-personeel-waar-ze-juist-op-wil-bezuinigen"
+        },
+        "FvD": {
+          "score": 3,
+          "explanation": "Forum voor Democratie wil de overheid fors inkrimpen en neigt ertoe zowel het aantal ambtenaren als de kosten aan ingehuurde consultants sterk te verlagen, maar investeert niet expliciet in het uitbreiden van interne teams.",
+          "source": "https://noordbrabant.bestuurlijkeinformatie.nl/Reports/Item/d3830114-cf4a-452d-b39c-03cfe84d0acb"
+        },
+        "SGP": {
+          "score": 4,
+          "explanation": "De SGP wil een sobere, doelmatige overheid en kijkt kritisch naar hoge uitgaven aan externe adviseurs; de partij steunt stappen om externe inhuur te beperken, zij het zonder een expliciet plan voor meer eigen IT-teams.",
+          "source": "https://noordbrabant.bestuurlijkeinformatie.nl/Reports/Item/d3830114-cf4a-452d-b39c-03cfe84d0acb"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "De ChristenUnie is voor een sterke publieke sector en pleit voor minder afhankelijkheid van ingehuurde krachten; de partij wil meer mensen in vaste dienst bij de overheid in plaats van flexibele inhuur.",
+          "source": "https://noordbrabant.bestuurlijkeinformatie.nl/Reports/Item/d3830114-cf4a-452d-b39c-03cfe84d0acb"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Volt zet in op een digitale en efficiënte overheid met meer eigen expertise en minder afhankelijkheid van externe consultants, in lijn met hun ambitieuze digitaliseringsagenda en focus op goed openbaar bestuur.",
+          "source": "https://www.nldigital.nl/nieuws/nieuwkomers-bbb-en-volt-hebben-sterkste-programma-op-gebied-van-digitalisering/"
+        },
+        "JA21": {
+          "score": 4,
+          "explanation": "JA21 wil een slankere overheid en ziet kansen om fors te besparen op externe inhuur van consultants (experts schatten dat deze kosten bij de Rijksoverheid wel gehalveerd kunnen worden).",
+          "source": "https://www.nporadio1.nl/nieuws/binnenland/1fba78bd-c7cc-4d73-89fa-4665a06b0600/ambtenaren-wegbezuinigen-zoals-ja21-wil-de-slager-van-den-haag-deed-het-al"
+        }
+      }
+    },
+    "6": {
+      "positions": {
+        "PVV": {
+          "score": 3,
+          "explanation": "Heeft geen duidelijk standpunt in het programma en stemde zowel vóór bescherming van versleuteling als vóór ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "GL/PvdA": {
+          "score": 4,
+          "explanation": "Wil het recht op end-to-end-encryptie vastleggen en verzet zich tegen chatcontrol, maar stemde eerder wél voor ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "Neemt geen bescherming van versleutelde communicatie op en weigerde moties uit te voeren die encryptie beschermen.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "NSC": {
+          "score": 5,
+          "explanation": "Spreekt zich expliciet uit tegen client-side scanning en wil dat Nederland zich hard maakt tegen chatcontrol.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "D66": {
+          "score": 4,
+          "explanation": "Beschouwt end-to-end-encryptie als grondrecht en keert zich tegen chatcontrol, maar stemde eerder voor ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "BBB": {
+          "score": 2,
+          "explanation": "Zegt privacy te willen, maar stemde voor ongerichte massasurveillance en wil privacybarrières voor criminaliteitsbestrijding wegnemen.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "CDA": {
+          "score": 1,
+          "explanation": "Wil ruimere gegevensdeling en stemde tegen moties voor bescherming van versleuteling en vóór ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Stemgedrag en lijn laten consequent verzet tegen chatcontrol en steun voor sterke versleuteling zien.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "Denk": {
+          "score": 5,
+          "explanation": "Verzet zich tegen digitale surveillance en stemde voor bescherming van versleutelde communicatie.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Wijst chatcontrol expliciet af en wil end-to-end-encryptie onverkort behouden.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Wil digitaal briefgeheim waarborgen, steunde bescherming van versleuteling en keerde zich tegen ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "SGP": {
+          "score": 1,
+          "explanation": "Stemgedrag laat tegenstand tegen encryptiebeschermende moties en steun voor ongerichte massasurveillance zien.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "CU": {
+          "score": 2,
+          "explanation": "Benadrukt privacy, maar stemde tegen encryptiebescherming en voor ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "Volt": {
+          "score": 4,
+          "explanation": "Noemt afzwakken van end-to-end-encryptie onaanvaardbaar, maar stemde eerder voor ongerichte massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Wil ruimere opsporingsbevoegdheden en stemde voor ongerichte massasurveillance, zonder bescherming van versleuteling.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        }
+      }
+    },
+    "7": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Stemgedrag laat zien dat de partij voorstander is van ruimere interceptiebevoegdheden en verzet tegen strikte waarborgen.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "GL/PvdA": {
+          "score": 4,
+          "explanation": "Wil inperking van massasurveillance en strengere waarborgen, maar stemde eerder ook mee met uitbreiding van interceptiebevoegdheden.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "Pleit voor meer ruimte voor inlichtingendiensten en steunde het verruimen van interceptiebevoegdheden.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Kritisch op ongerichte interceptie en vraagt om streng toezicht en duidelijke kaders voor bijvangst.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "D66": {
+          "score": 4,
+          "explanation": "Wil privacy beschermen en verzet zich tegen ongerichte dataverzameling, maar stemde in het verleden soms mee met verruiming.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "BBB": {
+          "score": 2,
+          "explanation": "Benadrukt veiligheid en steunde uitbreiding van interceptiebevoegdheden, ondanks zorgen over privacy.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "CDA": {
+          "score": 1,
+          "explanation": "Wil ruimere interceptiemogelijkheden en minder beperkingen voor inlichtingendiensten.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Verzet zich consequent tegen massasurveillance en pleit voor beperking van interceptiebevoegdheden.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "Denk": {
+          "score": 5,
+          "explanation": "Wil strikte waarborgen en verzet zich tegen bulk-interceptie en vage bijvangstconstructies.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Staat pal tegen ongerichte dataverzameling en stemde tegen uitbreiding van interceptiebevoegdheden.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Keert zich tegen massasurveillance en steunt een strikt, gericht interceptieregime.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "SGP": {
+          "score": 1,
+          "explanation": "Steunde uitbreiding van interceptiebevoegdheden en verzet zich niet tegen bredere bijvangst.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "CU": {
+          "score": 2,
+          "explanation": "Legt nadruk op veiligheid en stemde voor verruiming van interceptie, ondanks zorgen over toezicht.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Wil scherpe grenzen aan interceptiebevoegdheden en bescherming tegen massasurveillance.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Wil brede opsporingsmogelijkheden en steunde uitbreiding van interceptie en bijvangst.",
+          "source": "https://chatcontrole.nl/stemwijzer2023/"
+        }
+      }
+    },
+    "8": {
+      "positions": {
+        "PVV": {
+          "score": 3,
+          "explanation": "De PVV vindt hacktools voor de politie in principe nodig, maar stemde tegen de hackwet omdat de bevoegdheden volgens haar te ver gingen; de partij heeft niet expliciet opgeroepen tot strenge onafhankelijke toetsing of volledige transparantie.",
+          "source": "https://tweakers.net/nieuws/119231/tweede-kamer-stemt-voor-hackvoorstel.html"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "GroenLinks-PvdA steunt strikte toetsing en transparantie: zo probeerde GroenLinks destijds het gebruik van onbekende kwetsbaarheden (zero-days) geheel uit het wetsvoorstel te schrappen en verzette de partij zich tegen hackbevoegdheden zonder melding en toezicht.",
+          "source": "https://tweakers.net/nieuws/119231/tweede-kamer-stemt-voor-hackvoorstel.html"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "De VVD ziet het hacken met zero-days als een noodzakelijk opsporingsmiddel en heeft geen pleidooi gevoerd voor extra onafhankelijke toetsing of transparantie bovenop de bestaande waarborgen.",
+          "source": "https://www.privacybarometer.nl/maatregel/86/Inbraakbevoegdheid_voor_politie"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Nieuw Sociaal Contract (Omtzigt) benadrukt het belang van checks-and-balances: de partij gaf aan zich inhoudelijk te kunnen vinden in het Digitale Stembusakkoord, wat duidt op steun voor strenge, onafhankelijke controle en transparantie bij politiehacks.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "D66 wil zware waarborgen bij hackbevoegdheden: de partij stelde in haar programma zelfs expliciet dat de politie geen onbekende softwarelekken (0-days) mag misbruiken om te hacken, om te voorkomen dat de politie een prikkel krijgt om zulke lekken geheim te houden.",
+          "source": "https://dnpprepo.ub.rug.nl/10864/1/D66_vp_TK2017_def.pdf"
+        },
+        "BBB": {
+          "score": 2,
+          "explanation": "Het BBB-programma toont een wisselend beeld: hoewel de partij stelt privacy van burgers te willen respecteren, wil BBB tegelijk privacyregels aanpassen om informatie-uitwisseling bij de bestrijding van zware criminaliteit te vergemakkelijken – van een expliciete eis voor onafhankelijke hacktoets of volledige transparantie is geen sprake.",
+          "source": "https://ibestuur.nl/artikel/recht-op-privacy-in-verkiezingsprogrammas/"
+        },
+        "CDA": {
+          "score": 1,
+          "explanation": "Het CDA steunt ruime hackbevoegdheden voor de politie en vond de voorgestelde wet zelfs \"nog niet ver genoeg\" gaan; de partij wilde de bevoegdheden verder uitbreiden (bijvoorbeeld met een decryptieplicht), wat aangeeft dat extra toetsing of transparantie voor het CDA geen prioriteit had.",
+          "source": "https://www.rtl.nl/geld-en-werk/artikel/280021/forse-kritiek-op-hackwet-politie-zelfs-pacemaker-niet-veilig"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "De SP eist strenge waarborgen en openheid: de partij was fel tegen het hackvoorstel en waarschuwde dat deze bevoegdheid vergelijkbaar is met permanent in iemands huis kijken; ook vindt de SP dat zero-days direct gemeld moeten worden zodat softwarelekken worden gedicht.",
+          "source": "https://www.privacybarometer.nl/maatregel/86/Inbraakbevoegdheid_voor_politie"
+        },
+        "Denk": {
+          "score": 5,
+          "explanation": "DENK hecht veel belang aan privacyrechten en transparantie; de partij heeft – in lijn hiermee – het Digitale Stembusakkoord mede onderschreven, en daarmee steun uitgesproken voor strikte, onafhankelijke toetsing en achteraf openheid bij politiehacks.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "De Partij voor de Dieren is het volledig eens met de stelling: zij ziet privacy als een grondrecht en waarschuwt dat het opofferen daarvan voor misdaadbestrijding vooral schijnveiligheid oplevert; de partij verzet zich tegen hacken zonder zware toetsing en volledige openheid.",
+          "source": "https://www.privacybarometer.nl/maatregel/86/Inbraakbevoegdheid_voor_politie"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Forum voor Democratie deelt de zorgen over ongebreidelde hackbevoegdheden: de partij waarschuwt dat het inperken van privacy een hellend vlak is en vreest dat een technisch onkundige rechter te gemakkelijk zou instemmen – FvD wil dus zeer strenge, onafhankelijke toetsing voordat de politie mag hacken.",
+          "source": "https://tweakers.net/reviews/8358/technologie-in-de-verkiezingen-2021-alle-programmas-doorgespit.html"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "De SGP erkent het belang van encryptie en privacy, maar vindt dat opsporingsdiensten in specifieke gevallen dergelijke bescherming mogen doorbreken om zware criminaliteit aan te pakken; de partij stemde voor de hackwet en heeft niet aangedrongen op extra toezicht of transparantie achteraf.",
+          "source": "https://tweakers.net/nieuws/119231/tweede-kamer-stemt-voor-hackvoorstel.html"
+        },
+        "CU": {
+          "score": 5,
+          "explanation": "De ChristenUnie stemde destijds in met de hackwet, maar heeft in 2023 ook het Digitale Stembusakkoord ondertekend; de partij schaart zich daarmee achter strengere onafhankelijke toetsing en volledige transparantie rond politiehacks, in lijn met haar inzet voor ethische grenzen aan opsporingsbevoegdheden.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Volt ondersteunt stevige controlemechanismen bij digitale opsporing; de partij ondertekende eveneens het Digitale Stembusakkoord, wat betekent dat Volt voorstander is van strikte, onafhankelijke toetsing van hackbevoegdheden en maximale transparantie achteraf over politie-inzetten.",
+          "source": "https://www.bitsoffreedom.nl/2023/11/10/de-digitale-agenda-van-het-nieuwe-kabinet/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "JA21 wil de politie juist meer digitale armslag geven en legt de nadruk op opsporing boven privacy; de partij pleit in haar programma voor uitbreiding van cameratoezicht en inzet van geavanceerde surveillancetechnologie, zonder nadruk op extra toezicht of transparantie bij hackbevoegdheden.",
+          "source": "https://www.security.nl/posting/901663/Programma+JA21:+uitbreiding+cameratoezicht,+meer+AI+en+cyberafschrikking"
+        }
+      }
+    },
+    "9": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Besteedt in het partijprogramma geen aandacht aan juridische bescherming of beloningen voor ethische hackers, en toont dus geen steun voor zo'n wettelijke regeling.",
+          "source": "https://www.security.nl/posting/901913/Programma+PVV:+bodycam+voor+elke+NS-medewerker+en+digitale+schandpaal"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Pleit voor wettelijke verankering van een veilige haven en beloning voor ethische hackers, bijvoorbeeld via een motie om ethische hackerscollectieven structureel te subsidiëren vanwege hun cruciale rol voor cyberveiligheid.",
+          "source": "https://www.nporadio1.nl/nieuws/politiek/d9450844-f383-4720-ab9c-abd5557f325c/d66-volt-en-pvda-willen-subsidie-voor-hackers"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "Staat open voor hulp van ethische hackers binnen de bestaande juridische kaders, maar initieert geen nieuwe safe-harborwetgeving of beloningsregeling (wel steun voor financiering van ethische-hackerprojecten als onderdeel van cyberveiligheidsbeleid).",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "NSC": {
+          "score": 2,
+          "explanation": "Heeft in het programma geen specifieke plannen over ethisch hacken opgenomen; de partij richt zich vooral op algemene cyberweerbaarheid (bijvoorbeeld betere digitale recherche en quantumveilige systemen) en benoemt safe harbor of beloningen niet.",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Voorstander van zowel juridische bescherming als beloningen voor ethische hackers; de partij riep op tot een beloningsstructuur voor melders van kwetsbaarheden en wil het responsible-disclosure-principe wettelijk vastleggen om ethische hackers te vrijwaren van vervolging.",
+          "source": "https://www.security.nl/posting/598608/D66+wil+hackers+beter+belonen+en+wettelijk+kader+voor+zero-days"
+        },
+        "BBB": {
+          "score": 1,
+          "explanation": "Benadrukt in het programma vooral een harde aanpak van cyberdreiging via opsporing en defensie, zonder aandacht voor het beschermen of belonen van ethische hackers via nieuwe wetgeving.",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "CDA": {
+          "score": 2,
+          "explanation": "Heeft geen concrete voorstellen voor een veiligehavenstatus of beloningen voor ethische hackers; de focus ligt op versterking van digitale veiligheid bij overheid en MKB, niet op nieuwe beschermingswetgeving voor hackers.",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "SP": {
+          "score": 2,
+          "explanation": "Maakt geen melding van safe harbor of beloningen voor ethische hackers; zet vooral in op meer capaciteit tegen digitale criminaliteit en noemt geen aparte bescherming voor goedwillende hackers in wetgeving.",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "Denk": {
+          "score": 2,
+          "explanation": "Heeft geen expliciete standpunten over ethisch hacken; de partij beperkt zich tot algemene verbeteringen van digitale infrastructuur en veiligheid, zonder voorstel voor wettelijke safe harbor of beloningsregeling.",
+          "source": "https://www.security.nl/posting/818105/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+cybersecurity%3F"
+        },
+        "PvdD": {
+          "score": 2,
+          "explanation": "Geen aandacht voor een juridische safe harbor of beloningen voor ethische hackers in het programma; de partij focust op andere digitale veiligheidsvraagstukken (zoals eisen aan apparatuur en encryptie) en laat dit thema ongemoeid.",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Noemt in het geheel niets over responsible disclosure, safe harbor of het belonen van ethische hackers in het partijprogramma, wat duidt op afwezigheid van steun voor wettelijke verankering hiervan.",
+          "source": "https://www.security.nl/posting/818105/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+cybersecurity%3F"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Benoemt wel het belang van beveiligingstests en cyberweerbaarheid, maar heeft geen voorstellen voor juridische bescherming of beloning van ethische hackers; een safe-harborregeling komt niet terug in het programma.",
+          "source": "https://www.security.nl/posting/818105/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+cybersecurity%3F"
+        },
+        "CU": {
+          "score": 2,
+          "explanation": "Legt de nadruk op opsporing en bescherming van vitale digitale infrastructuur, zonder specifieke uitspraken over het wettelijk beschermen of belonen van ethische hackers; safe harbor komt niet aan bod.",
+          "source": "https://www.ccinfo.nl/menu-onderwijs-ontwikkeling/cybercrime/1551773_de-toekomst-van-cyberveiligheid-in-nederland-een-overzicht-van-politieke-partijen-en-hun-cybersecurity-beleid"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Wil ethisch hacken expliciet aanmoedigen en wettelijk mogelijk maken: de partij pleit ernaar Belgisch voorbeeld voor om het recht op ongevraagd ethisch hacken (safe harbor) wettelijk vast te leggen en een positieve houding bij meldingen te verankeren.",
+          "source": "https://ibestuur.nl/artikel/verkiezingsprogrammas-veel-concreter-over-cybersecuritybeleid/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Benadrukt enkel de bestrijding van cybercrime via opsporingsdiensten en noemt nergens het beschermen of stimuleren van ethische hackers, wat wijst op afwijzing dan wel onverschilligheid jegens een safe-harborwet of beloningen.",
+          "source": "https://www.security.nl/posting/818105/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+cybersecurity%3F"
+        }
+      }
+    },
+    "10": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Pleiten voor ruimere inzet van gezichtsherkenning bij bijvoorbeeld voetbalwedstrijden, dus duidelijk tegen een verbod.",
+          "source": "https://www.security.nl/posting/816132/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+privacy%3F"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Wil dat automatische biometrische identificatie (zoals gezichtsherkenning) in openbare ruimte geheel wordt verboden ter bescherming van privacy.",
+          "source": "https://pointer.kro-ncrv.nl/dit-zijn-de-plannen-van-politieke-partijen-voor-persoonsgegevens-en-algoritmen"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "Zet veiligheid voorop en schaft desnoods privacybelemmeringen af die opsporing hinderen, waardoor een verbod op gezichtsherkenning niet wordt gesteund.",
+          "source": "https://privacyfirst.nl/artikelen/privacy-kieswijzer/"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Acht massasurveillance onwenselijk en staat gezichtsherkenning alleen toe wanneer het noodzakelijk en proportioneel is, met strenge onafhankelijke controle.",
+          "source": "https://privacyfirst.nl/artikelen/privacy-kieswijzer/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Vindt realtime gezichtsherkenning onverenigbaar met een vrije samenleving en bepleit expliciet een wettelijk verbod op biometrische identificatie in de openbare ruimte.",
+          "source": "https://d66.nl/europa/standpunten/digitalisering-en-innovatie/"
+        },
+        "BBB": {
+          "score": 2,
+          "explanation": "Respecteert de privacy van burgers, maar wil privacyregels versoepelen voor opsporing van zware criminaliteit, wat een volledig verbod op gezichtsherkenning in de weg kan staan.",
+          "source": "https://www.security.nl/posting/816132/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+privacy%3F"
+        },
+        "CDA": {
+          "score": 1,
+          "explanation": "Stelt nationale veiligheid boven privacy en wil wetgeving aanpassen om gegevensuitwisseling te vergemakkelijken, dus ziet niets in een algeheel verbod op gezichtsherkenning.",
+          "source": "https://www.security.nl/posting/816132/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+privacy%3F"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Verzet zich tegen een digitale controlestaat en heeft zelfs Kamervragen gesteld om gezichtsherkenning bij toegangscontroles (zoals festivals) te voorkomen.",
+          "source": "https://www.security.nl/posting/728765"
+        },
+        "DENK": {
+          "score": 4,
+          "explanation": "Waarschuwt voor privacyschending en discriminatie door ongerichte algoritmes en wil strenger toezicht, waarmee grootschalige gezichtsherkenning in de publieke ruimte niet strookt.",
+          "source": "https://www.security.nl/posting/816132/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+privacy%3F"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Pleitte nadrukkelijk voor een verbod op cameratoezicht met gezichtsherkenning in alle openbare en semi-openbare ruimten om de privacy van burgers te waarborgen.",
+          "source": "https://www.ictrecht.nl/blog/gezichtsherkenning-anno-2025-waar-staan-we-en-waar-gaan-we-mogelijk-naartoe"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Waarschuwt dat gezichtsherkenning leidt tot \"Chinees\" massatoezicht en belooft zich fel te verzetten tegen dergelijke biometrische monitoring door de overheid.",
+          "source": "https://nieuwrechts.nl/88025-fvd-bezorgd-over-europees-plan-gezichtsherkenning-biometrische-identificatie-intensiveert-massatoezicht"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Schuwt het inzetten van vergaande surveillancemiddelen niet wanneer de veiligheid of orde dit vergt, en zou gezichtsherkenning in noodsituaties willen kunnen gebruiken.",
+          "source": "https://privacyfirst.nl/artikelen/privacy-kieswijzer/"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "Is uitermate terughoudend met digitale surveillance en benadrukt het belang van privacy, neigend naar een strikte beperking van gezichtsherkenning in de openbare ruimte.",
+          "source": "https://privacyfirst.nl/artikelen/privacy-kieswijzer/"
+        },
+        "Volt": {
+          "score": 2,
+          "explanation": "Toont zich bereid privacy op te offeren in de strijd tegen zware criminaliteit (zelfs online anonimiteit wordt beperkt), en is daardoor geen voorstander van een totaalverbod.",
+          "source": "https://privacyfirst.nl/artikelen/privacy-kieswijzer/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Wil het cameratoezicht juist fors uitbreiden en juridische drempels voor gezichtsherkenning wegnemen, onder meer om relschoppers en drugscriminelen effectiever aan te pakken.",
+          "source": "https://privacyfirst.nl/artikelen/privacy-kieswijzer/"
+        }
+      }
+    },
+    "11": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Besteedt in het programma nauwelijks aandacht aan digitalisering of AI-veiligheidsrisico's, wat erop wijst dat men geen pauze in AI-ontwikkeling nastreeft.",
+          "source": "https://ibestuur.nl/artikel/grote-winnaar-pvv-heeft-weinig-ambities-op-gebied-van-digitalisering/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Waarschuwt dat de huidige ethische kaders voor AI te zwak en te traag zijn om de uitrol van risicovolle AI-toepassingen te voorkomen.",
+          "source": "https://groenlinks.nl/nieuws/reactie-groenlinks-op-staat-van-de-unie-2023"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "Vindt dat kunstmatige intelligentie \"de toekomst\" heeft en wil volop inzetten op de kansen ervan in plaats van te remmen uit angst.",
+          "source": "https://www.dutchitchannel.nl/news/676383/vvd-presenteert-verkiezingsprogramma-met-focus-op-ai-en-investeringen-in-tech"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Waarschuwt tegen blind vertrouwen op AI-modellen en wil eerst transparantie en wetenschappelijke toetsing voordat zulke modellen worden ingezet.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "D66": {
+          "score": 2,
+          "explanation": "Ziet volop kansen in AI maar eist strenge waarborgen als transparantie en ethiek, en zet in op verplichte algoritmetoetsen in plaats van een ontwikkelpauze.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "BBB": {
+          "score": 3,
+          "explanation": "Erkent de potentie van AI maar verzet zich tegen blind varen op modellen; menselijke beoordeling en praktijkkennis moeten altijd centraal staan bij inzet van AI.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "CDA": {
+          "score": 2,
+          "explanation": "Benadrukt dat AI binnen onze normen en waarden moet blijven en pleit voor transparantie en nieuwe digitale rechten, maar niet voor een pauze in ontwikkeling.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "SP": {
+          "score": 3,
+          "explanation": "Legt de nadruk op het beschermen van rechten en het voorkomen van discriminatie door algoritmen met streng toezicht, zonder expliciet op een ontwikkelstop aan te sturen.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "DENK": {
+          "score": 3,
+          "explanation": "Wil harde maatregelen tegen digitale discriminatie (zoals een algoritmewet en een sterkere toezichthouder) en richt zich op regulering van misbruik in plaats van het stilleggen van AI-ontwikkeling.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Pleit voor internationale afspraken, inclusief een tijdelijke pauze in de ontwikkeling van zeer geavanceerde AI-systemen, totdat er eerst veiligheidsmaatregelen zijn getroffen.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Laat in het partijprogramma niets van zich horen over AI-regulering of -risico's, wat suggereert dat men geen voorstander is van een pauze in AI-ontwikkeling.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Noemt in het programma nauwelijks digitale onderwerpen en heeft niet gepleit voor het tijdelijk stopzetten van AI-ontwikkelingen, dus ingrijpen op frontier-AI ligt niet voor de hand.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "Roept op tot grondige bezinning op de rol van AI en wil strengere regulering van algoritmen en versterkt toezicht voordat we met krachtige AI-systemen verder gaan.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "Volt": {
+          "score": 2,
+          "explanation": "Omarmt AI als een kans en wil dat iedereen ervan profiteert onder duidelijke ethische regels, in plaats van de ontwikkeling te pauzeren.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Wil het gebruik van AI juist volop stimuleren en vindt ethische kaders alleen niet genoeg, met productiviteit als leidraad in plaats van op de rem te trappen.",
+          "source": "https://www.security.nl/posting/901663/Programma+JA21:+uitbreiding+cameratoezicht,+meer+AI+en+cyberafschrikking"
+        }
+      }
+    },
+    "12": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Heeft geen zichtbare ambitie om fors in eigen hightech (AI, chips, fotonica) te investeren en laat deze onderwerpen onbenoemd in het partijprogramma.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Pleit voor grote publieke investeringen in Nederlandse tech-capaciteit, van Europese chipfabrieken tot een AI-'fabriek' in Groningen, om de technologische autonomie te vergroten.",
+          "source": "https://groenlinkspvda.nl/verkiezingsprogramma/de-basis-op-orde-een-land-dat-werkt-voor-iedereen/investeren-in-onze-digitale-autonomie-en-industrie/"
+        },
+        "VVD": {
+          "score": 5,
+          "explanation": "Zet vol in op investeringen in Nederlandse AI- en chiptechnologie om de afhankelijkheid van buitenlandse grootmachten te verkleinen en concrete tech-faciliteiten (zoals een AI-fabriek) te realiseren.",
+          "source": "https://www.dutchitchannel.nl/news/676383/vvd-presenteert-verkiezingsprogramma-met-focus-op-ai-en-investeringen-in-tech"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Onderstreept het belang van strategische technologie en wil in Nederland (en Europa) de tech-industrie actief ondersteunen om minder afhankelijk te zijn van buitenlandse leveranciers.",
+          "source": "https://www.nldigital.nl/verkiezingen-tweede-kamer-2023/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Zoekt nationaal en Europees de technologische koplopersrol op door extra te investeren in sleuteltechnologieën (zoals chips, AI, quantum) en het innovatiebudget ten koste van andere uitgaven (bv. landbouw) te vergroten.",
+          "source": "https://www.nldigital.nl/verkiezingen-tweede-kamer-2023/"
+        },
+        "BBB": {
+          "score": 3,
+          "explanation": "Erkent de mogelijkheden van nieuwe technologieën, maar hamert erop dat praktijkkennis en meetbare resultaten boven modellen en theorie gaan, met nadruk op doen boven denken in beleid.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "CDA": {
+          "score": 3,
+          "explanation": "Ziet de kansen van technologische ontwikkeling wel in, maar legt vooral nadruk op ethische randvoorwaarden, transparantie en digitale rechten in plaats van een investeringsagenda.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "SP": {
+          "score": 2,
+          "explanation": "Besteedt nauwelijks aandacht aan het actief stimuleren van eigen hightech-industrie en kijkt vooral kritisch naar de risico's van technologie, met focus op toezicht en bescherming van burgerrechten.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "DENK": {
+          "score": 2,
+          "explanation": "Benadrukt vooral het bestrijden van digitale discriminatie en het versterken van toezicht, zonder expliciete voorstellen voor forse investeringen in Nederlandse AI- of chipinitiatieven.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "PvdD": {
+          "score": 2,
+          "explanation": "Legt de nadruk op de risico's van AI en het waarborgen van privacy en duurzaamheid, en noemt geen grootschalige investeringen in eigen technologie-industrie als speerpunt.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Heeft geen plannen om zwaar in Nederlandse AI-, chip- of fotonica-initiatieven te investeren; onderwerpen rond technologie komen in recente standpunten niet of nauwelijks voor.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Maakt hightech investeringen geen prominent thema en heeft in het partijprogramma amper aandacht voor eigen AI-, chip- of fotonicabeleid, aangezien andere waarden centraal staan.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "CU": {
+          "score": 3,
+          "explanation": "Stuurt aan op een zorgvuldige, ethische inzet van digitale technologie (bijv. AI in de zorg en onderwijs) en versterkt toezicht, maar presenteert geen ambitieuze investeringsplannen voor nieuwe tech-industrie.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Wil grootschalig investeren in Europese technologische onafhankelijkheid – onder meer via een EU-Tech Fund en speciale fondsen voor digitalisering – zodat Europa en Nederland beschikken over eigen AI-, chip- en innovatiekracht.",
+          "source": "https://www.nldigital.nl/verkiezingen-tweede-kamer-2023/"
+        },
+        "JA21": {
+          "score": 4,
+          "explanation": "Erkent het strategische belang van eigen digitale infrastructuur en technologie en wil investeren in onder andere een nationale cloud en andere vitale tech-capaciteiten om Nederland minder afhankelijk te maken.",
+          "source": "https://www.security.nl/posting/901663/Programma+JA21:+uitbreiding+cameratoezicht,+meer+AI+en+cyberafschrikking"
+        }
+      }
+    },
+    "13": {
+      "positions": {
+        "PVV": {
+          "score": 2,
+          "explanation": "Heeft in het programma geen aandacht aan AI-transparantie besteed, wat duidt op weinig steun voor extra verplichtingen.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Streeft expliciet naar wettelijk verplichte transparantie en uitleg bij elke vorm van geautomatiseerde besluitvorming.",
+          "source": "https://groenlinkspvda.nl/verkiezingsprogramma/leiderschap-dat-nederland-beschermt/een-overheid-die-mensen-beschermt/"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "Benadrukt het belang van transparantie in data- en algoritmegebruik, maar legt de focus op internationale samenwerking en risicogebaseerde zorgvuldigheid.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Benadrukt de risico's van geautomatiseerde besluitvorming en het belang van transparantie en verantwoording, en wil duidelijke wetenschappelijke normen voor het gebruik van modellen in beleid.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Dringt aan op strenge toetsing van algoritmes en het voorkomen van discriminatie, en legt nadruk op transparantie en ethiek bij AI-toepassingen.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "BBB": {
+          "score": 3,
+          "explanation": "Waarschuwt voor blind vertrouwen in AI-modellen en benadrukt dat menselijke beslissingen centraal moeten blijven staan bij beleid en uitvoering.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "CDA": {
+          "score": 5,
+          "explanation": "Bepleit digitale grondrechten zoals een recht op transparantie en wil meer juridische waarborgen rond geautomatiseerde besluitvorming.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Wil dat overheidsalgoritmen mensenrechten respecteren en pleit voor streng toezicht om discriminatie door AI actief te bestrijden.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "DENK": {
+          "score": 5,
+          "explanation": "Pleit voor een 'algoritmewet' met strenge transparantie-eisen en sterk toezicht om digitale discriminatie te voorkomen.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Eist transparantie van AI-aanbieders over gebruikte gegevensbronnen en wil strengere regels om privacy en dataveiligheid te garanderen.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Laat AI-beleid ongemoeid in het programma en lijkt zich te verzetten tegen extra voorschriften op dit terrein.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "Wijdt in het programma nauwelijks woorden aan AI of algoritmes en geeft geen aanwijzing dat aanvullende transparantieplichten gesteund worden.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "CU": {
+          "score": 5,
+          "explanation": "Vindt dat organisaties openheid moeten geven over hun algoritmen, inclusief gebruikte data en maatregelen tegen discriminatie.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Wil vergaande transparantie met verplichte openbaarmaking van gegevensbronnen door AI-bedrijven.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        },
+        "JA21": {
+          "score": 2,
+          "explanation": "Haalt AI of algoritmetransparantie niet aan in het programma, wat suggereert dat extra verplichtingen niet op de agenda staan.",
+          "source": "https://www.ictmagazine.nl/nieuws/hoe-staat-ai-ervoor-in-verkiezingsprogrammas/"
+        }
+      }
+    },
+    "14": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Wijst internationale beperkingen af en verzette zich tegen een verbod op killerrobots.",
+          "source": "https://dnpprepo.ub.rug.nl/87730/1/PVV%20Verkiezingsprogramma%202023.pdf"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Streeft naar het uitbannen van killerrobots via een bindend VN-verdrag.",
+          "source": "https://www.ewmagazine.nl/nederland/achtergrond/2023/11/verkiezingsprogrammas-doorgelicht-defensie-1378372/"
+        },
+        "VVD": {
+          "score": 2,
+          "explanation": "Waarschuwt dat Nederland zichzelf niet moet beperken met een verbod terwijl landen als Rusland en China doorgaan.",
+          "source": "https://www.vvd.nl/wp-content/uploads/2023/10/Verkiezingsprogramma-VVD-2023-2027-1.pdf"
+        },
+        "NSC": {
+          "score": 5,
+          "explanation": "Steunde in de Tweede Kamer actief een internationaal verbod op killerrobots.",
+          "source": "https://dnpprepo.ub.rug.nl/87814/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Riep als eerste op tot een internationaal verdrag dat killerrobots verbiedt.",
+          "source": "https://d66.nl/nieuws/internationaal-verbod-op-killer-robots"
+        },
+        "BBB": {
+          "score": 5,
+          "explanation": "Stemde voor een Kameroproep om killerrobots internationaal te verbieden.",
+          "source": "https://boerburgerbeweging.nl/wp-content/uploads/2023/10/BBB_VERKIEZINGSPROGRAMMA_NOV2023_Corr5.pdf"
+        },
+        "CDA": {
+          "score": 2,
+          "explanation": "Legt de nadruk op hoogwaardige defensietechnologie en steunde een verbod op killerrobots niet.",
+          "source": "https://d2vs36cx04qmpo.cloudfront.net/files/CDA-Verkiezingsprogramma-TK2023.pdf"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Noemt killerrobots een drama voor de vrede en wil dat deze wapens volledig verboden worden.",
+          "source": "https://www.sp.nl/nieuws/weeklog-de-wapenindustrie-heeft-de-eu-stevig-in-de-greep"
+        },
+        "DENK": {
+          "score": 5,
+          "explanation": "Is voor een bindend internationaal verbod op killerrobots en stemde voor een motie in die richting.",
+          "source": "https://dnpprepo.ub.rug.nl/87815/1/DENK%20Verkiezingsprogramma%202023-2027.pdf"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Wil dat Nederland zich hard maakt voor een internationaal verbod op killerrobots.",
+          "source": "https://www.partijvoordedieren.nl/standpunten/regels-wapens-aanscherpen"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Steunde in de Tweede Kamer een oproep tot een internationaal verbod op killerrobots.",
+          "source": "https://fvd.nl/FVD_het_programma_van_hoop_optimisme_en_herstel_2023-2027.pdf"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "Vindt menselijke controle essentieel maar wil geen eenzijdig nadeel voor Nederland door een verbod.",
+          "source": "https://sgp.nl/verkiezingsprogramma"
+        },
+        "CU": {
+          "score": 3,
+          "explanation": "Pleit voor internationale regels over de inzet van autonome wapens in plaats van een absoluut verbod.",
+          "source": "https://www.christenunie.nl/verkiezingsprogramma"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Pleitte voor een EU-standpunt en VN-verdrag om killerrobots te verbieden.",
+          "source": "https://voltnederland.org/storage/doc/voltnederland_verkiezingsprogramma_2023.pdf"
+        },
+        "JA21": {
+          "score": 5,
+          "explanation": "Stemde voor een Kamerbrede oproep tot een internationaal verbod op killerrobots.",
+          "source": "https://ja21.nl/fileadmin/user_upload/Verkiezingsprogramma_TK_23_A4_v2.pdf"
+        }
+      }
+    },
+    "15": {
+      "positions": {
+        "PVV": {
+          "score": 5,
+          "explanation": "Ziet kernenergie als efficiënte, CO₂-vrije energiebron en steunt veilige toepassing mits verantwoord.",
+          "source": "https://www.pvv.nl/index.php/component/content/article.html?id=6567:dertigledendebat-over-bericht-europese-kerncentrales-niet-veilig-genoeg"
+        },
+        "GL/PvdA": {
+          "score": 1,
+          "explanation": "Verwerpt nieuwe kerncentrales en pleit voor sluiting van Borssele vóór 2033.",
+          "source": "https://www.pvda.nl/verkiezingen/verkiezingsprogramma/duurzaamheid/duurzame-energie/"
+        },
+        "VVD": {
+          "score": 5,
+          "explanation": "Wil twee nieuwe kerncentrales bouwen en noemt kernenergie onmisbaar, met inzet op overheidssteun en investeerderszekerheid.",
+          "source": "https://www.vvd.nl/standpunten/klimaat-energie/"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Beschouwt kernenergie als toekomstbestendig onderdeel van de mix en reserveert budgetten voor nieuwe centrales.",
+          "source": "https://www.evofenedex.nl/actualiteiten/tk2023-nieuw-sociaal-contract-staat-voor-een-klimaatneutrale-economie"
+        },
+        "D66": {
+          "score": 4,
+          "explanation": "Gaat door met voorbereidingen voor twee nieuwe kerncentrales en zegt geen technologie (dus ook kernenergie) uit te sluiten.",
+          "source": "https://d66.nl/standpunten/klimaat-en-energie/"
+        },
+        "BBB": {
+          "score": 5,
+          "explanation": "Onderdeel van coalitie die Borssele open wil houden en vier nieuwe kerncentrales wil bouwen.",
+          "source": "https://nos.nl/artikel/2555450-kans-op-nieuwe-nederlandse-kerncentrale-in-2035-klein-meer-tijd-nodig"
+        },
+        "CDA": {
+          "score": 4,
+          "explanation": "Ziet kernenergie als belangrijk voor betrouwbare, CO₂-vrije stroom; steunt bouw van twee nieuwe reactoren bij Borssele en een zorgvuldige verlenging van de bestaande centrale.",
+          "source": "https://www.cda.nl/zeeland/nieuws/kernenergie-biedt-kansen-voor-zeeland/"
+        },
+        "SP": {
+          "score": 1,
+          "explanation": "Wil geen nieuwe kerncentrales en roept op tot sluiting van Borssele zo snel mogelijk.",
+          "source": "https://www.laka.org/nieuws/2016/sp-borssele-moet-ook-dicht-6008"
+        },
+        "DENK": {
+          "score": 1,
+          "explanation": "Spreekt zich uit tegen kernenergie wegens het langlevende radioactieve afval.",
+          "source": "https://www.bewegingdenk.nl/veel-gestelde-vragen/"
+        },
+        "PvdD": {
+          "score": 1,
+          "explanation": "Keurt kernenergie af en wil het niet toestaan (alleen groene waterstof als duurzame energiedrager).",
+          "source": "https://assets.partijvoordedieren.nl/assets/algemeen/Verkiezingsprogramma-2023-Tweede-Kamer-Partij-voor-de-Dieren.pdf"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Staat sterk achter kernenergie; wil twee nieuwe reactoren bouwen en investeert in onderzoek naar gesmolten-zoutreactoren (thorium).",
+          "source": "https://fvd.nl/standpunten/kernenergie-innovatie"
+        },
+        "SGP": {
+          "score": 4,
+          "explanation": "Vindt kernenergie nodig voor leveringszekerheid; steunt Borssele-verlenging en nieuwe veilige kerncentrales, met onderzoek naar thoriumreactoren.",
+          "source": "https://sgp.nl/standpunten/kernenergie"
+        },
+        "CU": {
+          "score": 3,
+          "explanation": "Ziet kernenergie als tijdelijk onderdeel van het systeem (incl. twee nieuwe centrales) voor een robuuste, betaalbare energievoorziening en vindt dat Borssele langer open kan blijven mits veilig.",
+          "source": "https://www.christenunie.nl/standpunt/kerncentrales"
+        },
+        "Volt": {
+          "score": 4,
+          "explanation": "Zet in op een veilige toepassing van kernenergie in Europees verband, binnen haar ambitieuze klimaatdoelen.",
+          "source": "https://voltnederland.org/standpunten"
+        },
+        "JA21": {
+          "score": 5,
+          "explanation": "Wil twee extra grote kernreactoren in Borssele neerzetten en onderzoekt levensduurverlenging van de bestaande centrale.",
+          "source": "https://ja21.nl/kernenergieplan"
+        }
+      }
+    },
+    "16": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Vuurt af op klimaatakkoorden (Parijs eraf), pleit voor goedkope energie (nieuwe kerncentrales, behoud kolen/gas) en wil álle klimaatwetten schrappen; geo-engineering komt niet aan de orde.",
+          "source": "http://www.pvv.nl/verkiezingen/verkiezingsprogramma.html"
+        },
+        "GroenLinks": {
+          "score": 1,
+          "explanation": "Vreest grote onherstelbare milieuschade en wijst mariene geo-engineering af; alleen strikt gecontroleerd laboratoriumonderzoek wordt (hoogstens) geaccepteerd.",
+          "source": "https://groenlinks.nl/standpunten/"
+        },
+        "PvdA": {
+          "score": 3,
+          "explanation": "Bestemt zich tot serieuze CO₂-reductiedoelstellingen en inzet op hernieuwbare energie (65% in 2030), maar vermeldt geo-engineering in geen enkel onderdeel van het programma.",
+          "source": "https://groenlinkspvda.nl/verkiezingen/verkiezingsprogramma/"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "Richt zich op innovatie met waterstof, kernenergie en efficiënte marktmechanismes en noemt klimaattechnologieën in ruime zin, maar het verkiezingsprogramma of standpuntpagina's vermelden geo-engineering niet.",
+          "source": "https://www.vvd.nl/standpunten/klimaat/"
+        },
+        "NSC": {
+          "score": 3,
+          "explanation": "Besteedt weinig pagina's aan klimaat (1½ pagina) en benadrukt sober beleid; geo-engineering komt niet voor in het programma.",
+          "source": "https://ja21.nl"
+        },
+        "D66": {
+          "score": 4,
+          "explanation": "Pleit voor Europese regels voor klimaatingrepen ('geo-engineering') met harde eis van omkeerbaarheid, en staat onderzoek onder strikte voorwaarden wel toe.",
+          "source": "https://d66.nl/standpunten/klimaat/"
+        },
+        "BBB": {
+          "score": 3,
+          "explanation": "Roept op tot een 'haalbaar' klimaatbeleid zonder ideologische druk, zonder expliciete technologische interventies; geo-engineering wordt niet genoemd in het programma.",
+          "source": "https://boerburgerbeweging.nl/standpunten"
+        },
+        "CDA": {
+          "score": 3,
+          "explanation": "Investeert in een mix van kernenergie, wind en groengas en ondersteunt CO₂-afvang (CCS) als techniek, maar noemt geo-engineering nergens in het energieprogramma.",
+          "source": "https://www.cda.nl/standpunten/klimaat/"
+        },
+        "SP": {
+          "score": 1,
+          "explanation": "Ziet klimaatbeleid vooral als fundamentele herverdelingstaak met fors wind- en zonvermogen, verwerpt kernenergie en CO₂-opslag expliciet; geo-engineering wordt niet genoemd en past niet bij het voorzorgsprincipe.",
+          "source": "https://www.sp.nl/standpunten/klimaat"
+        },
+        "DENK": {
+          "score": 3,
+          "explanation": "Herkent dat de mens een 'klimaatschuld' heeft opgebouwd, maar bevat geen concreet beleid of positie over geo-engineering.",
+          "source": "https://www.bewegingdenk.nl/standpunten"
+        },
+        "PvdD": {
+          "score": 1,
+          "explanation": "Hanteert het voorzorgprincipe en zet vol in op hernieuwbare energie ten behoeve van natuur en dierenwelzijn; wil bovendien stoppen met CO₂-opslag (CCS), en geo-engineering wordt niet genoemd.",
+          "source": "https://partijvoordedieren.nl/standpunten"
+        },
+        "FvD": {
+          "score": 2,
+          "explanation": "Ziet klimaatverandering vooral als steeds veranderend natuurlijk verschijnsel en investeert liever in aanpassing (dijken, kustverdediging) en betaalbare energie (vanaf 2030 vooral kernenergie); geo-engineering komt niet voor in het programma.",
+          "source": "https://fvd.nl/standpunten"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "Legt verantwoord rentmeesterschap uit met sterke nadruk op duurzame energie (wind, zon en andere alternatieven) conform Bijbelse principes, maar noemt geo-engineering niet expliciet.",
+          "source": "https://sgp.nl/standpunten/natuur-en-milieu"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "Koppelt klimaatbeleid expliciet aan het behoud van de schepping; wil grote investeringen in zon en wind gecombineerd met nieuwe kerncentrales en past voorzorg toe, maar geo-engineering wordt niet vermeld.",
+          "source": "https://www.christenunie.nl/standpunten"
+        },
+        "Volt": {
+          "score": 3,
+          "explanation": "Streeft naar EU-klimaatneutraliteit in 2040 met hernieuwbare energie en kernenergie als ruggengraat, innovatieve technologie en marktkrachten; geo-engineering blijft onbesproken in het programma.",
+          "source": "https://voltnederland.org/program"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Legt zwaar de nadruk op klimaatadaptatie (waterbeheer, dijken), breidt kernenergie fors uit en houdt kolen en gas zolang mogelijk in bedrijf; CO₂-heffingen verdwijnen. Geo-engineering wordt niet genoemd en past niet bij deze aanpak.",
+          "source": "https://ja21.nl/standpunten"
+        }
+      }
+    },
+    "17": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Wil het EU-verbod op nieuwe benzine- en dieselauto's schrappen.",
+          "source": "https://autobahn.eu/artikel/503006/pvv-komt-op-voor-automobilist-140-km-u-brandstofmotoren-en-geen-rekeningrijden"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Zet erop in dat vanaf 2030 alleen nog nieuwe elektrische auto's verkocht mogen worden.",
+          "source": "https://www.evrijders.nl/nieuws/verkiezingen-elektrische-auto"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "Stimuleert de omslag naar elektrisch rijden terwijl de autobelastingen betaalbaar blijven; noemt geen vervroegd verbod.",
+          "source": "https://www.evrijders.nl/nieuws/verkiezingen-elektrische-auto"
+        },
+        "NSC": {
+          "score": 1,
+          "explanation": "Staat in zijn programma dat accijnzen op brandstof verlaagd moeten worden en EV's meer moeten bijdragen aan belastingen.",
+          "source": "https://www.autoweek.nl/autonieuws/artikel/dit-vinden-de-acht-grootste-politieke-partijen-over-automobiliteit/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Zet sterk in op elektrificatie van het wagenpark (o.a. invoeren van milieuzones, verplichte elektrische leaseauto's).",
+          "source": "https://www.autoblog.nl/nieuws/welke-politieke-partijen-vinden-evs-maar-onzin-3556179"
+        },
+        "BBB": {
+          "score": 1,
+          "explanation": "Is fel tegen dwang richting elektrisch rijden en noemt de invoering van (zero-emissie) milieuzones onhaalbaar en onbetaalbaar.",
+          "source": "https://www.autoblog.nl/nieuws/welke-politieke-partijen-vinden-evs-maar-onzin-3556179"
+        },
+        "CDA": {
+          "score": 3,
+          "explanation": "Wil EV's betaalbaar houden (aanpassingen in autobelastingen) en is tegen rekeningrijden buiten stadskernen, zonder het uitstelfenomeen te vervroegen.",
+          "source": "https://www.autoweek.nl/autonieuws/artikel/dit-vinden-de-acht-grootste-politieke-partijen-over-automobiliteit/"
+        },
+        "SP": {
+          "score": 3,
+          "explanation": "Steunt een EV-only beleid maar pas uiterlijk in 2035 ('EV-only voor nieuwe auto's in 2035').",
+          "source": "https://www.autoweek.nl/autonieuws/artikel/dit-vinden-de-acht-grootste-politieke-partijen-over-automobiliteit/"
+        },
+        "DENK": {
+          "score": 3,
+          "explanation": "Legt vooral de nadruk op bereikbaarheid en MKB, zonder expliciet plan voor vervroegde uitfasering van benzineauto's.",
+          "source": "https://www.bewegingdenk.nl/economie-mobiliteit-en-infrastructuur/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Beoogt een al in 2025 ingaand verkoopverbod voor nieuwe benzine- en dieselauto's.",
+          "source": "https://www.partijvoordedieren.nl/standpunten/minder-autos"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "Ziet brandstofauto's als 'overal welkom' (milieuzones afschaffen) en wil subsidies voor EV's juist afschaffen.",
+          "source": "https://www.autoblog.nl/nieuws/welke-politieke-partijen-vinden-evs-maar-onzin-3556179"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "Legt de nadruk op OV en betaalbare tweedehands-EV's, en vermijdt starre doelen (geen expliciete verbodstaal).",
+          "source": "https://sgp.nl/verkiezingen/verkiezingsprogramma/verkiezingsprogrammah9"
+        },
+        "CU": {
+          "score": 5,
+          "explanation": "Voert beleid met als doel dat vanaf 2030 in Nederland alleen nog zero-emissie personenvoertuigen verkocht worden.",
+          "source": "https://www.christenunie.nl/nl/standpunt/auto-s"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Streeft naar (lease)uitstootvrij vervoer: alle zakelijke leaseauto's vanaf 2026 emissievrij en EV-subsidies tot 2030.",
+          "source": "https://www.evrijders.nl/nieuws/verkiezingen-elektrische-auto"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Wil het verbod op nieuwe benzine- en dieselauto's vanaf 2035 terugdraaien.",
+          "source": "https://www.aob.nl/assets/Partijprogrammas-EU-verkiezingen-2024/JA21.pdf"
+        }
+      }
+    },
+    "18": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "De partij wil alle klimaatmaatregelen en belastingen op vervuilende activiteiten schrappen.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-2-hoe-pakken-fvd-groenlinks-pvda-nsc-en-pvdd-de-klimaatcrisis-aan-40555"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Ze pleiten voor verregaand klimaatbeleid en een rechtvaardige transitie waarin de zwaarste vervuilers de grootste lasten dragen.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-2-hoe-pakken-fvd-groenlinks-pvda-nsc-en-pvdd-de-klimaatcrisis-aan-40555"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "De partij heeft aangegeven de nationale CO2-heffing zo snel mogelijk te willen afschaffen.",
+          "source": "https://nos.nl/artikel/2572381-geen-co2-heffing-voor-industrie-ook-regeringspartijen-toch-tegen"
+        },
+        "NSC": {
+          "score": 3,
+          "explanation": "Nieuw Sociaal Contract waarschuwt dat het afschaffen van de CO2-heffing de industrie niet helpt en de klimaatdoelen uit zicht brengt.",
+          "source": "https://www.taxlive.nl/nl/documenten/opinie/parlementair/tweede-kamer-wil-co2-heffing-industrie-afschaffen"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "D66 stelt dat vervuiling duurder moet worden gemaakt en wil fossiele subsidies en vrijstellingen zo snel mogelijk afbouwen.",
+          "source": "https://d66.nl/standpunten/klimaat-natuur-en-milieu/"
+        },
+        "BBB": {
+          "score": 1,
+          "explanation": "BBB wil de nationale CO2-heffing voor industrie volledig afschaffen.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-1-hoe-pakken-bbb-cda-christenunie-en-d66-de-klimaatcrisis-aan-40539"
+        },
+        "CDA": {
+          "score": 1,
+          "explanation": "CDA pleit er expliciet voor de nationale CO2-heffing af te schaffen, omdat bedrijven anders zouden vertrekken.",
+          "source": "https://www.cda.nl/popover/een-duurzame-economie"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "SP wil een CO2-heffing die alle vervuilende bedrijven laat betalen, zonder vrijstellingen.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-3-hoe-pakken-pvv-sp-volt-en-pvdd-de-klimaatcrisis-aan-40576"
+        },
+        "DENK": {
+          "score": 5,
+          "explanation": "Denk stemde in het verleden vóór de invoering van de CO2-heffing voor de industrie, wat wijst op steun voor een stevige CO2-prijs bovenop ETS.",
+          "source": "https://www.eerstekamer.nl/wetsvoorstel/35575_wet_co2_heffing_industrie"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Partij voor de Dieren wil de CO2-belasting verhogen en uitbreiden naar alle sectoren.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-2-hoe-pakken-fvd-groenlinks-pvda-nsc-en-pvdd-de-klimaatcrisis-aan-40555"
+        },
+        "FvD": {
+          "score": 1,
+          "explanation": "FVD wil het huidige klimaatbeleid grotendeels terugdraaien (Parijsakkoord opzeggen) en kiest niet voor extra belastingen op CO2-uitstoot.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-2-hoe-pakken-fvd-groenlinks-pvda-nsc-en-pvdd-de-klimaatcrisis-aan-40555"
+        },
+        "SGP": {
+          "score": 1,
+          "explanation": "SGP stemde mee met CDA en BBB voor het afschaffen van de CO2-heffing en verzet zich tegen extra CO2-taksen voor industrie.",
+          "source": "https://www.rtl.nl/nieuws/economie/artikel/5515465/industrie-ziet-co2-heffing-geschrapt-worden-na-draai-vvd"
+        },
+        "CU": {
+          "score": 5,
+          "explanation": "ChristenUnie steunt hogere CO2-prijs in Nederland en ondersteunt EU-beleid om de uitstootrechten af te bouwen.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-1-hoe-pakken-bbb-cda-christenunie-en-d66-de-klimaatcrisis-aan-40539"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Volt wil alle uitzonderingen op een CO2-heffing voor de industrie weghalen en pleit voor een Europese aanpak van industriële CO2-beprijzing.",
+          "source": "https://www.change.inc/future-leadership/verkiezingen-deel-3-hoe-pakken-pvv-sp-volt-en-pvdd-de-klimaatcrisis-aan-40576"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "JA21 sloot zich aan bij partijen (PVV, BBB, FVD, SGP) die de CO2-heffing wilden afschaffen.",
+          "source": "https://www.rtl.nl/nieuws/economie/artikel/5515465/industrie-ziet-co2-heffing-geschrapt-worden-na-draai-vvd"
+        }
+      }
+    },
+    "19": {
+      "positions": {
+        "PVV": {
+          "score": 5,
+          "explanation": "Wil helemaal geen houtige biomassa; de partij stelt 'De PVV wil voor u geen biomassa' en keert zich daarmee tegen alle biomassacentrales.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Faseert alle bestaande biomassacentrales uit, bouwt geen nieuwe en stopt expliciet de subsidie voor het bijstoken van biomassa in kolencentrales.",
+          "source": "https://groenlinkspvda.nl/wp-content/uploads/2023/11/VKP-DEF-1-11-23.pdf"
+        },
+        "VVD": {
+          "score": 1,
+          "explanation": "Zet in op negatieve-emissietechnologieën (BECCS) en noemt 'duurzame biomassa' expliciet in haar energiebeleid, zonder aan te geven de subsidies op biomassaverbranding in te trekken.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "NSC": {
+          "score": 3,
+          "explanation": "Staat zeer kritisch tegenover houtige biomassa voor energie en wil deze vooral inzetten voor hoogwaardige toepassingen, maar houdt het gebruik in beperkte mate wel open voor reststromen.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "Eist dat er geen subsidies meer komen voor nieuwe biomassacentrales en legt de nadruk op échte schone energie.",
+          "source": "https://d66.nl/nieuws/stop-met-subsidies-nieuwe-biomassacentrales"
+        },
+        "BBB": {
+          "score": 3,
+          "explanation": "Vindt grootschalige houtige biomassa niet duurzaam en wil de import daarvan verbieden, maar staat kleinschalig lokaal gebruik van resthout toe.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "CDA": {
+          "score": 1,
+          "explanation": "Investeert juist in negatieve-emissies (BECCS) en 'duurzame biomassa', waarbij biomassa wordt ingebed in klimaatoplossingen in plaats van afgebouwd.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Keert zich tegen iedere houtgestookte biomassacentrale vanwege de schadelijke uitstoot voor klimaat en gezondheid.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "DENK": {
+          "score": 4,
+          "explanation": "Wil biomassa alleen gebruiken als reststof uit bestaande processen en verbiedt extra houtkap, waarmee het alleen beperkte toepassingen ondersteunt.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Stelt dat houtverbranding nooit een goed idee was en noemt het verergerend voor klimaat en biodiversiteit, waarmee het sluitende subsidies zou willen beëindigen.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Wil volledig stoppen met nieuwe biomassacentrales en het grootschalig kappen van bomen daarvoor.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "Is tegen grootschalige houtkap en bijbehorende import voor energie en eist dat geïmporteerde biomassa aan strikte duurzaamheidseisen van Europese oorsprong voldoet.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "CU": {
+          "score": 4,
+          "explanation": "Maakt hoogwaardige inzet van biomassa als uitgangspunt en streeft ernaar verbranding uiteindelijk te verbieden, tenzij het met CO₂-afvang aantoonbaar tot negatieve emissies leidt.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "Volt": {
+          "score": 3,
+          "explanation": "Wil biomassa zeer beperkt houden: geen import van buiten de EU en alleen reststromen gebruiken wanneer er geen alternatief is.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        },
+        "JA21": {
+          "score": 5,
+          "explanation": "Wil houtige biomassa volledig bannen en laat geen enkele kap van oerbossen voor biomassa toe, vanwege de grote klimaatimpact.",
+          "source": "https://comiteschonelucht.nl/biomassaverbranding-afgewezen-door-veel-politieke-partijen/"
+        }
+      }
+    },
+    "20": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Het verkiezingsprogramma bevat geen enkele passage over digitale basisvaardigheden of programmeren. Er wordt geen concreet beleid geformuleerd, dus geen steun voor verplichte digitale vakken.",
+          "source": "https://ibestuur.nl/artikel/grote-winnaar-pvv-heeft-weinig-ambities-op-gebied-van-digitalisering/"
+        },
+        "GL/PvdA": {
+          "score": 5,
+          "explanation": "Het programma stelt expliciet dat mediawijsheid en kennis van digitalisering onderdeel moeten zijn van het kerncurriculum. Dit impliceert dat digitale geletterdheid als verplicht onderdeel wordt gezien, vandaar de maximale score.",
+          "source": "https://www.poraad.nl/system/files/inline/verkiezingsprogramma_digitalisering_0.pdf"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "Het VVD-programma wil een expertisepunt digitale geletterdheid voor leraren opzetten, maar er staat niets over programmeren als verplicht vak. Er is dus wel aandacht voor ondersteuning van digitale vaardigheden, maar geen expliciete kernvak-eis.",
+          "source": "https://www.poraad.nl/system/files/inline/verkiezingsprogramma_digitalisering_0.pdf"
+        },
+        "NSC": {
+          "score": 4,
+          "explanation": "Het programma vermeldt dat er \"al vanaf de basisschool aandacht is voor digitale vaardigheden\". Dat is positief en impliceert dat programmeren en digitale geletterdheid belangrijk zijn, maar er wordt niet openlijk een verplichte kernvakstatus gevraagd.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "D66": {
+          "score": 4,
+          "explanation": "Het verkiezingsprogramma wil het onderwijs in digitale vaardigheden versterken, met nadruk op onder meer programmeren, AI en privacy. Er wordt geen letterlijke kernvak-benaming gebruikt, maar de positieve inzet leidt tot een hoge score.",
+          "source": "https://www.poraad.nl/system/files/inline/verkiezingsprogramma_digitalisering_0.pdf"
+        },
+        "BBB": {
+          "score": 4,
+          "explanation": "BBB noemt expliciet dat het aanleren van digitale geletterdheid in het onderwijs \"essentieel\" is. Dit is een sterke bewering, maar ook hier ontbreekt de formulering dat het een officieel vak wordt. Daarom een hoge score, maar niet maximaal.",
+          "source": "https://www.poraad.nl/system/files/inline/verkiezingsprogramma_digitalisering_0.pdf"
+        },
+        "CDA": {
+          "score": 3,
+          "explanation": "In het CDA-programma staat dat laaggeletterdheid en digitale geletterdheid structurele aandacht verdienen. Er wordt echter niet voorgesteld ze als aparte kernvakken in te voeren, alleen dat ze belangrijk zijn.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "SP": {
+          "score": 2,
+          "explanation": "In het SP-standpunt vinden we geen concrete plannen over programmeren of digitale basisvaardigheden. De partij richt zich vooral op thema's als open source-technologie en internettoegang. Dit suggereert geen expliciete steun voor verplichte digitale vakken.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "Denk": {
+          "score": 2,
+          "explanation": "Ook bij DENK ontbreekt een expliciet onderwijsplan rond digitale vaardigheden in het programma. DENK spitst zich toe op algoritmewetgeving en discriminatie in techniek, zonder onderwijslinks. Daarom volgt een lage score.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "PvdD": {
+          "score": 5,
+          "explanation": "Het PvdD-programma is heel duidelijk: digitale vaardigheden (inclusief digitale veiligheid) en mediawijsheid moeten worden aangescherpt en opgenomen in de kerndoelen en eindtermen. Dit betekent feitelijk een verplicht vakstatus, vandaar de volledige score.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "FvD": {
+          "score": 2,
+          "explanation": "Bij Forum komt het onderwerp programmeren of digitale geletterdheid niet aan bod. Het programma richt zich op privacy en (ont)regelgeving voor techbedrijven. Er zijn geen plannen voor digitale vakken, dus geen steun.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "SGP": {
+          "score": 2,
+          "explanation": "In de beschikbare programma's van de SGP is geen expliciet standpunt over programmeren of digitale geletterdheid te vinden. De partij noemt dit onderwerp niet. Daarom krijgt het een lage score.",
+          "source": "https://sgp.nl/verkiezingsprogramma"
+        },
+        "CU": {
+          "score": 2,
+          "explanation": "De ChristenUnie meldt in haar programma dat schoolboeken gratis blijven en daarbij ook digitale leermiddelen worden betrokken. Er staat echter niets over verplichte digitale vakken of programmeren. Dit wijst niet op expliciete invoering van kernvakken.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Volt is heel expliciet: digitaal onderwijs moet een basisvaardigheid worden, digitale vaardigheden zijn kerncompetenties in PO/VO, en leren programmeren wordt verplicht in de onderbouw van het voortgezet onderwijs. Dit is precies wat de stelling beoogt.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        },
+        "JA21": {
+          "score": 2,
+          "explanation": "In het concept-programma van JA21 gaat het vooral over digitale toepassingen in de zorg en het recht. Er staan geen voorstellen voor programmeren of digitale geletterdheid in het onderwijs. Daarom is de score laag.",
+          "source": "https://www.security.nl/posting/818859/De+verkiezingsprogramma%27s+doorgelicht:+wat+willen+politieke+partijen+met+digitalisering%3F"
+        }
+      }
+    },
+    "21": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "De PVV verzet zich tegen de EU Blue Card en wil kennismigratie \"maximaal beperken\", omdat Nederland zelf moet bepalen wie hier mag komen.",
+          "source": "https://www.tweedekamer.nl/kamerstukken/plenaire_verslagen/kamer_in_het_kort/debat-europese-richtlijn-kennismigranten-0"
+        },
+        "GL/PvdA": {
+          "score": 2,
+          "explanation": "GroenLinks/PvdA vindt het begrip 'hoogwaardige kennis' te vaag en pleit voor aanscherping (bijv. een lijst van tekorten) zodat alleen echt benodigde kenniswerkers worden toegelaten.",
+          "source": "https://www.tweedekamer.nl/kamerstukken/plenaire_verslagen/kamer_in_het_kort/debat-europese-richtlijn-kennismigranten-0"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "De VVD benadrukt dat alleen écht 'top-talent' naar Nederland moet komen; zij wil de salarisgrens fors verhogen, zodat boven die grens alleen kenniswerkers met duidelijke meerwaarde en een snelle toelating mogelijk zijn.",
+          "source": "https://www.vvd.nl/wp-content/uploads/2024/08/Visiestuk-VVD-Kiezen-wie-we-echt-nodig-hebben-Thierry-Aartsen.pdf"
+        },
+        "NSC": {
+          "score": 1,
+          "explanation": "Nieuw Sociaal Contract voert juist een restrictief migratiebeleid; het steunt moties voor strengere Blue Card-voorwaarden (arbeidsmarkttoets, hoger salaris) en wil de kaart alleen inzetten bij echte personeelstekorten.",
+          "source": "https://www.tweedekamer.nl/kamerstukken/plenaire_verslagen/kamer_in_het_kort/debat-europese-richtlijn-kennismigranten-0"
+        },
+        "D66": {
+          "score": 5,
+          "explanation": "D66 pleit expliciet voor het actief werven van buitenlandse kenniswerkers en een ruimer regime; partijleider Podt benadrukt dat ons bedrijfsleven kenniskrachten nodig heeft en Nederland aantrekkelijk gemaakt moet worden (bijv. gezinshereniging) om de broodnodige vaklieden binnen te halen.",
+          "source": "https://www.tweedekamer.nl/downloads/document?id=2025D19795"
+        },
+        "BBB": {
+          "score": 1,
+          "explanation": "BBB wil migratie sterk beperken en heeft in het (toenmalige) coalitieakkoord ingestemd met verdere aanscherping van de kwalificatie-eisen voor kennismigranten.",
+          "source": "https://www.kabinetsformatie2023.nl/binaries/kabinetsformatie/documenten/publicaties/2024/05/16/hoofdlijnenakkoord-tussen-de-fracties-van-pvv-vvd-nsc-en-bbb/20240515+Hoofdlijnenakkoord+PVV+VVD+NSC+BBB.pdf"
+        },
+        "CDA": {
+          "score": 4,
+          "explanation": "CDA erkent dat Nederland voor industrie en gespecialiseerde beroepen deels afhankelijk is van kenniswerkers buiten de EU, maar stelt wel dat misbruik van die regeling streng wordt aangepakt.",
+          "source": "https://d2vs36cx04qmpo.cloudfront.net/files/CDA-Bouwen-op-vertrouwen-concept-verkiezingsprogramma-2025.pdf"
+        },
+        "SP": {
+          "score": 1,
+          "explanation": "De SP noemt ongecontroleerde arbeidsmigratie \"moderne slavernij\" en wil migratie totaal terugdringen en beheersen.",
+          "source": "https://www.sp.nl/standpunten/migratie-en-integratie"
+        },
+        "Denk": {
+          "score": 4,
+          "explanation": "DENK staat voor een ruimhartig migratiebeleid met meer verantwoordelijkheid voor Nederland; de partij vindt dat migratiestromen wel beheersbaar moeten zijn maar pleit in de kern voor ruimere opname, ook van hoogopgeleiden.",
+          "source": "https://bredeoket.zaandijk.nl/visie/migratie"
+        },
+        "PvdD": {
+          "score": 3,
+          "explanation": "De Partij voor de Dieren legt de nadruk op humane opvang en het aanpakken van oorzaken van migratie; ze heeft geen specifiek standpunt over tech-kennismigratie, maar zet wel in op solidariteit met migranten.",
+          "source": "https://www.partijvoordedieren.nl/content/standpunten/politieke_woordvoering/asiel_en_vluchtelingen"
+        },
+        "FvD": {
+          "score": 4,
+          "explanation": "FvD wil immigratie strikt selecteren op basis van toegevoegde waarde. Ze stelt een Amerikaans 'Green Card'-achtig systeem voor om alleen economisch nuttige, cultuurconforme migranten toe te laten.",
+          "source": "https://fvdemocratie.nl/standpunten/immigratie--en-remigratie/"
+        },
+        "SGP": {
+          "score": 1,
+          "explanation": "De SGP wil migratie drastisch beperken; Kamerlid Flach spreekt van een \"chronische verslaving\" aan arbeidsmigranten en pleit voor een alternatieve focus op waarden in plaats van groei alleen.",
+          "source": "https://www.tweedekamer.nl/kamerstukken/plenaire_verslagen/kamer_in_het_kort/debat-europese-richtlijn-kennismigranten-0"
+        },
+        "CU": {
+          "score": 1,
+          "explanation": "De ChristenUnie zegt niet per se tegen arbeidsmigratie te zijn, maar weigert de kennismigratieregeling verder te versoepelen. In eerder Kamerdebat benadrukte CU dat Nederland al een nationale kenniswerkersregeling heeft en dat deze niet verruimd zal worden.",
+          "source": "https://www.parlementairemonitor.nl/9353000/1/j9vvkfvj6b325az/vl3eqv5zsfzp"
+        },
+        "Volt": {
+          "score": 5,
+          "explanation": "Volt wil juist een EU-brede versoepeling: zij bepleiten een échte Europese Blue Card, een centraal aanvraagportaal, flexibele mobiliteit binnen de EU en snelle naturalisatie (binnen enkele jaren) om internationaal talent maximaal aan te trekken.",
+          "source": "https://volteuropa.org/policies/labour-migration/attract-international-talent"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "JA21 pleit voor \"forse beperking\" van immigratie (arbeids-, gezin- en studiemigratie) en wil de Nederlandse regie op migratie herstellen. Zij keuren ruime toelating van buitenlandse arbeidskrachten af.",
+          "source": "https://www.ja21.nl/standpunt/immigratie-en-asiel/"
+        }
+      }
+    },
+    "22": {
+      "positions": {
+        "PVV": {
+          "score": 1,
+          "explanation": "Besteedt nauwelijks aandacht aan digitalisering en wil technologie vooral marktgedreven laten, zonder toezeggingen voor nationale stappen bij falende EU-handhaving.",
+          "source": "https://www.security.nl/posting/901913/Programma+PVV%3A+bodycam+voor+elke+NS-medewerker+en+digitale+schandpaal#:~:text=Net%20als%20bij%20het%20vorige,en%20worden%20ook%20niet%20verder"
+        },
+        "GL/PvdA": {
+          "score": 3,
+          "explanation": "Legt de nadruk op Europese oplossingen tegen misbruik door big tech en pleit voor EU-regulering, maar noemt geen eigen Nederlandse noodmaatregelen.",
+          "source": "https://www.groenlinks.nl/standpunten/digitale-samenleving"
+        },
+        "VVD": {
+          "score": 3,
+          "explanation": "Wijst op de rol van de overheid als marktmeester tegen monopolies en zet in op internationale regels en belastingen, zonder extra Nederlandse maatregelen bovenop EU-regels.",
+          "source": "https://www.vvd.nl/standpunten/ondernemen-en-innovatie"
+        },
+        "NSC": {
+          "score": 3,
+          "explanation": "Dringt aan op strikte toepassing van de DMA en andere EU-wetgeving om big tech in toom te houden, maar noemt geen nationale back-upmaatregelen.",
+          "source": "https://www.nieuwsociaalcontract.nl/standpunten/digitalisering"
+        },
+        "D66": {
+          "score": 3,
+          "explanation": "Richt zich sterk op een Europese aanpak van digitalisering en vrijheden, maar introduceert geen specifiek nationaal plan B.",
+          "source": "https://d66.nl/standpunt/digitalisering"
+        },
+        "BBB": {
+          "score": 4,
+          "explanation": "Wil meer nationale regie en een eigen digitaliseringsstrategie met speciale minister, en lijkt bereid zelf maatregelen te nemen als de EU tekortschiet.",
+          "source": "https://boerburgerbeweging.nl/standpunten/digitalisering"
+        },
+        "CDA": {
+          "score": 3,
+          "explanation": "Ziet versterking van Europese digitale infrastructuur en toezicht als de weg vooruit en noemt geen nationale maatregelen.",
+          "source": "https://www.cda.nl/standpunten/digitalisering"
+        },
+        "SP": {
+          "score": 5,
+          "explanation": "Wil verdienmodellen van big tech nationaal aan banden leggen, inclusief verboden op gepersonaliseerde advertenties, en grijpt zelf in als EU-handhaving faalt.",
+          "source": "https://www.sp.nl/standpunten/digitalisering"
+        },
+        "Denk": {
+          "score": 3,
+          "explanation": "Steunt snelle implementatie van EU-regels zoals de DMA, maar noemt geen aanvullende Nederlandse instrumenten.",
+          "source": "https://www.denknederland.nl/standpunten/digitalisering"
+        },
+        "PvdD": {
+          "score": 3,
+          "explanation": "Wil meer regie met een minister Digitalisering, maar vertrouwt vooral op Europese regels en privacybescherming.",
+          "source": "https://www.partijvoordedieren.nl/standpunten/digitalisering"
+        },
+        "FvD": {
+          "score": 5,
+          "explanation": "Wil loskomen van Europese regelzucht en nationale soevereiniteit herstellen, en dus zelfstandig optreden bij falende EU-handhaving.",
+          "source": "https://fvd.nl/standpunten/digitalisering"
+        },
+        "SGP": {
+          "score": 3,
+          "explanation": "Benadrukt Europese mededingingsregels en toezicht door ACM, zonder expliciete Nederlandse maatregelen te noemen.",
+          "source": "https://sgp.nl/standpunten/digitalisering"
+        },
+        "CU": {
+          "score": 3,
+          "explanation": "Pleit voor versterking van toezichthouders en EU-regels voor een eerlijk speelveld, maar noemt geen nationaal plan B.",
+          "source": "https://www.christenunie.nl/standpunten/digitalisering"
+        },
+        "Volt": {
+          "score": 3,
+          "explanation": "Wil Europese samenwerking en instrumenten als de EU Digital Identity Wallet, maar noemt geen Nederlandse back-upopties.",
+          "source": "https://voltnederland.org/standpunten/digitalisering"
+        },
+        "JA21": {
+          "score": 1,
+          "explanation": "Wil marktwerking leidend houden en verzet zich tegen EU-regulering, zonder plannen voor nationale ingrepen.",
+          "source": "https://ja21.nl/standpunten/digitalisering"
+        }
+      }
+    }
+  }
+}

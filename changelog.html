@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Changelog en wijzigingsgeschiedenis van de NerdWijzer stemwijzer">
+    <meta name="theme-color" content="#1e3c72">
+    <meta name="msapplication-TileColor" content="#1e3c72">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NerdWijzer">
+    <title>NerdWijzer - Changelog</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/changelog.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="NerdWijzer - Changelog">
+    <meta property="og:description" content="Changelog en wijzigingsgeschiedenis van de NerdWijzer stemwijzer">
+    <meta property="og:image" content="/nerdwijzer-logo-light.png">
+    <meta property="og:url" content="/changelog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NerdWijzer">
+    
+    <!-- Favicon voor alle apparaten -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-attachment: fixed;
+            background-position: top left;
+        }
+        
+        .changelog-container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 0 16px; 
+            background: transparent;
+        }
+        .changelog-title { font-size: 28px; margin-bottom: 12px; }
+        .changelog-sub { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+        .changelog-entry { 
+            background: transparent; 
+            border: 1px solid rgba(255,255,255,0.12); 
+            border-radius: 10px; 
+            padding: 16px; 
+            margin-bottom: 12px; 
+        }
+        .changelog-entry h3 { margin: 0 0 6px 0; font-size: 18px; }
+        .changelog-entry time { font-size: 12px; color: rgba(255,255,255,0.6); }
+        .changelog-entry ul { margin: 8px 0 0 18px; }
+        .version-tag { 
+            display: inline-block; 
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b); 
+            color: white; 
+            padding: 4px 8px; 
+            border-radius: 12px; 
+            font-size: 11px; 
+            font-weight: bold; 
+            margin-left: 12px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="changelog-container">
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-logo">
+                <img src="nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img">
+            </div>
+        </header>
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="index.html" class="back-button">← Terug naar NerdWijzer</a>
+        </div>
+        
+        <h1 class="changelog-title">Changelog</h1>
+        <div class="changelog-sub">Overzicht van alle wijzigingen en verbeteringen aan de NerdWijzer</div>
+
+        <div class="changelog-entries">
+            <div class="changelog-entry">
+                <h3>🔧 Bugfixes en kleine verbeteringen</h3>
+                <time>2025-09-07</time>
+                <span class="version-tag">v0.6.1</span>
+                <ul>
+                    <li><strong>Stabiliteit verbeterd:</strong> Verschillende kleine bugfixes en verbeteringen voor betere gebruikerservaring.</li>
+                    <li><strong>Code optimalisatie:</strong> Verbeterde prestaties en stabiliteit van de applicatie.</li>
+                    <li><strong>Onderhoudsupdate:</strong> Algemene verbeteringen en updates voor optimale werking.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>📝 Vragen volledig herzien en geüpdatet</h3>
+                <time>2025-01-27</time>
+                <span class="version-tag">v0.6.0</span>
+                <ul>
+                    <li><strong>Alle 22 vragen herzien:</strong> Nieuwe, duidelijkere formuleringen en toegankelijkere uitleg.</li>
+                    <li><strong>Verbeterde uitleg:</strong> Kortere, praktischere uitleg bij elke vraag voor betere begrijpelijkheid.</li>
+                    <li><strong>Consistente taal:</strong> Alle vragen en uitleg aangepast naar duidelijke, directe Nederlandse taal.</li>
+                    <li><strong>Focus op praktijk:</strong> Uitleg richt zich meer op concrete gevolgen en praktische implementatie.</li>
+                    <li><strong>UI verbeteringen:</strong> Feature items krijgen dezelfde styling als andere content blokken met borders.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎨 Typografie, toegankelijkheid & hero tekst verbeteringen</h3>
+                <time>2025-09-04</time>
+                <span class="version-tag">v0.5.3</span>
+                <ul>
+                    <li><strong>Nieuwe typografie:</strong> Space Grotesk voor headings en Inter voor body tekst voor betere leesbaarheid.</li>
+                    <li><strong>Toegankelijkheid verbeterd:</strong> Focus-staten met 3:1 contrast, aria-live voor vraag updates, en tabel-weergave voor screenreaders.</li>
+                    <li><strong>Hero tekst geüpdatet:</strong> Nieuwe, duidelijkere introductie met "Hoe het werkt" en "Waarom NerdWijzer" secties.</li>
+                    <li><strong>Slider uitleg verkort:</strong> Van "Helemaal niet mee eens" naar "Helemaal oneens" voor kortere, duidelijkere labels.</li>
+                    <li><strong>Visuele verbeteringen:</strong> Gradients onder slider weggehaald, borders van feature items onzichtbaar gemaakt.</li>
+                    <li><strong>SEO & performance:</strong> Cache-control headers, Open Graph tags, canonical links en Google Fonts preconnect toegevoegd.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎨 UI/UX overhaul: Slider verbeteringen, contrast & accentkleuren</h3>
+                <time>2025-09-04</time>
+                <span class="version-tag">v0.5.2</span>
+                <ul>
+                    <li><strong>Slider uitlijning gefixt:</strong> Getallen 1-5 staan nu perfect uitgelijnd onder de juiste slider posities.</li>
+                    <li><strong>Verbeterde slider styling:</strong> Moderne container met backdrop-filter, betere thumb styling en hover effecten.</li>
+                    <li><strong>Interactieve scale labels:</strong> Gebruikers kunnen nu direct op de 1-5 labels klikken om slider waarde te wijzigen.</li>
+                    <li><strong>Contrast verbeterd:</strong> Donkerdere achtergrond met gradient voor betere leesbaarheid.</li>
+                    <li><strong>Roze/oranje accentkleur (#ff6b6b) toegevoegd:</strong> Consistente accentkleur op progress bar, buttons, cards, footer en verantwoording pagina.</li>
+                    <li><strong>Hover effecten:</strong> Alle interactieve elementen hebben nu mooie roze accentkleuren en schaduwen.</li>
+                    <li><strong>Verantwoording pagina verbeterd:</strong> Score nummers vervangen door beschrijvende tekst (1="Helemaal niet mee eens", 5="Helemaal mee eens).</li>
+                    <li><strong>Visuele consistentie:</strong> Balans tussen blauwe (#00d4ff) en roze (#ff6b6b) accentkleuren door de hele interface.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>⌨️ Keyboard navigatie toegevoegd voor betere toegankelijkheid</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.5.1</span>
+                <ul>
+                    <li><strong>Pijltjestoetsen:</strong> Gebruikers kunnen nu met ← → navigeren door de slider waarden (1-5).</li>
+                    <li><strong>Enter toets:</strong> Bevestigen van antwoorden en navigeren tussen schermen.</li>
+                    <li><strong>Keyboard tip:</strong> Duidelijke instructie voor gebruikers over beschikbare keyboard shortcuts.</li>
+                    <li><strong>Toegankelijkheid:</strong> Verbeterde gebruikerservaring voor keyboard-gebruikers en schermlezers.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>🎉 NerdWijzer v0.5.0 - Eerste complete versie afgerond!</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.5.0</span>
+                <ul>
+                    <li><strong>Mijlpaal bereikt:</strong> Alle 22 vragen zijn nu voorzien van complete partijstandpunten!</li>
+                    <li>Elke vraag heeft alle 15 partijen met gedetailleerde scores (1-5), uitleg en bronnen.</li>
+                    <li>De NerdWijzer is nu inhoudelijk compleet en klaar voor inhoudelijke controleslagen en testing.</li>
+                    <li>Vanaf deze versie focussen we op kwaliteitsverbetering, bugfixes en gebruikerservaring.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 22 bijgewerkt met nationale stappen bij falende EU-handhaving standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.38</span>
+                <ul>
+                    <li>Vraag 22 bijgewerkt met gedetailleerde partijstandpunten over nationale maatregelen bij falende EU-handhaving van de DMA.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van nationale back-upmaatregelen en soevereiniteit.</li>
+                    <li>Scores variëren van 1 (geen nationale maatregelen, marktgedreven) tot 5 (actieve nationale interventie en soevereiniteit).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 21 bijgewerkt met kennismigratie en internationaal tech-talent standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.37</span>
+                <ul>
+                    <li>Vraag 21 bijgewerkt met gedetailleerde partijstandpunten over kennismigratie en het aantrekken van internationaal tech-talent.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van versoepeling van kennismigratie en Blue Card-regelingen.</li>
+                    <li>Scores variëren van 1 (maximale beperking van kennismigratie) tot 5 (actief werven en versoepeling van regelingen).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 20 bijgewerkt met programmeren en digitale geletterdheid standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.36</span>
+                <ul>
+                    <li>Vraag 20 bijgewerkt met gedetailleerde partijstandpunten over programmeren en digitale geletterdheid als kernvakken.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van verplichte digitale vakken in het onderwijs.</li>
+                    <li>Scores variëren van 1 (geen steun voor digitale vakken) tot 5 (expliciete steun voor verplichte kernvakken).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 19 bijgewerkt met houtige biomassa en biomassacentrales standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.35</span>
+                <ul>
+                    <li>Vraag 19 bijgewerkt met gedetailleerde partijstandpunten over houtige biomassa en biomassacentrales.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van biomassaverbranding en houtkap voor energie.</li>
+                    <li>Scores variëren van 1 (voor biomassa en BECCS) tot 5 (tegen alle biomassacentrales en houtkap).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Emoji voor Klimaat & Transitie aangepast naar groen boompje</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.34</span>
+                <ul>
+                    <li>Emoji voor Klimaat & Transitie aangepast van 🌍 (wereldbol) naar 🌳 (groen boompje).</li>
+                    <li>Groen boompje is visueel passender en duidelijker voor klimaat- en duurzaamheidsonderwerpen.</li>
+                    <li>Behoudt alle andere functionaliteit en styling.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Voorpagina uitgebreid met Klimaat & Transitie onderwerp</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.33</span>
+                <ul>
+                    <li>Voorpagina uitgebreid met nieuw onderwerp: Klimaat & Transitie.</li>
+                    <li>Toegevoegd naast bestaande onderwerpen: Privacy & Cybersecurity, AI & Digitalisering, en Internet & Rechten.</li>
+                    <li>Gebruikt 🌍 emoji voor visuele consistentie met andere onderwerpen.</li>
+                    <li>Behoudt de bestaande layout en styling van de feature-items.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 18 bijgewerkt met CO2-heffingen en klimaatbeleid standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.32</span>
+                <ul>
+                    <li>Vraag 18 bijgewerkt met gedetailleerde partijstandpunten over CO2-heffingen en klimaatbeleid.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van CO2-beprijzing en klimaatmaatregelen.</li>
+                    <li>Scores variëren van 1 (tegen CO2-heffingen, voor afschaffing) tot 5 (voor sterke CO2-beprijzing en klimaatbeleid).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 17 bijgewerkt met elektrische auto's en verbod op benzine/diesel auto's standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.30</span>
+                <ul>
+                    <li>Vraag 17 bijgewerkt met gedetailleerde partijstandpunten over elektrische auto's en het verbod op benzine/diesel auto's.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van elektrificatie van het wagenpark.</li>
+                    <li>Scores variëren van 1 (tegen verbod, voor behoud brandstofauto's) tot 5 (voor vervroegd verbod, sterke elektrificatie).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Verantwoording pagina herstructurerd met tabbed interface</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.31</span>
+                <ul>
+                    <li>Verantwoording pagina opgesplitst in overzichtelijke tabs per stelling.</li>
+                    <li>Bezoekers kunnen nu kiezen welke stelling ze willen bekijken in plaats van door een lange pagina te scrollen.</li>
+                    <li>Tabbed interface met 22 knoppen voor alle stellingen, georganiseerd in een responsive grid.</li>
+                    <li>Welkomstbericht toont instructies voor gebruik van de interface.</li>
+                    <li>Actieve tab wordt visueel gemarkeerd voor betere gebruikerservaring.</li>
+                    <li>Responsive design voor mobiele apparaten.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 16 bijgewerkt met geo-engineering en klimaatbeleid standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.29</span>
+                <ul>
+                    <li>Vraag 16 bijgewerkt met gedetailleerde partijstandpunten over geo-engineering en klimaatbeleid.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van klimaattechnologieën en geo-engineering.</li>
+                    <li>Scores variëren van 1 (tegen klimaatbeleid/geo-engineering) tot 4 (voor geo-engineering onder voorwaarden).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 15 bijgewerkt met kernenergie standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.28</span>
+                <ul>
+                    <li>Vraag 15 bijgewerkt met gedetailleerde partijstandpunten over kernenergie.</li>
+                    <li>15 partijen geanalyseerd op hun steun voor kernenergie en nieuwe kerncentrales.</li>
+                    <li>Scores variëren van 1 (tegen kernenergie) tot 5 (sterk voorstander).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 14 bijgewerkt met killerrobots standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.27</span>
+                <ul>
+                    <li>Vraag 14 bijgewerkt met gedetailleerde partijstandpunten over killerrobots en autonome wapensystemen.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van AI-gestuurde wapensystemen.</li>
+                    <li>Scores variëren van 1 (voor ontwikkeling en gebruik) tot 5 (voor volledig verbod).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 13 bijgewerkt met AI-transparantie standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.26</span>
+                <ul>
+                    <li>Vraag 13 bijgewerkt met gedetailleerde partijstandpunten over AI-transparantie en uitlegbaarheid.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van transparante AI-systemen.</li>
+                    <li>Scores variëren van 1 (tegen transparantie) tot 5 (voor volledige transparantie).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 12 bijgewerkt met hightech investeringen standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.25</span>
+                <ul>
+                    <li>Vraag 12 bijgewerkt met gedetailleerde partijstandpunten over hightech investeringen en innovatie.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van technologische vooruitgang.</li>
+                    <li>Scores variëren van 1 (tegen overheidsinvesteringen) tot 5 (voor grote investeringen).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 11 bijgewerkt met AI-ontwikkeling en regulering standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.24</span>
+                <ul>
+                    <li>Vraag 11 bijgewerkt met gedetailleerde partijstandpunten over AI-ontwikkeling en regulering.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van AI-beleid.</li>
+                    <li>Scores variëren van 1 (tegen AI-regulering) tot 5 (voor strenge regulering).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Logo implementatie en bug fixes</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.23</span>
+                <ul>
+                    <li>Drie nieuwe logo bestanden geïmplementeerd: nerdwijzer-logo-light.png, nerdwijzer-logo-dark.png, en nerdwijzer-mark-1024.png.</li>
+                    <li>Logo's toegevoegd aan alle pagina's: header, welcome screen, resultaten, prioriteiten, vergelijking en vragen.</li>
+                    <li>Emoji gewijzigd van 🚀 naar 🤓 op de welcome screen.</li>
+                    <li>Footer logo's verwijderd uit alle pagina's.</li>
+                    <li>Bug opgelost: "Score: undefined" op verantwoording pagina door partyData.position te vervangen door partyData.score.</li>
+                    <li>Alle partijstandpunten bijgewerkt van "position" naar "score" in party_positions.json.</li>
+                    <li>Changelog chronologisch geordend (nieuwste eerst).</li>
+                    <li>Ongebruikte bestanden opgeruimd.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 10 bijgewerkt met gezichtsherkenning standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.22</span>
+                <ul>
+                    <li>Vraag 10 bijgewerkt met gedetailleerde partijstandpunten over gezichtsherkenning en surveillance.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van biometrische technologie.</li>
+                    <li>Scores variëren van 1 (voor onbeperkt gebruik) tot 5 (voor volledig verbod).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 9 bijgewerkt met ethische hackers standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.21</span>
+                <ul>
+                    <li>Vraag 9 bijgewerkt met gedetailleerde partijstandpunten over ethische hackers en safe harbor.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van verantwoordelijke security research.</li>
+                    <li>Scores variëren van 1 (tegen ethische hackers) tot 5 (voor volledige bescherming).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 8 bijgewerkt met politie hackbevoegdheden standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.20</span>
+                <ul>
+                    <li>Vraag 8 bijgewerkt met gedetailleerde partijstandpunten over politie hackbevoegdheden en privacy-waarborgen.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van digitale surveillance door politie.</li>
+                    <li>Scores variëren van 1 (voor uitgebreide bevoegdheden) tot 5 (voor strenge beperkingen).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 7 bijgewerkt met interceptiebevoegdheden standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.19</span>
+                <ul>
+                    <li>Vraag 7 bijgewerkt met gedetailleerde partijstandpunten over interceptiebevoegdheden en massasurveillance.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van digitale surveillance.</li>
+                    <li>Scores variëren van 1 (voor uitgebreide surveillance) tot 5 (voor strenge beperkingen).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 6 bijgewerkt met versleuteling standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.18</span>
+                <ul>
+                    <li>Vraag 6 bijgewerkt met gedetailleerde partijstandpunten over versleuteling en chatcontrol.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van end-to-end encryptie.</li>
+                    <li>Scores variëren van 1 (voor chatcontrol) tot 5 (voor volledige versleuteling).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 5 bijgewerkt met externe inhuur standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.17</span>
+                <ul>
+                    <li>Vraag 5 bijgewerkt met gedetailleerde partijstandpunten over externe inhuur en consultancy.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van externe expertise.</li>
+                    <li>Scores variëren van 1 (voor uitgebreide inhuur) tot 5 (voor strenge beperkingen).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 4 bijgewerkt met Big Tech regulering standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.16</span>
+                <ul>
+                    <li>Vraag 4 bijgewerkt met gedetailleerde partijstandpunten over Big Tech regulering.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van tech-giganten.</li>
+                    <li>Scores variëren van 1 (tegen regulering) tot 5 (voor strenge regulering).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 3 bijgewerkt met EU datasoevereiniteit standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.15</span>
+                <ul>
+                    <li>Vraag 3 bijgewerkt met gedetailleerde partijstandpunten over EU datasoevereiniteit.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van Europese data-autonomie.</li>
+                    <li>Scores variëren van 1 (tegen EU regulering) tot 5 (voor sterke EU regulering).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 2 bijgewerkt met open source standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.14</span>
+                <ul>
+                    <li>Vraag 2 bijgewerkt met gedetailleerde partijstandpunten over open source software.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van open source beleid.</li>
+                    <li>Scores variëren van 1 (tegen open source) tot 5 (voor verplicht open source).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 1 bijgewerkt met Ministerie van Digitale Zaken standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.13</span>
+                <ul>
+                    <li>Vraag 1 bijgewerkt met gedetailleerde partijstandpunten over een Ministerie van Digitale Zaken.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van digitale overheidsorganisatie.</li>
+                    <li>Scores variëren van 1 (tegen nieuw ministerie) tot 5 (voor nieuw ministerie).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Front page verbeteringen en UI fixes</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.12</span>
+                <ul>
+                    <li>Voorpagina visueel aantrekkelijker gemaakt met welkomstbericht en feature overzicht.</li>
+                    <li>Progress bar toegevoegd met "Vraag X van 22" tekst.</li>
+                    <li>Slider alignment gefixed: cijfers 1-5 staan nu netjes onder de slider.</li>
+                    <li>Logo en "Belangrijke Onderwerpen" tekst horizontaal uitgelijnd op prioriteitsscherm.</li>
+                    <li>Drie actieknoppen op resultatenpagina gelijke grootte gegeven.</li>
+                    <li>"Bron" knop op vergelijkingspagina gestyled zoals "Verklaring" knop met 🔗 emoji.</li>
+                    <li>Alle knoppen geconsolideerd naar action-btn klasse voor consistentie.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Footer styling en cache clearing</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.11</span>
+                <ul>
+                    <li>Footer gemaakt: alles kleiner (padding, margins, font-sizes).</li>
+                    <li>Alle caches gecleared: browser, service worker, JSON fetches.</li>
+                    <li>Cache-busting geïmplementeerd voor alle JSON requests.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 11-22 placeholder data toegevoegd</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.10</span>
+                <ul>
+                    <li>Vragen 11-22 toegevoegd aan party_positions.json met placeholder data.</li>
+                    <li>Alle scores ingesteld op 3 (neutraal) voor verdere uitwerking.</li>
+                    <li>Explanations en sources ingesteld op "Placeholder" voor latere update.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 5 bijgewerkt met externe inhuur standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.9</span>
+                <ul>
+                    <li>Vraag 5 bijgewerkt met gedetailleerde partijstandpunten over externe inhuur en consultancy.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van externe expertise.</li>
+                    <li>Scores variëren van 1 (voor uitgebreide inhuur) tot 5 (voor strenge beperkingen).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 1 bijgewerkt met Ministerie van Digitale Zaken standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.8</span>
+                <ul>
+                    <li>Vraag 1 bijgewerkt met gedetailleerde partijstandpunten over een Ministerie van Digitale Zaken.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van digitale overheidsorganisatie.</li>
+                    <li>Scores variëren van 1 (tegen nieuw ministerie) tot 5 (voor nieuw ministerie).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 3 bijgewerkt met EU datasoevereiniteit standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.7</span>
+                <ul>
+                    <li>Vraag 3 bijgewerkt met gedetailleerde partijstandpunten over EU datasoevereiniteit.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van Europese data-autonomie.</li>
+                    <li>Scores variëren van 1 (tegen EU regulering) tot 5 (voor sterke EU regulering).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 2 bijgewerkt met open source standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.6</span>
+                <ul>
+                    <li>Vraag 2 bijgewerkt met gedetailleerde partijstandpunten over open source software.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van open source beleid.</li>
+                    <li>Scores variëren van 1 (tegen open source) tot 5 (voor verplicht open source).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Vraag 4 bijgewerkt met Big Tech regulering standpunten</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.5</span>
+                <ul>
+                    <li>Vraag 4 bijgewerkt met gedetailleerde partijstandpunten over Big Tech regulering.</li>
+                    <li>15 partijen geanalyseerd op hun houding ten opzichte van tech-giganten.</li>
+                    <li>Scores variëren van 1 (tegen regulering) tot 5 (voor strenge regulering).</li>
+                    <li>Alle standpunten voorzien van gedetailleerde uitleg en bronnen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Verantwoording pagina dynamisch gemaakt</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.4</span>
+                <ul>
+                    <li>Verantwoording pagina omgezet naar dynamische content loading uit JSON bestanden.</li>
+                    <li>Klikbare index toegevoegd bovenaan voor directe navigatie naar specifieke stellingen.</li>
+                    <li>Alle hardcoded HTML vervangen door JavaScript-gegenereerde content.</li>
+                    <li>Partijstandpunten worden dynamisch geladen uit party_positions.json.</li>
+                    <li>Score bubbles vervangen door beschrijvende tekst met gradient achtergronden.</li>
+                    <li>"Bronnen worden nog toegevoegd" secties volledig verwijderd.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Grammatica en interpunctie gecorrigeerd</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.3</span>
+                <ul>
+                    <li>Alle 'explanation' velden in questions.json gecorrigeerd voor grammatica, interpunctie en hoofdlettergebruik.</li>
+                    <li>Alle 'question' velden in questions.json gecorrigeerd voor grammatica, interpunctie en hoofdlettergebruik.</li>
+                    <li>Redundante "type": "scale" velden verwijderd uit questions.json.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Changelog chronologisch geordend</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.2</span>
+                <ul>
+                    <li>Changelog entries herordend van nieuwste (boven) naar oudste (onder).</li>
+                    <li>Alle entries voorzien van versienummers.</li>
+                    <li>Duplicaten verwijderd en samengevoegd.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Website styling verbeterd</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.1</span>
+                <ul>
+                    <li>Gradient achtergronden verwijderd van body, verantwoording en changelog pagina's.</li>
+                    <li>Footer compacter gemaakt.</li>
+                    <li>Website breder gemaakt op grote beeldschermen.</li>
+                    <li>Container breedtes gestandaardiseerd voor alle quiz stappen en statische pagina's.</li>
+                    <li>Back buttons gestyled en toegevoegd aan verantwoording en changelog pagina's.</li>
+                    <li>Tooltip z-index verhoogd naar 99999 voor betere zichtbaarheid.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>22 stellingen geïmplementeerd</h3>
+                <time>2025-09-03</time>
+                <span class="version-tag">v0.4.0</span>
+                <ul>
+                    <li>Quiz uitgebreid van 20 naar 22 stellingen.</li>
+                    <li>Nieuwe stellingen 21 en 22 toegevoegd aan alle relevante bestanden.</li>
+                    <li>Progress bar aangepast naar "Vraag X van 22".</li>
+                    <li>Alle pagina's bijgewerkt om 22 stellingen te ondersteunen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Footer styling definitief opgelost</h3>
+                <time>2025-09-02</time>
+                <span class="version-tag">v0.3.0</span>
+                <ul>
+                    <li>Footer styling conflicten opgelost met WordPress thema's door maximale CSS specificiteit.</li>
+                    <li>CSS aangepast om voorrang te krijgen op conflicterende stijlen met !important flags.</li>
+                    <li>Footer volledig opnieuw ontworpen met moderne gradient en betere typografie.</li>
+                    <li>Gekleurde accentlijn toegevoegd met blauwe gradient.</li>
+                    <li>Versie-informatie gestileerd als chip met monospace font.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Verklaringen en tooltips geïmplementeerd</h3>
+                <time>2025-09-02</time>
+                <span class="version-tag">v0.2.5</span>
+                <ul>
+                    <li>Uitleg bij resultaten verplaatst naar tooltip via "?"-icoon.</li>
+                    <li>Bron-link gestileerd als chip en opent in nieuw tabblad.</li>
+                    <li>Fallback teksten/bron gegenereerd wanneer JSON geen verklaring/bron bevat.</li>
+                    <li>Intro tekst "Partij over thema:" weggehaald uit verklaringen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Verklaringen en bronnen per partij per stelling</h3>
+                <time>2025-09-02</time>
+                <span class="version-tag">v0.2.4</span>
+                <ul>
+                    <li>Nieuwe JSON-structuur voorbereid: per partij nu position, explanation en source.</li>
+                    <li>Resultaatvergelijking toont per stelling de verklaring en een bron-link.</li>
+                    <li>Scoreberekening compatibel gemaakt met oude en nieuwe structuur.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Footer, versie en changelog toegevoegd</h3>
+                <time>2025-09-02</time>
+                <span class="version-tag">v0.2.3</span>
+                <ul>
+                    <li>Footer toegevoegd met disclaimer over Randal Peelen en entertainment doel.</li>
+                    <li>Versie-informatie toegevoegd en wordt bijgewerkt bij elke wijziging.</li>
+                    <li>Changelog pagina toegevoegd met overzicht van alle wijzigingen.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Priority-gewicht in resultaten</h3>
+                <time>2025-09-01</time>
+                <span class="version-tag">v0.2.2</span>
+                <ul>
+                    <li>Belangrijke vragen krijgen 3x gewicht in de scoreberekening.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Ludieke development sessie</h3>
+                <time>2025-08-31</time>
+                <span class="version-tag">v0.2.0</span>
+                <ul>
+                    <li>Hele avond dronken zitten vibecoden, geen idee wat ik allemaal heb gedaan.</li>
+                    <li>Wie dit leest is af.</li>
+                </ul>
+            </div>
+
+            <div class="changelog-entry">
+                <h3>Project gestart</h3>
+                <time>2025-08-31</time>
+                <span class="version-tag">v0.1.0</span>
+                <ul>
+                    <li>Eerste versie van NerdWijzer gemaakt door Randal Peelen.</li>
+                    <li>Basis functionaliteit: 5-punts schaal voor antwoorden.</li>
+                    <li>Dummy data toegevoegd voor vragen en partijstandpunten.</li>
+                    <li>Resultaten pagina geïmplementeerd.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.html" class="back-button">← Terug naar NerdWijzer</a>
+        </div>
+    </div>
+
+    <!-- Service Worker registratie voor PWA functionaliteit -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

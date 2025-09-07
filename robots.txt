@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nerdwijzer.nl/sitemap.xml
+
+# Crawl-delay voor vriendelijke crawlers
+Crawl-delay: 1

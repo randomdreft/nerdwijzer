@@ -1,0 +1,26 @@
+{
+  "name": "NerdWijzer - Stemwijzer voor Nerds",
+  "short_name": "NerdWijzer",
+  "description": "Een politieke stemwijzer specifiek gericht op IT, privacy, mensenrechten en technologie onderwerpen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e3c72",
+  "theme_color": "#1e3c72",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "nerdwijzer-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["politics", "education", "utilities"],
+  "lang": "nl",
+  "dir": "ltr"
+}

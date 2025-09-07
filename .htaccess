@@ -1,0 +1,56 @@
+# Cache-Control headers voor betere performance en cache management
+
+# HTML bestanden: no-store om oude versies na reload te voorkomen
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
+# JSON bestanden: korte cache voor dynamische data
+<FilesMatch "\.json$">
+    Header set Cache-Control "no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
+# CSS en JS bestanden: lange cache met immutable voor gehashte bestanden
+<FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=31536000, immutable"
+</FilesMatch>
+
+# Afbeeldingen: lange cache
+<FilesMatch "\.(png|jpg|jpeg|gif|svg|ico|webp)$">
+    Header set Cache-Control "max-age=31536000, immutable"
+</FilesMatch>
+
+# Manifest en service worker: korte cache
+<FilesMatch "\.(manifest|webmanifest)$">
+    Header set Cache-Control "no-store, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "sw\.js$">
+    Header set Cache-Control "no-store, must-revalidate"
+</FilesMatch>
+
+# Compressie voor betere performance
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="NerdWijzer is de nerdy stemhulp met 22 vragen over IT, privacy en technologie.">
+    <meta name="theme-color" content="#1e3c72">
+    <meta name="msapplication-TileColor" content="#1e3c72">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NerdWijzer">
+    <title>NerdWijzer - Stemwijzer voor Nerds</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/index.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="NerdWijzer - Stemwijzer voor Nerds">
+    <meta property="og:description" content="NerdWijzer is de nerdy stemhulp met 22 vragen over IT, privacy en technologie.">
+    <meta property="og:image" content="/nerdwijzer-logo-light.png">
+    <meta property="og:url" content="/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NerdWijzer">
+    
+    <!-- Favicon voor alle apparaten -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="welcome-screen">
+            <div class="welcome-logo">
+                <h1><img src="nerdwijzer-logo-dark.png" alt="NerdWijzer" class="welcome-logo-img"></h1>
+            </div>
+            <div class="welcome-content">
+                <div class="welcome-description">
+                    <p class="welcome-subtitle">Welkom, nerd 🤓</p>
+                    <p>Vind in 2 minuten de partij die het beste matcht met jouw nerdy idealen. 22 vragen over IT, privacy, mensenrechten en technologie.</p>
+                    <p><em>Kleine noot: dit is een onafhankelijke, nerdy stemhulp. Handig, niet heilig.</em></p>
+                </div>
+                
+                <div class="how-it-works">
+                    <h3>Hoe het werkt</h3>
+                    <ol>
+                        <li>Beantwoord 22 stellingen met de slider van 1 tot 5</li>
+                        <li>Kies jouw belangrijke onderwerpen</li>
+                        <li>Bekijk je match en de onderbouwing per thema</li>
+                    </ol>
+                </div>
+                
+                <div class="why-nerdwijzer">
+                    <h3>Waarom NerdWijzer</h3>
+                    <ul>
+                        <li>Focus op digitale thema's</li>
+                        <li>Transparant over bronnen en scoring</li>
+                        <li>Geen onzin, wél duidelijke uitleg per vraag</li>
+                    </ul>
+                </div>
+                <div class="welcome-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🔒</span>
+                        <span>Privacy & Cybersecurity</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🤖</span>
+                        <span>AI & Digitalisering</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🌐</span>
+                        <span>Internet & Rechten</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🌳</span>
+                        <span>Klimaat & Transitie</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="start-btn">Start de NerdWijzer</button>
+            </div>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="question-screen" class="question-screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="progress-current">1</span> van <span id="progress-total">22</span>
+                </div>
+            </div>
+            
+            <div class="question-header">
+                <h2 id="question-text" class="question-text" aria-live="polite">Vraag tekst hier</h2>
+                <p id="question-explanation" class="question-explanation" aria-live="polite">Uitleg bij de vraag</p>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-header">
+                    <span class="slider-label-left">👎</span>
+                    <div id="slider-value" class="slider-value">3</div>
+                    <span class="slider-label-right">👍</span>
+                </div>
+                <input type="range" id="answer-slider" class="slider" min="1" max="5" value="3">
+                <div class="slider-scale">
+                    <span>
+                        <div class="scale-number">1</div>
+                        <div class="scale-description">Helemaal oneens</div>
+                    </span>
+                    <span>
+                        <div class="scale-number">2</div>
+                        <div class="scale-description">Eens</div>
+                    </span>
+                    <span>
+                        <div class="scale-number">3</div>
+                        <div class="scale-description">Neutraal</div>
+                    </span>
+                    <span>
+                        <div class="scale-number">4</div>
+                        <div class="scale-description">Eens</div>
+                    </span>
+                    <span>
+                        <div class="scale-number">5</div>
+                        <div class="scale-description">Helemaal eens</div>
+                    </span>
+                </div>
+                <div class="keyboard-tip desktop-only">
+                    <span class="tip-icon">⌨️</span>
+                    <span>Tip: Gebruik pijltjestoetsen, en Enter om te bevestigen.</span>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="nav-btn" disabled>
+                    <span class="btn-icon">←</span>
+                    <span>Vorige</span>
+                </button>
+                <button id="next-btn" class="nav-btn">
+                    <span>Volgende</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Priority Questions Screen -->
+        <div id="priority-screen" class="priority-screen">
+            <div class="results-header">
+                <img src="nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <h2 class="results-title">Belangrijke Onderwerpen</h2>
+            </div>
+            <div class="priority-intro">
+                <p>Hier zijn alle vragen die je hebt beantwoord. Selecteer de onderwerpen die voor jou extra belangrijk zijn:</p>
+                <div class="priority-tip">
+                    <span class="tip-icon">💡</span>
+                    <span>Je kunt meerdere onderwerpen selecteren om je resultaat te verfijnen</span>
+                </div>
+            </div>
+            
+            <div id="priority-questions" class="priority-questions">
+                <!-- Priority questions will be populated here -->
+            </div>
+
+            <div class="priority-buttons">
+                <button id="skip-priority-btn" class="action-btn">
+                    <span class="btn-icon">⏭️</span>
+                    <span>Sla over</span>
+                </button>
+                <button id="continue-priority-btn" class="action-btn">
+                    <span class="btn-icon">✅</span>
+                    <span>Bekijk resultaat</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Comparison Screen -->
+        <div id="comparison-screen" class="comparison-screen">
+            <div class="results-header">
+                <img src="nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <h2 class="results-title">Vergelijk Partijen</h2>
+            </div>
+            <div class="comparison-intro">
+                <p>Bekijk hoe partijen scoren op specifieke onderwerpen:</p>
+            </div>
+            <div id="comparison-content" class="comparison-content">
+                <!-- Comparison content will be populated here -->
+            </div>
+            
+            <div class="comparison-buttons">
+                <button id="back-to-results-btn" class="action-btn">
+                    <span class="btn-icon">←</span>
+                    <span>Terug naar resultaten</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="results-screen">
+            <div class="results-header">
+                <img src="nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <h2 class="results-title">Jouw NerdWijzer Resultaat</h2>
+            </div>
+            <div class="results-intro">
+                <p>Hier zijn de politieke partijen gerangschikt op basis van jouw antwoorden:</p>
+                <div class="results-summary">
+                    <span class="summary-item">
+                        <span class="summary-icon">📊</span>
+                        <span>22 vragen beantwoord</span>
+                    </span>
+                    <span class="summary-item">
+                        <span class="summary-icon">🎯</span>
+                        <span>Persoonlijke match</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div id="party-results" class="party-results">
+                <!-- Party results will be populated here -->
+            </div>
+            
+            <!-- Screen reader table view -->
+            <div class="sr-only">
+                <h3>Resultaten in tabelvorm</h3>
+                <table id="results-table" class="results-table" role="table" aria-label="Stemwijzer resultaten per partij">
+                    <thead>
+                        <tr>
+                            <th scope="col">Rang</th>
+                            <th scope="col">Partij</th>
+                            <th scope="col">Match percentage</th>
+                            <th scope="col">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-table-body">
+                        <!-- Table rows will be populated here -->
+                    </tbody>
+                </table>
+                
+                <h3>Resultaten per thema</h3>
+                <div id="theme-results" class="theme-results">
+                    <!-- Theme-based results will be populated here -->
+                </div>
+            </div>
+
+            <div id="more-results" class="more-results" style="display: none;">
+                <div id="all-party-results" class="party-results" style="margin-top: 0;">
+                    <!-- All party results will be populated here -->
+                </div>
+            </div>
+
+            <div class="results-buttons">
+                <button id="more-btn" class="action-btn">
+                    <span class="btn-icon">📋</span>
+                    <span>Meer uitslagen</span>
+                </button>
+                <button id="share-btn" class="action-btn">
+                    <span class="btn-icon">📤</span>
+                    <span>Resultaten delen</span>
+                </button>
+                <button id="restart-btn" class="action-btn">
+                    <span class="btn-icon">🔄</span>
+                    <span>Opnieuw beginnen</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-text">
+                Deze website is gemaakt door Randal Peelen en bedoeld voor vermaak. Hoewel de informatie met zorg is samengesteld, kan deze fouten bevatten en is niet gegarandeerd juist of afgestemd met politieke partijen.
+            </p>
+            <div class="footer-meta">
+                <span id="app-version">Versie: –</span>
+                <span class="footer-sep">•</span>
+                <a href="changelog.html" class="footer-link">Changelog</a>
+                <span class="footer-sep">•</span>
+                <a href="verantwoording.html" class="footer-link">Verantwoording</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        class NerdWijzer {
+            constructor() {
+                this.questions = [];
+                this.currentQuestionIndex = 0;
+                this.answers = {};
+                this.parties = [];
+                this.questionsPerQuiz = 22;
+                
+                this.init();
+            }
+
+            async init() {
+                try {
+                    await Promise.all([
+                        this.loadQuestions(),
+                        this.loadPartyPositions(),
+                        this.loadVersion()
+                    ]);
+                    // Zorg dat we alleen vragen tonen waarvoor partijdata bestaat
+                    this.alignQuestionsWithPartyPositions();
+                    this.setupEventListeners();
+                    this.showWelcomeScreen();
+                } catch (error) {
+                    console.error('Error initializing NerdWijzer:', error);
+                    alert('Er is een fout opgetreden bij het laden van de vragen. Ververs de pagina en probeer opnieuw.');
+                }
+            }
+
+            async loadVersion() {
+                try {
+                    const res = await fetch('version.json', { cache: 'no-store' });
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    const el = document.getElementById('app-version');
+                    if (el && data && data.version) {
+                        el.textContent = `Versie: ${data.version} (${data.date || ''})`.trim();
+                    }
+                } catch (e) {
+                    // Stil falen; footer is niet kritisch
+                }
+            }
+
+            async loadQuestions() {
+                const response = await fetch(`questions.json?ts=${Date.now()}`, { cache: 'no-store' });
+                const data = await response.json();
+                this.questions = data.questions;
+            }
+
+            async loadPartyPositions() {
+                const response = await fetch(`party_positions.json?ts=${Date.now()}`, { cache: 'no-store' });
+                const data = await response.json();
+                this.partyPositions = data.party_positions;
+                
+                // Extracteer partijen uit de eerste beschikbare vraag
+                const keys = Object.keys(this.partyPositions || {});
+                const firstKey = keys.length ? keys[0] : null;
+                if (firstKey && this.partyPositions[firstKey] && this.partyPositions[firstKey].positions) {
+                    this.parties = Object.keys(this.partyPositions[firstKey].positions);
+                } else {
+                    this.parties = [];
+                }
+            }
+
+            // Filter vragen zodat alleen vragen met beschikbare partijdata overblijven,
+            // daarna pas shufflen en slicen naar gewenste hoeveelheid
+            alignQuestionsWithPartyPositions() {
+                if (!this.questions || !this.questions.length || !this.partyPositions) return;
+                const filtered = this.questions.filter(q => this.partyPositions[String(q.id)]);
+                this.shuffleArray(filtered);
+                this.questions = filtered.slice(0, Math.min(this.questionsPerQuiz, filtered.length));
+            }
+
+            shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+
+            setupEventListeners() {
+                // Welcome screen
+                document.getElementById('start-btn').addEventListener('click', () => {
+                    this.startQuiz();
+                });
+
+                // Question navigation
+                document.getElementById('prev-btn').addEventListener('click', () => {
+                    this.previousQuestion();
+                });
+
+                document.getElementById('next-btn').addEventListener('click', () => {
+                    this.nextQuestion();
+                });
+
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    const questionScreen = document.getElementById('question-screen');
+                    const priorityScreen = document.getElementById('priority-screen');
+                    
+                    if (e.key === 'Enter') {
+                        if (questionScreen.style.display === 'block') {
+                            this.nextQuestion();
+                        } else if (priorityScreen.style.display === 'block') {
+                            this.showResults();
+                        }
+                    } else if (e.key === 'ArrowLeft' && questionScreen.style.display === 'block') {
+                        // Pijltje naar links: verlaag slider waarde
+                        const slider = document.getElementById('answer-slider');
+                        const currentValue = parseInt(slider.value);
+                        if (currentValue > 1) {
+                            slider.value = currentValue - 1;
+                            this.updateSliderValue(slider.value);
+                        }
+                    } else if (e.key === 'ArrowRight' && questionScreen.style.display === 'block') {
+                        // Pijltje naar rechts: verhoog slider waarde
+                        const slider = document.getElementById('answer-slider');
+                        const currentValue = parseInt(slider.value);
+                        if (currentValue < 5) {
+                            slider.value = currentValue + 1;
+                            this.updateSliderValue(slider.value);
+                        }
+                    }
+                });
+
+                // Slider
+                document.getElementById('answer-slider').addEventListener('input', (e) => {
+                    this.updateSliderValue(e.target.value);
+                });
+                
+                // Scale label clicks
+                this.setupScaleClickEvents();
+
+                // Restart
+                document.getElementById('restart-btn').addEventListener('click', () => {
+                    this.restart();
+                });
+
+                // More results
+                document.getElementById('more-btn').addEventListener('click', () => {
+                    this.toggleMoreResults();
+                });
+
+                // Share results
+                document.getElementById('share-btn').addEventListener('click', () => {
+                    this.shareResults();
+                });
+
+                // Priority questions
+                document.getElementById('skip-priority-btn').addEventListener('click', () => {
+                    this.showResults();
+                });
+
+                document.getElementById('continue-priority-btn').addEventListener('click', () => {
+                    this.showResults();
+                });
+
+                // Back to results
+                document.getElementById('back-to-results-btn').addEventListener('click', () => {
+                    this.showResults();
+                });
+            }
+
+            showWelcomeScreen() {
+                document.getElementById('welcome-screen').style.display = 'block';
+                document.getElementById('question-screen').style.display = 'none';
+                document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('comparison-screen').style.display = 'none';
+                document.getElementById('results-screen').style.display = 'none';
+            }
+
+            startQuiz() {
+                this.currentQuestionIndex = 0;
+                this.answers = {};
+                this.showQuestion();
+            }
+
+            showQuestion() {
+                const question = this.questions[this.currentQuestionIndex];
+                
+                document.getElementById('welcome-screen').style.display = 'none';
+                document.getElementById('question-screen').style.display = 'block';
+                document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('comparison-screen').style.display = 'none';
+                document.getElementById('results-screen').style.display = 'none';
+
+                document.getElementById('question-text').textContent = question.question;
+                document.getElementById('question-explanation').textContent = question.explanation;
+
+                // Set slider value
+                const savedAnswer = this.answers[this.currentQuestionIndex];
+                const slider = document.getElementById('answer-slider');
+                slider.value = savedAnswer || 3;
+                this.updateSliderValue(slider.value);
+                
+                // Initialize scale highlighting
+                this.updateScaleHighlight(slider.value);
+                
+                // Re-setup scale click events for new question
+                this.setupScaleClickEvents();
+
+                // Update progress bar
+                const progress = ((this.currentQuestionIndex + 1) / this.questions.length) * 100;
+                document.getElementById('progress-fill').style.width = `${progress}%`;
+        document.getElementById('progress-current').textContent = this.currentQuestionIndex + 1;
+        document.getElementById('progress-total').textContent = this.questions.length;
+
+                // Update navigation buttons
+                document.getElementById('prev-btn').disabled = this.currentQuestionIndex === 0;
+                document.getElementById('next-btn').textContent = 
+                    this.currentQuestionIndex === this.questions.length - 1 ? 'Bekijk resultaat' : 'Volgende';
+            }
+
+            updateSliderValue(value) {
+                document.getElementById('slider-value').textContent = value;
+                this.answers[this.currentQuestionIndex] = parseInt(value);
+                
+                // Update active scale highlighting
+                this.updateScaleHighlight(value);
+            }
+            
+            updateScaleHighlight(value) {
+                // Remove all active classes
+                const scaleSpans = document.querySelectorAll('.slider-scale span');
+                scaleSpans.forEach(span => span.classList.remove('active'));
+                
+                // Add active class to current value
+                const activeSpan = document.querySelector(`.slider-scale span:nth-child(${value})`);
+                if (activeSpan) {
+                    activeSpan.classList.add('active');
+                }
+            }
+            
+            setupScaleClickEvents() {
+                const scaleSpans = document.querySelectorAll('.slider-scale span');
+                scaleSpans.forEach((span, index) => {
+                    span.addEventListener('click', () => {
+                        const value = index + 1;
+                        const slider = document.getElementById('answer-slider');
+                        slider.value = value;
+                        this.updateSliderValue(value);
+                    });
+                });
+            }
+
+            previousQuestion() {
+                if (this.currentQuestionIndex > 0) {
+                    this.currentQuestionIndex--;
+                    this.showQuestion();
+                }
+            }
+
+            nextQuestion() {
+                if (this.currentQuestionIndex < this.questions.length - 1) {
+                    this.currentQuestionIndex++;
+                    this.showQuestion();
+                } else {
+                    this.showPriorityScreen();
+                }
+            }
+
+            showPriorityScreen() {
+                document.getElementById('welcome-screen').style.display = 'none';
+                document.getElementById('question-screen').style.display = 'none';
+                document.getElementById('priority-screen').style.display = 'block';
+                document.getElementById('comparison-screen').style.display = 'none';
+                document.getElementById('results-screen').style.display = 'none';
+
+                this.displayPriorityQuestions();
+            }
+
+            displayPriorityQuestions() {
+                const container = document.getElementById('priority-questions');
+                container.innerHTML = '';
+
+                this.questions.forEach((question, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'priority-question';
+                    
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.id = `priority-${index}`;
+                    checkbox.dataset.questionIndex = index;
+                    
+                    const label = document.createElement('label');
+                    label.htmlFor = `priority-${index}`;
+                    label.textContent = question.question;
+                    
+                    questionDiv.appendChild(checkbox);
+                    questionDiv.appendChild(label);
+                    container.appendChild(questionDiv);
+                });
+            }
+
+            showResults() {
+                document.getElementById('welcome-screen').style.display = 'none';
+                document.getElementById('question-screen').style.display = 'none';
+                document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('comparison-screen').style.display = 'none';
+                document.getElementById('results-screen').style.display = 'block';
+
+                const results = this.calculateResults();
+                this.displayResults(results);
+            }
+
+            calculateResults() {
+                const partyScores = {};
+                
+                // Initialize scores
+                this.parties.forEach(party => {
+                    partyScores[party] = 0;
+                });
+
+                // Get priority questions
+                const priorityQuestions = [];
+                this.questions.forEach((question, index) => {
+                    const checkbox = document.getElementById(`priority-${index}`);
+                    if (checkbox && checkbox.checked) {
+                        priorityQuestions.push(index);
+                    }
+                });
+
+                // Calculate scores for each question
+                this.questions.forEach((question, questionIndex) => {
+                    const userAnswer = this.answers[questionIndex];
+                    const isPriority = priorityQuestions.includes(questionIndex);
+                    const weight = isPriority ? 3 : 1; // Priority questions count 3x
+                    
+                    this.parties.forEach(party => {
+                        const questionId = question.id.toString();
+                        const partyData = this.partyPositions[questionId]?.positions[party];
+                        
+                                    if (partyData && partyData.score !== undefined) {
+                const partyPosition = partyData.score;
+                            const difference = Math.abs(userAnswer - partyPosition);
+                            const score = (5 - difference) * weight; // Apply weight
+                            partyScores[party] += score;
+                        }
+                    });
+                });
+
+                // Convert to percentages and sort
+                const totalWeight = this.questions.length + (priorityQuestions.length * 2); // Extra weight for priority questions
+                const maxPossibleScore = totalWeight * 5;
+                const results = this.parties.map(party => ({
+                    name: party,
+                    score: partyScores[party],
+                    percentage: Math.round((partyScores[party] / maxPossibleScore) * 100)
+                }));
+
+                return results.sort((a, b) => b.percentage - a.percentage);
+            }
+
+            getPartyLogo(partyName) {
+                const logoMap = {
+                    'PVV': 'pvv.png',
+                    'GL/PvdA': 'glpvda.png',
+                    'VVD': 'vvd.png',
+                    'NSC': 'nsc.svg',
+                    'D66': 'd66.png',
+                    'BBB': 'bbb.png',
+                    'CDA': 'cda.png',
+                    'SP': 'sp.png',
+                    'Denk': 'denk.svg',
+                    'PvdD': 'pvdd.png',
+                    'FvD': 'fvd.png',
+                    'SGP': 'sgp.png',
+                    'CU': 'cu.png',
+                    'Volt': 'volt.png',
+                    'JA21': 'ja21.png'
+                };
+                return logoMap[partyName] || 'default.png';
+            }
+
+            populateResultsTable(results) {
+                const tableBody = document.getElementById('results-table-body');
+                tableBody.innerHTML = '';
+
+                results.forEach((result, index) => {
+                    const row = document.createElement('tr');
+                    const rank = index + 1;
+                    
+                    row.innerHTML = `
+                        <td>${rank}</td>
+                        <td>${result.name}</td>
+                        <td>${result.percentage}%</td>
+                        <td>${result.score}</td>
+                    `;
+                    
+                    tableBody.appendChild(row);
+                });
+
+                // Populate theme results
+                this.populateThemeResults(results);
+            }
+
+            populateThemeResults(results) {
+                const themeContainer = document.getElementById('theme-results');
+                themeContainer.innerHTML = '';
+
+                // Define themes based on question categories
+                const themes = {
+                    'Digitale Overheid': [1, 2, 3, 4],
+                    'Privacy & Cybersecurity': [5, 6, 7, 8, 9, 10],
+                    'AI & Digitalisering': [11, 12, 13, 14, 15],
+                    'Internet & Rechten': [16, 17, 18, 19, 20, 21, 22]
+                };
+
+                Object.entries(themes).forEach(([themeName, questionIds]) => {
+                    const themeDiv = document.createElement('div');
+                    themeDiv.className = 'theme-section';
+                    
+                    const themeTable = document.createElement('table');
+                    themeTable.className = 'results-table';
+                    themeTable.setAttribute('aria-label', `Resultaten voor thema: ${themeName}`);
+                    
+                    themeTable.innerHTML = `
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">${themeName}</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Partij</th>
+                                <th scope="col">Gemiddelde score</th>
+                                <th scope="col">Aantal vragen</th>
+                                <th scope="col">Match</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    `;
+                    
+                    const tbody = themeTable.querySelector('tbody');
+                    
+                    // Calculate theme scores for each party
+                    results.forEach(result => {
+                        const themeScore = this.calculateThemeScore(result.name, questionIds);
+                        const row = document.createElement('tr');
+                        
+                        row.innerHTML = `
+                            <td>${result.name}</td>
+                            <td>${themeScore.average.toFixed(1)}</td>
+                            <td>${themeScore.count}</td>
+                            <td>${themeScore.match}%</td>
+                        `;
+                        
+                        tbody.appendChild(row);
+                    });
+                    
+                    themeDiv.appendChild(themeTable);
+                    themeContainer.appendChild(themeDiv);
+                });
+            }
+
+            calculateThemeScore(partyName, questionIds) {
+                let totalScore = 0;
+                let count = 0;
+                
+                questionIds.forEach(questionId => {
+                    if (this.answers[questionId] !== undefined && this.partyPositions[questionId] && this.partyPositions[questionId][partyName]) {
+                        const userAnswer = this.answers[questionId];
+                        const partyScore = this.partyPositions[questionId][partyName].score;
+                        const difference = Math.abs(userAnswer - partyScore);
+                        const match = Math.max(0, 100 - (difference * 25)); // 25 points per step difference
+                        
+                        totalScore += match;
+                        count++;
+                    }
+                });
+                
+                const average = count > 0 ? totalScore / count : 0;
+                const match = Math.round(average);
+                
+                return { average, count, match };
+            }
+
+            displayResults(results) {
+                // Show top 4 results
+                const container = document.getElementById('party-results');
+                container.innerHTML = '';
+
+                // Populate screen reader table
+                this.populateResultsTable(results);
+
+                results.slice(0, 4).forEach((result, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'party-card';
+                    card.style.cursor = 'pointer';
+                    card.dataset.partyName = result.name;
+                    
+                    const rank = index + 1;
+                    const rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `${rank}.`;
+                    const logoFile = this.getPartyLogo(result.name);
+                    
+                    card.innerHTML = `
+                        <div class="party-info">
+                            <div class="party-name">${rankEmoji} ${result.name}</div>
+                            <div class="party-score">${result.percentage}%</div>
+                        </div>
+                        <div class="party-logo">
+                            <img src="logos/${logoFile}" alt="${result.name} logo" onerror="this.style.display='none'">
+                        </div>
+                    `;
+                    
+                    // Add click event
+                    card.addEventListener('click', () => {
+                        this.showPartyComparison(result.name);
+                    });
+                    
+                    container.appendChild(card);
+                });
+
+                // Store all results for later use
+                this.allResults = results;
+            }
+
+            showPartyComparison(partyName) {
+                document.getElementById('welcome-screen').style.display = 'none';
+                document.getElementById('question-screen').style.display = 'none';
+                document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('results-screen').style.display = 'none';
+                document.getElementById('comparison-screen').style.display = 'block';
+
+                this.displayPartyComparison(partyName);
+            }
+
+            displayPartyComparison(partyName) {
+                const container = document.getElementById('comparison-content');
+                container.innerHTML = '';
+
+                // Header
+                const header = document.createElement('h3');
+                header.textContent = `Vergelijking: ${partyName}`;
+                header.className = 'comparison-header';
+                container.appendChild(header);
+
+                // Table
+                const table = document.createElement('table');
+                table.className = 'comparison-table';
+                
+                // Table header
+                const thead = document.createElement('thead');
+                thead.innerHTML = `
+                    <tr>
+                        <th>Vraag</th>
+                        <th>Jouw antwoord</th>
+                        <th>${partyName}</th>
+                        <th>Verschil</th>
+                        <th>Verklaring</th>
+                        <th>Bron</th>
+                    </tr>
+                `;
+                table.appendChild(thead);
+
+                // Table body
+                const tbody = document.createElement('tbody');
+                this.questions.forEach((question, index) => {
+                    const userAnswer = this.answers[index];
+                    const questionId = question.id.toString();
+                    const partyData = this.partyPositions[questionId]?.positions[partyName];
+                    
+                    let partyAnswer, partyExplanation, partySource;
+                    
+                    if (partyData && partyData.score !== undefined) {
+                        // Get data from party_positions.json
+                        partyAnswer = partyData.score;
+                        partyExplanation = partyData.explanation;
+                        partySource = partyData.source;
+                    } else {
+                        // Fallback if data not found
+                        partyAnswer = 3;
+                        partyExplanation = "Geen verklaring beschikbaar";
+                        partySource = "#";
+                    }
+                    
+                    const difference = Math.abs(userAnswer - partyAnswer);
+                    
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${question.question}</td>
+                        <td>${userAnswer}</td>
+                        <td>${partyAnswer}</td>
+                        <td>${difference === 0 ? '✅' : difference === 1 ? '🟡' : '🔴'}</td>
+                        <td class="explanation-cell">
+                            <button class="explain-icon" aria-label="Toon verklaring" type="button">?</button>
+                            <div class="tooltip-content"></div>
+                        </td>
+                        <td class="source-cell">
+                            <button class="source-icon" aria-label="Open bron" type="button" onclick="window.open('${partySource}', '_blank', 'noopener,noreferrer')">🔗</button>
+                        </td>
+                    `;
+                    // Fill tooltip text safely
+                    const tooltip = row.querySelector('.tooltip-content');
+                    if (tooltip) tooltip.textContent = partyExplanation || '';
+                    
+                    // Add tooltip positioning logic
+                    const explainIcon = row.querySelector('.explain-icon');
+                    if (explainIcon && tooltip) {
+                        explainIcon.addEventListener('mouseenter', () => {
+                            this.positionTooltip(tooltip, explainIcon);
+                        });
+                    }
+                    
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+                container.appendChild(table);
+            }
+
+
+
+
+
+            toggleMoreResults() {
+                const moreResults = document.getElementById('more-results');
+                const moreBtn = document.getElementById('more-btn');
+                
+                if (moreResults.style.display === 'none') {
+                    // Show all results (excluding top 4)
+                    const allContainer = document.getElementById('all-party-results');
+                    allContainer.innerHTML = '';
+
+                    this.allResults.slice(4).forEach((result, index) => {
+                        const card = document.createElement('div');
+                        card.className = 'party-card';
+                        card.style.cursor = 'pointer';
+                        card.dataset.partyName = result.name;
+                        
+                        const rank = index + 5; // Start from 5th place
+                        const rankEmoji = `${rank}.`;
+                        const logoFile = this.getPartyLogo(result.name);
+                        
+                        card.innerHTML = `
+                            <div class="party-info">
+                                <div class="party-name">${rankEmoji} ${result.name}</div>
+                                <div class="party-score">${result.percentage}%</div>
+                            </div>
+                            <div class="party-logo">
+                                <img src="logos/${logoFile}" alt="${result.name} logo" onerror="this.style.display='none'">
+                            </div>
+                        `;
+                        
+                        // Add click event
+                        card.addEventListener('click', () => {
+                            this.showPartyComparison(result.name);
+                        });
+                        
+                        allContainer.appendChild(card);
+                    });
+
+                    moreResults.style.display = 'block';
+                    moreBtn.textContent = 'Minder uitslagen';
+                } else {
+                    // Hide all results
+                    moreResults.style.display = 'none';
+                    moreBtn.textContent = 'Meer uitslagen';
+                }
+            }
+
+            positionTooltip(tooltip, icon) {
+                // Reset tooltip position
+                tooltip.style.left = '';
+                tooltip.style.top = '';
+                tooltip.style.right = '';
+                tooltip.style.bottom = '';
+                
+                // Get positions
+                const iconRect = icon.getBoundingClientRect();
+                const tooltipRect = tooltip.getBoundingClientRect();
+                const containerRect = document.querySelector('.comparison-screen').getBoundingClientRect();
+                
+                // Calculate available space
+                const spaceRight = containerRect.right - iconRect.right;
+                const spaceLeft = iconRect.left - containerRect.left;
+                const spaceTop = iconRect.top - containerRect.top;
+                const spaceBottom = containerRect.bottom - iconRect.bottom;
+                
+                // Position horizontally
+                if (spaceRight >= tooltipRect.width + 20) {
+                    // Enough space on the right
+                    tooltip.style.left = '28px';
+                } else if (spaceLeft >= tooltipRect.width + 20) {
+                    // Enough space on the left
+                    tooltip.style.left = 'auto';
+                    tooltip.style.right = '28px';
+                } else {
+                    // Center above/below the icon
+                    tooltip.style.left = '50%';
+                    tooltip.style.transform = 'translateX(-50%)';
+                }
+                
+                // Position vertically
+                if (spaceBottom >= tooltipRect.height + 20) {
+                    // Enough space below
+                    tooltip.style.top = '50%';
+                    tooltip.style.transform = tooltip.style.transform ? 
+                        tooltip.style.transform + ' translateY(-50%)' : 'translateY(-50%)';
+                } else if (spaceTop >= tooltipRect.height + 20) {
+                    // Enough space above
+                    tooltip.style.top = 'auto';
+                    tooltip.style.bottom = '50%';
+                    tooltip.style.transform = tooltip.style.transform ? 
+                        tooltip.style.transform + ' translateY(50%)' : 'translateY(50%)';
+                } else {
+                    // Center vertically
+                    tooltip.style.top = '50%';
+                    tooltip.style.transform = tooltip.style.transform ? 
+                        tooltip.style.transform + ' translateY(-50%)' : 'translateY(-50%)';
+                }
+            }
+
+            shareResults() {
+                const topResults = this.allResults.slice(0, 3);
+                let shareText = '🎯 Mijn NerdWijzer resultaat:\n\n';
+                
+                topResults.forEach((result, index) => {
+                    const rank = index + 1;
+                    const rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : '4️⃣';
+                    shareText += `${rankEmoji} ${result.name}: ${result.percentage}%\n`;
+                });
+                
+                shareText += '\n👉 Doe de test zelf op: nerdwijzer.nl';
+                
+                // Copy to clipboard
+                navigator.clipboard.writeText(shareText).then(() => {
+                    alert('Resultaten gekopieerd naar klembord! Je kunt ze nu plakken in een chat of social media.');
+                }).catch(() => {
+                    // Fallback for older browsers
+                    const textArea = document.createElement('textarea');
+                    textArea.value = shareText;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    alert('Resultaten gekopieerd naar klembord! Je kunt ze nu plakken in een chat of social media.');
+                });
+            }
+
+            restart() {
+                this.currentQuestionIndex = 0;
+                this.answers = {};
+                this.showWelcomeScreen();
+            }
+        }
+
+        // Initialize the app when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new NerdWijzer();
+        });
+
+        // Service Worker registratie voor PWA functionaliteit
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

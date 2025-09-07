@@ -1,0 +1,131 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Richt een ministerie van Digitale Zaken op.",
+      "explanation": "Digitale taken zijn nu verspreid over meerdere ministeries. Dat maakt beleid traag en onduidelijk. Eén ministerie met eigen budget en mandaat zorgt voor duidelijke regie en aanspreekbaarheid."
+    },
+    {
+      "id": 2,
+      "question": "Maak open source de norm bij overheidssoftware.",
+      "explanation": "Open source voorkomt afhankelijkheid van één leverancier, maakt controle en hergebruik makkelijker en vergroot transparantie. Alleen afwijken als veiligheid of privacy dat echt eisen."
+    },
+    {
+      "id": 3,
+      "question": "Host overheidsdata alleen bij EU-leveranciers zonder Amerikaanse moeder.",
+      "explanation": "EU-hosting helpt, maar beschermt niet als een bedrijf onder de Amerikaanse CLOUD Act valt. Kies leveranciers met een volledige EU-juridische basis en gebruik versleuteling met eigen sleutels."
+    },
+    {
+      "id": 4,
+      "question": "Reguleer big tech en splits bedrijven op als dat nodig is.",
+      "explanation": "Enkele techreuzen controleren toegang tot markten en standaarden. Strenge regels en handhaving zijn nodig. Als dat niet genoeg werkt, moet opsplitsen van bedrijven mogelijk zijn."
+    },
+    {
+      "id": 5,
+      "question": "Investeer in eigen ontwikkelteams bij de overheid.",
+      "explanation": "De overheid leunt zwaar op dure externen. Dat leidt tot kennisverlies en afhankelijkheid. Sterke interne teams vergroten veiligheid, continuïteit en onderhandelingsmacht."
+    },
+    {
+      "id": 6,
+      "question": "Geen chatcontrol of scannen van privéberichten.",
+      "explanation": "Scannen van apparaten breekt versleuteling en opent de deur naar massasurveillance. Misbruik moet gericht worden bestreden, niet door universeel meekijken in ieders berichten."
+    },
+    {
+      "id": 7,
+      "question": "Geen ruimere bevoegdheden voor bulkinterceptie.",
+      "explanation": "Ongericht verzamelen van communicatiegegevens raakt ook onschuldige burgers. Kies voor gerichte interceptie met sterk onafhankelijk toezicht."
+    },
+    {
+      "id": 8,
+      "question": "Politie mag alleen hacken na toets door een toezichthouder.",
+      "explanation": "Hackbevoegdheid is ingrijpend en foutgevoelig. Vereis een onafhankelijke toets op noodzaak en proportionaliteit. Logging en een openbaar jaarverslag zorgen voor verantwoording achteraf."
+    },
+    {
+      "id": 9,
+      "question": "Bescherm ethische hackers wettelijk.",
+      "explanation": "Meldingen van beveiligingslekken gebeuren nu vaak op basis van afspraken, niet via wet. Leg vast dat goedwillende hackers beschermd zijn en stimuleer beloningen of erkenning."
+    },
+    {
+      "id": 10,
+      "question": "Verbied realtime gezichtsherkenning en massale biometrie in de openbare ruimte.",
+      "explanation": "Deze technologie tast grondrechten aan en vergroot de kans op fouten. Een hard verbod voorkomt massasurveillance. Wie het daar niet mee eens is, kan nuance zoeken in uitzonderingen."
+    },
+    {
+      "id": 11,
+      "question": "Pauzeer frontier-AI tot toezicht en normen op orde zijn.",
+      "explanation": "Frontier-AI zijn de meest geavanceerde modellen, zoals ChatGPT of Gemini, die grote risico's kunnen hebben. Zet een pauze totdat duidelijke veiligheidsnormen en toezicht geregeld zijn."
+    },
+    {
+      "id": 12,
+      "question": "Investeer fors in AI, chips en fotonica in Nederland.",
+      "explanation": "Nederland heeft sterke kennis en bedrijven in deze sectoren. Door fors te investeren blijft ons land concurrerend en verkleinen we afhankelijkheid van andere regio's."
+    },
+    {
+      "id": 13,
+      "question": "Verplicht uitleg en documentatie bij elke overheids-AI.",
+      "explanation": "Burgers moeten weten wanneer AI meebeslist. Documenteer datasets, doelen en werking. Maak bezwaar en controle mogelijk. Transparantie hoort standaard te zijn."
+    },
+    {
+      "id": 14,
+      "question": "Verbied dodelijke autonome wapens internationaal.",
+      "explanation": "Nederland steunde al VN-stappen richting regulering. Leg vast dat er altijd menselijke controle is bij het gebruik van wapens."
+    },
+    {
+      "id": 15,
+      "question": "Bouw nieuwe kerncentrales met publieke regie en realistische planning.",
+      "explanation": "Het kabinet wil meer kernenergie. Doorlooptijd en kosten zijn hoog, dus publieke regie en strakke projectbegeleiding zijn nodig. Kies technologie-neutraal."
+    },
+    {
+      "id": 16,
+      "question": "Financier onderzoek naar geo-engineering onder strikte voorwaarden.",
+      "explanation": "Klimaatverandering vraagt om kennis van mogelijke ingrepen, zoals zonlicht terugkaatsen. Doe alleen kleine, gecontroleerde onderzoeken met open data en strikte ethische regels."
+    },
+    {
+      "id": 17,
+      "question": "Stop verkoop van nieuwe benzine- en dieselauto's en -bestelauto's in 2030.",
+      "explanation": "De EU stopt in 2035. Nederland kan eerder stoppen en zo laadnetwerken en innovatie versnellen. Combineer met betaalbare elektrische alternatieven."
+    },
+    {
+      "id": 18,
+      "question": "Voer een hoge, voorspelbare CO2-prijs voor industrie.",
+      "explanation": "De CO2-heffing bestaat al, maar uitzonderingen maken haar zwak. Maak de prijs hoog en stabiel, zodat bedrijven echt investeren in schonere productie."
+    },
+    {
+      "id": 19,
+      "question": "Stop alle subsidies voor laagwaardige biomassa.",
+      "explanation": "Biomassa levert vaak weinig klimaatwinst op. Stop met subsidiëren van laagwaardige toepassingen en richt steun op alternatieven die wél effectief zijn."
+    },
+    {
+      "id": 20,
+      "question": "Maak digitale geletterdheid en programmeren verplichte vakken.",
+      "explanation": "Digitale basisvaardigheden zijn net zo belangrijk als taal en rekenen. Verplicht en toetsbaar onderwijs voorkomt dat jongeren achterblijven."
+    },
+    {
+      "id": 21,
+      "question": "Versnel kennismigratie en maak de EU Blue Card toegankelijker.",
+      "explanation": "Erken ook werkervaring in plaats van alleen diploma's, hanteer duidelijke salarisgrenzen en verkort de procedure. Zo kan Nederland sneller internationaal talent aantrekken."
+    },
+    {
+      "id": 22,
+      "question": "Zet nationaal door als EU-handhaving van de DMA stokt.",
+      "explanation": "Nederland kan via consumenten- en mededingingsrecht appstores openen, sideloading toestaan en bundeling tegengaan. Zo doorbreek je machtsposities sneller."
+    }
+  ],
+  "parties": [
+    "PVV",
+    "GL/PvdA",
+    "VVD",
+    "NSC",
+    "D66",
+    "BBB",
+    "CDA",
+    "SP",
+    "Denk",
+    "PvdD",
+    "FvD",
+    "SGP",
+    "CU",
+    "Volt",
+    "JA21"
+  ]
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Verantwoording en bronnen voor alle stellingen in de NerdWijzer stemwijzer">
+    <meta name="theme-color" content="#1e3c72">
+    <meta name="msapplication-TileColor" content="#1e3c72">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NerdWijzer">
+    <title>NerdWijzer - Verantwoording</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/verantwoording.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="NerdWijzer - Verantwoording">
+    <meta property="og:description" content="Verantwoording en bronnen voor alle stellingen in de NerdWijzer stemwijzer">
+    <meta property="og:image" content="/nerdwijzer-logo-light.png">
+    <meta property="og:url" content="/verantwoording.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NerdWijzer">
+    
+    <!-- Favicon voor alle apparaten -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-attachment: fixed;
+            background-position: top left;
+        }
+        
+        .verantwoording-container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 0 16px; 
+            background: transparent;
+        }
+        .verantwoording-title { 
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-size: 28px; 
+            font-weight: 700;
+            margin-bottom: 12px; 
+            line-height: 1.2;
+        }
+        .verantwoording-sub { 
+            color: rgba(255,255,255,0.7); 
+            margin-bottom: 24px; 
+            line-height: 1.6;
+        }
+        
+        /* Tabbed interface styling */
+        .stelling-tabs {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .stelling-tabs h3 {
+            color: #00d4ff;
+            margin: 0 0 20px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+        .tabs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.4;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            font-family: inherit;
+        }
+        .tab-button:hover {
+            background: rgba(255,107,107,0.1);
+            border-color: rgba(255,107,107,0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,107,107,0.2);
+        }
+        .tab-button:focus {
+            outline: 3px solid #ffffff;
+            outline-offset: 3px;
+            background: rgba(255,107,107,0.2);
+            border-color: #ff6b6b;
+        }
+        .tab-button.active {
+            background: rgba(255,107,107,0.2);
+            border-color: #ff6b6b;
+            color: #ff6b6b;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(255,107,107,0.3);
+        }
+        .tab-number {
+            color: #ff6b6b;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        /* Content area styling */
+        .stelling-content {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 10px;
+            padding: 24px;
+            margin-top: 20px;
+            min-height: 400px;
+        }
+        .stelling-content.hidden {
+            display: none;
+        }
+        .stelling-title {
+            margin: 0 0 16px 0;
+            font-size: 22px;
+            color: #00d4ff;
+        }
+        .uitleg {
+            margin: 0 0 20px 0;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        /* Party positions styling */
+        .party-positions { margin: 20px 0; }
+        .party-positions h4 { 
+            color: #ff6b6b; 
+            margin: 0 0 15px 0; 
+            font-size: 16px; 
+            border-bottom: 1px solid rgba(255,107,107,0.3); 
+            padding-bottom: 8px; 
+        }
+        .party-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 15px; 
+            margin-top: 15px; 
+        }
+        .party-item { 
+            background: rgba(255,255,255,0.04); 
+            border: 1px solid rgba(255,107,107,0.2); 
+            border-radius: 8px; 
+            padding: 15px; 
+            position: relative; 
+            transition: all 0.3s ease;
+        }
+        
+        .party-item:hover {
+            background: rgba(255,107,107,0.08);
+            border-color: rgba(255,107,107,0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,107,107,0.2);
+        }
+        .party-name { 
+            font-weight: bold; 
+            color: #00d4ff; 
+            font-size: 14px; 
+            display: inline-block; 
+            margin-right: 10px; 
+        }
+        .party-score { 
+            color: white; 
+            padding: 4px 10px; 
+            border-radius: 12px; 
+            font-size: 11px; 
+            font-weight: bold; 
+            display: inline-block; 
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .party-score.score-1 { 
+            background: linear-gradient(135deg, #8B0000, #DC143C); 
+        }
+        .party-score.score-2 { 
+            background: linear-gradient(135deg, #B22222, #FF4500); 
+        }
+        .party-score.score-3 { 
+            background: linear-gradient(135deg, #FF8C00, #FFA500); 
+        }
+        .party-score.score-4 { 
+            background: linear-gradient(135deg, #32CD32, #228B22); 
+        }
+        .party-score.score-5 { 
+            background: linear-gradient(135deg, #006400, #228B22); 
+        }
+        .party-explanation { 
+            color: rgba(255,255,255,0.8); 
+            font-size: 13px; 
+            line-height: 1.5; 
+            margin: 10px 0; 
+        }
+        .party-source { 
+            color: #00d4ff; 
+            text-decoration: none; 
+            font-size: 12px; 
+            background: rgba(0,212,255,0.1); 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            border: 1px solid rgba(0,212,255,0.3); 
+            display: inline-block; 
+        }
+        .party-source:hover { 
+            background: rgba(0,212,255,0.2); 
+            text-decoration: none; 
+        }
+        
+        .loading { 
+            color: rgba(255,255,255,0.6); 
+            font-style: italic; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        
+        /* Welcome message styling */
+        .welcome-message {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .welcome-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .tabs-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            .tab-button {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+            .stelling-content {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="verantwoording-container">
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-logo">
+                <img src="nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img">
+            </div>
+        </header>
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="index.html" class="back-button">← Terug naar NerdWijzer</a>
+        </div>
+        
+        <h1 class="verantwoording-title">Verantwoording</h1>
+        <div class="verantwoording-sub">Per stelling toelichting waarom deze is opgenomen in de NerdWijzer, met inspiratiebronnen en toelichting van de partijstandpunten. Voor elk standpunt is een bron opgenomen.</div>
+
+        <!-- Tabbed interface -->
+        <div class="stelling-tabs">
+            <h3>📋 Kies een stelling om te bekijken</h3>
+            <div class="tabs-grid" id="tabs-grid">
+                <div class="loading">Laden van stellingen...</div>
+            </div>
+        </div>
+
+        <!-- Content area -->
+        <div class="stelling-content" id="stelling-content">
+            <div class="welcome-message">
+                <span class="welcome-icon">🤓</span>
+                <p>Welkom bij de verantwoording van de NerdWijzer!</p>
+                <p>Kies hierboven een stelling om de uitleg en partijstandpunten te bekijken.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let questions = [];
+        let partyPositions = {};
+        let currentQuestionId = null;
+
+        // Load questions from JSON
+        async function loadQuestions() {
+            try {
+                const response = await fetch('questions.json?t=' + Date.now());
+                const data = await response.json();
+                return data.questions;
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                return null;
+            }
+        }
+
+        // Load party positions from JSON
+        async function loadPartyPositions() {
+            try {
+                const response = await fetch('party_positions.json?t=' + Date.now());
+                const data = await response.json();
+                return data.party_positions;
+            } catch (error) {
+                console.error('Error loading party positions:', error);
+                return null;
+            }
+        }
+
+        // Create tabs HTML
+        function createTabsHTML(questions) {
+            return questions.map(question => `
+                <button class="tab-button" data-question-id="${question.id}" onclick="showQuestion(${question.id})">
+                    <span class="tab-number">${question.id}</span>
+                    ${question.question.length > 50 ? question.question.substring(0, 50) + '...' : question.question}
+                </button>
+            `).join('');
+        }
+
+        // Show specific question
+        function showQuestion(questionId) {
+            // Update active tab
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-question-id="${questionId}"]`).classList.add('active');
+            
+            // Update content
+            const question = questions.find(q => q.id == questionId);
+            const questionData = partyPositions[questionId];
+            
+            if (question) {
+                const content = document.getElementById('stelling-content');
+                content.innerHTML = `
+                    <h3 class="stelling-title">${question.id}. ${question.question}</h3>
+                    <div class="uitleg">${question.explanation}</div>
+                    <div class="party-positions">
+                        <h4>Partijstandpunten:</h4>
+                        ${questionData ? createPartyPositionsHTML(questionData) : '<div class="loading">Laden van partijstandpunten...</div>'}
+                    </div>
+                `;
+                
+                currentQuestionId = questionId;
+            }
+        }
+
+        // Convert score numbers to descriptive text
+        function getScoreText(score) {
+            switch(score) {
+                case 1: return 'Helemaal niet mee eens';
+                case 2: return 'Mee oneens';
+                case 3: return 'Onverschillig';
+                case 4: return 'Mee eens';
+                case 5: return 'Helemaal mee eens';
+                default: return `Score: ${score}`;
+            }
+        }
+
+        // Create party positions HTML
+        function createPartyPositionsHTML(questionData) {
+            if (!questionData.positions) return '<div class="loading">Geen partijstandpunten beschikbaar</div>';
+            
+            const parties = Object.keys(questionData.positions);
+            const partyHTML = parties.map(party => {
+                const partyData = questionData.positions[party];
+                const partySource = partyData.source || '#';
+                
+                return `
+                    <div class="party-item">
+                        <div class="party-name">${party}</div>
+                        <div class="party-score score-${partyData.score}">${getScoreText(partyData.score)}</div>
+                        <div class="party-explanation">${partyData.explanation}</div>
+                        <a href="${partySource}" target="_blank" rel="noopener noreferrer" class="party-source">Bron ↗</a>
+                    </div>
+                `;
+            }).join('');
+            
+            return `<div class="party-grid">${partyHTML}</div>`;
+        }
+
+        // Initialize the page
+        async function initializePage() {
+            try {
+                // Load both data sources
+                const [questionsData, partyPositionsData] = await Promise.all([
+                    loadQuestions(),
+                    loadPartyPositions()
+                ]);
+
+                if (!questionsData) {
+                    console.error('Failed to load questions');
+                    return;
+                }
+
+                questions = questionsData;
+                partyPositions = partyPositionsData || {};
+
+                // Update tabs
+                const tabsGrid = document.getElementById('tabs-grid');
+                if (tabsGrid) {
+                    tabsGrid.innerHTML = createTabsHTML(questions);
+                }
+
+                // Show first question by default
+                if (questions.length > 0) {
+                    showQuestion(questions[0].id);
+                }
+
+            } catch (error) {
+                console.error('Error initializing page:', error);
+                
+                // Show error messages
+                document.getElementById('tabs-grid').innerHTML = '<div class="loading" style="color: #ff6b6b;">Fout bij laden van data</div>';
+                document.getElementById('stelling-content').innerHTML = '<div class="loading" style="color: #ff6b6b;">Fout bij laden van data</div>';
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializePage);
+
+        // Service Worker registratie voor PWA functionaliteit
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
