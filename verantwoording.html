@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover, shrink-to-fit=no">
     <meta name="description" content="Verantwoording en bronnen voor alle stellingen in de NerdWijzer stemwijzer">
     <meta name="theme-color" content="#1e3c72">
     <meta name="msapplication-TileColor" content="#1e3c72">
@@ -17,16 +17,16 @@
     <!-- Open Graph tags -->
     <meta property="og:title" content="NerdWijzer - Verantwoording">
     <meta property="og:description" content="Verantwoording en bronnen voor alle stellingen in de NerdWijzer stemwijzer">
-    <meta property="og:image" content="/nerdwijzer-logo-light.png">
+    <meta property="og:image" content="/images/nerdwijzer-logo-light.png">
     <meta property="og:url" content="/verantwoording.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NerdWijzer">
     
     <!-- Favicon voor alle apparaten -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="nerdwijzer-favicon.svg">
-    <link rel="apple-touch-icon" href="nerdwijzer-favicon.svg">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="images/nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="manifest" href="manifest.json">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -267,7 +267,7 @@
         <!-- Site Header -->
         <header class="site-header">
             <div class="header-logo">
-                <img src="nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img">
+                <a href="index.html"><img src="images/nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img"></a>
             </div>
         </header>
         
@@ -296,6 +296,30 @@
         </div>
     </div>
 
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-text">
+                Deze website is gemaakt door <a href="https://www.linkedin.com/in/randalpeelen/" target="_blank" rel="noopener noreferrer">Randal Peelen</a> en bedoeld voor vermaak. Hoewel de informatie met zorg is samengesteld, kan deze fouten bevatten en is niet gegarandeerd juist of afgestemd met politieke partijen.
+            </p>
+            <div class="footer-meta">
+                <a href="changelog.html" class="footer-link">Changelog</a>
+                <span class="footer-sep">•</span>
+                <a href="dankwoord.html" class="footer-link">Dankwoord</a>
+                <span class="footer-sep">•</span>
+                <a href="verantwoording.html" class="footer-link">Partijstandpunten</a>
+                <span class="footer-sep">•</span>
+                <a href="digitale-agenda.html" class="footer-link">Digitale Agenda</a>
+                <span class="footer-sep">•</span>
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <span class="footer-sep">•</span>
+                <span id="app-version">Versie: –</span>
+            </div>
+            <div class="footer-parties">
+                <small>NerdWijzer vergelijkt de standpunten van de volgende partijen: BBB, BIJ1, CDA, CU, D66, Denk, FvD, GL/PvdA, JA21, NSC, Piratenpartij, PvdD, PVV, SGP, SP, Volt, VVD</small>
+            </div>
+        </div>
+    </footer>
+
     <script>
         let questions = [];
         let partyPositions = {};
@@ -304,7 +328,7 @@
         // Load questions from JSON
         async function loadQuestions() {
             try {
-                const response = await fetch('questions.json?t=' + Date.now());
+                const response = await fetch(`questions.json?ts=${Date.now()}`);
                 const data = await response.json();
                 return data.questions;
             } catch (error) {
@@ -316,7 +340,7 @@
         // Load party positions from JSON
         async function loadPartyPositions() {
             try {
-                const response = await fetch('party_positions.json?t=' + Date.now());
+                const response = await fetch(`party_positions.json?ts=${Date.now()}`);
                 const data = await response.json();
                 return data.party_positions;
             } catch (error) {
@@ -341,7 +365,10 @@
             document.querySelectorAll('.tab-button').forEach(btn => {
                 btn.classList.remove('active');
             });
-            document.querySelector(`[data-question-id="${questionId}"]`).classList.add('active');
+            const activeButton = document.querySelector(`[data-question-id="${questionId}"]`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
             
             // Update content
             const question = questions.find(q => q.id == questionId);
@@ -359,6 +386,15 @@
                 `;
                 
                 currentQuestionId = questionId;
+                
+                // Smooth scroll to content section
+                setTimeout(() => {
+                    content.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start',
+                        inline: 'nearest'
+                    });
+                }, 100); // Small delay to ensure content is rendered
             }
         }
 
@@ -419,10 +455,8 @@
                     tabsGrid.innerHTML = createTabsHTML(questions);
                 }
 
-                // Show first question by default
-                if (questions.length > 0) {
-                    showQuestion(questions[0].id);
-                }
+                // Don't show any question by default - keep welcome message visible
+                // User must click on a statement to see content
 
             } catch (error) {
                 console.error('Error initializing page:', error);
@@ -435,6 +469,23 @@
 
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', initializePage);
+
+        // Load version info for footer
+        async function loadVersionInfo() {
+            try {
+                const response = await fetch(`version.json?ts=${Date.now()}`, { cache: 'no-store' });
+                const data = await response.json();
+                const el = document.getElementById('app-version');
+                if (el && data && data.version) {
+                    el.textContent = `Versie: ${data.version} (${data.date || ''})`.trim();
+                }
+            } catch (e) {
+                // Stil falen; footer is niet kritisch
+            }
+        }
+
+        // Load version info when page loads
+        document.addEventListener('DOMContentLoaded', loadVersionInfo);
 
         // Service Worker registratie voor PWA functionaliteit
         if ('serviceWorker' in navigator) {

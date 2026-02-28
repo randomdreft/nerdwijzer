@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover, shrink-to-fit=no">
     <meta name="description" content="Changelog en wijzigingsgeschiedenis van de NerdWijzer stemwijzer">
     <meta name="theme-color" content="#1e3c72">
     <meta name="msapplication-TileColor" content="#1e3c72">
@@ -17,16 +17,16 @@
     <!-- Open Graph tags -->
     <meta property="og:title" content="NerdWijzer - Changelog">
     <meta property="og:description" content="Changelog en wijzigingsgeschiedenis van de NerdWijzer stemwijzer">
-    <meta property="og:image" content="/nerdwijzer-logo-light.png">
+    <meta property="og:image" content="/images/nerdwijzer-logo-light.png">
     <meta property="og:url" content="/changelog.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NerdWijzer">
     
     <!-- Favicon voor alle apparaten -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="nerdwijzer-favicon.svg">
-    <link rel="apple-touch-icon" href="nerdwijzer-favicon.svg">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="images/nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="manifest" href="manifest.json">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +76,7 @@
         <!-- Site Header -->
         <header class="site-header">
             <div class="header-logo">
-                <img src="nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img">
+                <a href="index.html"><img src="images/nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img"></a>
             </div>
         </header>
         
@@ -88,6 +88,391 @@
         <div class="changelog-sub">Overzicht van alle wijzigingen en verbeteringen aan de NerdWijzer</div>
 
         <div class="changelog-entries">
+            <div class="changelog-entry">
+                <h3>🔒 NerdWijzer v1.0.4 - Privacy verbeteringen en beveiliging</h3>
+                <time>2025-09-22</time>
+                <span class="version-tag">v1.0.4</span>
+                <ul>
+                    <li><strong>Partij logo preloading:</strong> Alle partij logos worden nu vooraf geladen in willekeurige volgorde om privacy te beschermen. Server logs kunnen niet meer worden gebruikt om resultaten van bezoekers af te leiden.</li>
+                    <li><strong>AWStats beveiligd:</strong> De AWStats statistieken zijn nu beveiligd met een wachtwoord. Hoewel het leuk was om bezoekcijfers te delen, bleek het in de praktijk een datalek dat niet eenvoudig te dichten was.</li>
+                    <li><strong>Privacy-first benadering:</strong> De NerdWijzer respecteert nu volledig de privacy van bezoekers door te voorkomen dat stemresultaten kunnen worden afgeleid uit server logs.</li>
+                    <li><strong>Performance verbetering:</strong> Door logos vooraf te laden worden resultaten sneller weergegeven zonder privacy in te leveren.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎨 NerdWijzer v1.0.3 - Digitale agenda kleurcodering verbeterd</h3>
+                <time>2025-09-18</time>
+                <span class="version-tag">v1.0.3</span>
+                <ul>
+                    <li><strong>Kleurgradiënt geoptimaliseerd:</strong> Alle woordenaantallen in de digitale agenda hebben nu een consistente kleurcodering van rood (laagste) naar groen (hoogste) gebaseerd op werkelijke waarden.</li>
+                    <li><strong>50PLUS scores gecorrigeerd:</strong> De digitale score van 50PLUS is aangepast van 9 naar 3, wat hun positie verandert van 8e naar 18e plaats in de digitale agenda ranking.</li>
+                    <li><strong>Kleurindicatoren gestandaardiseerd:</strong> Privacy, AI, internet en klimaat scores gebruiken nu uniforme bereiken voor een eerlijke vergelijking tussen partijen.</li>
+                    <li><strong>Positie-ranking bijgewerkt:</strong> Alle partijposities in de digitale agenda zijn herberekend na de 50PLUS score-aanpassing voor een accurate weergave.</li>
+                    <li><strong>Visuele consistentie verbeterd:</strong> De kleurcodering (1-5 schaal) weerspiegelt nu correct de werkelijke focus van partijen op digitale onderwerpen.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>➕ NerdWijzer v1.0.2 - 50PLUS partij toegevoegd</h3>
+                <time>2025-09-18</time>
+                <span class="version-tag">v1.0.2</span>
+                <ul>
+                    <li><strong>50PLUS partij toegevoegd:</strong> De 50PLUS partij is volledig geïntegreerd in de NerdWijzer met alle 27 standpunten gebaseerd op hun verkiezingsprogramma en stemgedrag.</li>
+                    <li><strong>Partijstandpunten compleet:</strong> Alle 27 vragen hebben nu een 50PLUS positie met score, uitleg en bronvermelding uit officiële documenten.</li>
+                    <li><strong>Logo toegevoegd:</strong> Het 50PLUS logo (50plus.png) is toegevoegd aan de logo mapping voor correcte weergave in de resultaten.</li>
+                    <li><strong>Footer bijgewerkt:</strong> De partijlijst in de footer is bijgewerkt om 50PLUS te bevatten in alfabetische volgorde.</li>
+                    <li><strong>Karakteristieke standpunten:</strong> 50PLUS toont een duidelijke focus op veiligheid boven privacy, steun voor kernenergie, bescherming van jongeren en conservatieve benadering van digitale identiteit.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>📱 NerdWijzer v1.0.1 - Slider bug gefixt voor mobiele apparaten</h3>
+                <time>2025-09-18</time>
+                <span class="version-tag">v1.0.1</span>
+                <ul>
+                    <li><strong>Slider slepen gefixt:</strong> De slider kan nu ook op mobiele apparaten (smartphones, tablets) worden gesleept door touch event handlers toe te voegen.</li>
+                    <li><strong>Touch ondersteuning:</strong> Toegevoegd: touchstart, touchmove, touchend en touchcancel event handlers voor volledige mobiele ondersteuning.</li>
+                    <li><strong>Verbeterde touch targets:</strong> Grotere touch targets op mobiele apparaten (36px thumb, 48px track) voor betere gebruikerservaring.</li>
+                    <li><strong>Touch gedrag geoptimaliseerd:</strong> Voorkoming van ongewenst scrollen tijdens het slepen en betere touch feedback.</li>
+                    <li><strong>Cross-platform compatibiliteit:</strong> Slider werkt nu consistent op desktop (muis), mobiel (touch) en hybride apparaten (touchscreen laptops).</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎉 NerdWijzer v1.0.0 - Eindelijk af! Niks meer aan doen. #famouslastwords</h3>
+                <time>2025-09-17</time>
+                <span class="version-tag">v1.0.0</span>
+                <ul>
+                    <li><strong>Live vanaf de productie-omgeving nog even de totale score-berekening gerefactort. Zoals het hoort.</strong></li>
+                    <li><strong>Percentage berekening gefixt:</strong> Opgelost dat partijen ten onrechte 100% scoorden terwijl de werkelijke berekening lager was. Percentages worden nu correct weergegeven met 1 decimaal precisie.</li>
+                    <li><strong>Dynamisch maximum systeem:</strong> Het maximum van 100% wordt nu dynamisch berekend op basis van gebruiker instellingen (belangrijke vragen, digitale agenda). Geen percentages meer boven de 100%!</li>
+                    <li><strong>Consistente berekeningen:</strong> Hoofduitslag en gedetailleerde breakdown tonen nu altijd dezelfde percentages. Geen verwarring meer tussen verschillende weergaves.</li>
+                    <li><strong>Digitale agenda bonus gefixt:</strong> De weergave van de digitale agenda bonus is gecorrigeerd (toont nu "7/15 × 0.5" in plaats van vreemde waarden zoals "× 50.6").</li>
+                    <li><strong>Breakdown tabel verbeterd:</strong> De berekeningstabel toont nu correcte totalen zonder dubbel tellen van de digitale bonus.</li>
+                    <li><strong>Digitale agenda opties volledig klikbaar:</strong> Alle digitale agenda opties zijn nu volledig klikbaar, niet alleen de radio buttons maar ook de hele optie-kaarten.</li>
+                    <li><strong>Eindelijk af! Niks meer aan doen. #famouslastwords</strong></li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎮 NerdWijzer v0.9.1 - Geheime easteregg toegevoegd!</h3>
+                <time>2025-09-17</time>
+                <span class="version-tag">v0.9.1</span>
+                <ul>
+                    <li><strong>Konami Code easteregg:</strong> Een geheime easteregg is toegevoegd die wordt besproken in aflevering 435 van Met Nerds om Tafel. Probeer de klassieke Konami code op de voorpagina!</li>
+                    <li><strong>Obama meme popup:</strong> De easteregg toont een speciale popup met een Obama meme en confetti-effect.</li>
+                    <li><strong>Nerdy verrassing:</strong> "Ons advies: alle partijen zouden op jóu moeten stemmen!" - een leuke boodschap voor de echte nerds die de code vinden.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>✅ NerdWijzer v0.9.2 - Partijstandpunten volledig gecontroleerd en compleet</h3>
+                <time>2025-09-17</time>
+                <span class="version-tag">v0.9.2</span>
+                <ul>
+                    <li><strong>Alle partijstandpunten gecontroleerd:</strong> Alle 27 vragen zijn uitvoerig gecontroleerd en alle partijstandpunten zijn nu compleet met actuele informatie uit officiële verkiezingsprogramma's.</li>
+                    <li><strong>Piratenpartij volledig geüpdatet:</strong> Alle 27 standpunten van de Piratenpartij zijn geüpdatet met hun 2025 partijprogramma en correcte bronvermelding.</li>
+                    <li><strong>BIJ1 volledig geüpdatet:</strong> Alle 27 standpunten van BIJ1 zijn geüpdatet met hun 2025 verkiezingsprogramma en officiële bronnen.</li>
+                    <li><strong>URLs gecontroleerd en gerepareerd:</strong> Alle bronnen zijn gecontroleerd op geldigheid en foutieve URLs zijn gerepareerd voor een betrouwbare gebruikerservaring.</li>
+                    <li><strong>Feedback voorbereid:</strong> De partijen hebben nog geen feedback gegeven op hun standpunten, maar alle feedback die ontvangen wordt zal direct worden verwerkt om de nauwkeurigheid verder te verbeteren.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎨 NerdWijzer v0.9.0 - Grote visuele verbeteringen & berekening uitgelegd</h3>
+                <time>2025-09-17</time>
+                <span class="version-tag">v0.9.0</span>
+                <ul>
+                    <li><strong>Berekening uitgelegd:</strong> Volledige uitleg van de scoreberekening toegevoegd met formules, gewichting en voorbeelden. Verborgen achter een "📐 Berekening" knop voor een schone interface.</li>
+                    <li><strong>Vergelijkingstabel verbeterd:</strong> De comparison-table heeft nu hetzelfde mooie uiterlijk als de table-container met glasmorfisme effect, betere hover animaties en verbeterde styling.</li>
+                    <li><strong>Kolom "Jij" toegevoegd:</strong> De tabel toont nu "Jij" in plaats van "Jouw antwoord" en heeft een nieuwe "Score" kolom die het gewogen percentage per vraag toont.</li>
+                    <li><strong>Tip verplaatst:</strong> De keyboard tip "⌨️ Tip: Gebruik pijltjestoetsen, en Enter om te bevestigen" is verplaatst naar onder de slider-container voor betere visuele hiërarchie.</li>
+                    <li><strong>Partijstandpunten gecontroleerd:</strong> Nog meer partijstandpunten zijn gecontroleerd en geüpdatet met actuele informatie uit verkiezingsprogramma's.</li>
+                    <li><strong>Berekening gefinetuned:</strong> De inhoudelijke berekening van de partijmatch is verder verfijnd voor nog nauwkeurigere resultaten.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>💃 Nog meer partijstandpunten geüpdatet</h3>
+                <time>2025-09-16</time>
+                <span class="version-tag">v0.8.9</span>
+                <ul>
+                    <li><strong>Alle vragen tot en met vraag 20 zijn uitvoerig geüpdatet met gedetailleerde partijstandpunten en officiële bronnen.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎯 NerdWijzer v0.8.8 - Scoring algoritme verbeterd & partijstandpunten geüpdatet</h3>
+                <time>2025-09-15</time>
+                <span class="version-tag">v0.8.8</span>
+                <ul>
+                    <li><strong>Scoring algoritme verbeterd:</strong> Digitale agenda belang wordt nu evenwichtiger meegenomen - van 100 naar 20 bonuspunten om te voorkomen dat de Piratenpartij altijd wint bij "heel belangrijk".</li>
+                    <li><strong>Digitale vragen gewicht:</strong> Wanneer digitale agenda belangrijk is, krijgen digitale-gerelateerde vragen 1.5x meer gewicht in plaats van alleen een bonus.</li>
+                    <li><strong>Vraag 7 geüpdatet:</strong> Alle partijstandpunten over afluisterbevoegdheden vervangen met citaten uit officiële verkiezingsprogramma's (GL/PvdA, NSC, BBB, CDA, SP, CU, PvdD, FvD).</li>
+                    <li><strong>Vraag 8 geüpdatet:</strong> Standpunten over hackbevoegdheden geüpdatet voor Piratenpartij, PvdD en SP met officiële bronnen.</li>
+                    <li><strong>Vraag 9 geüpdatet:</strong> Standpunten over ethisch hacken geüpdatet voor VVD en Volt met officiële verkiezingsprogramma's.</li>
+                    <li><strong>Vraag 11 geüpdatet:</strong> Alle 16 partijstandpunten over AI-regulering vervangen met citaten uit officiële verkiezingsprogramma's.</li>
+                    <li><strong>Vraag 10 geüpdatet:</strong> Standpunten over gezichtsherkenning geüpdatet voor GL/PvdA, VVD, D66, CDA, PvdD, JA21 en Piratenpartij.</li>
+                    <li><strong>Betere bronvermelding:</strong> Alle updates voorzien van directe links naar officiële verkiezingsprogramma's en paginanummers.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>😊 Emoji's toegevoegd aan digitale agenda opties</h3>
+                <time>2025-09-15</time>
+                <span class="version-tag">v0.8.7</span>
+                <ul>
+                    <li><strong>Visuele verbetering:</strong> Emoji's toegevoegd aan de drie opties voor digitale agenda belangrijkheid.</li>
+                    <li><strong>💯 Heel belangrijk:</strong> 100 emoji voor gebruikers die digitale onderwerpen cruciaal vinden.</li>
+                    <li><strong>🤔 Redelijk belangrijk:</strong> Denkend gezicht voor gebruikers die digitale onderwerpen wel meewegen.</li>
+                    <li><strong>🤷 Niet belangrijk:</strong> Schouderophalen voor gebruikers die digitale onderwerpen niet relevant vinden.</li>
+                    <li><strong>Toegankelijkheid:</strong> Gebruikers kunnen nu direct zien wat elke optie betekent zonder tekst te hoeven lezen.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🏢 Partijstandpunten geüpdatet: Big Tech regulering (vraag 4)</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.6</span>
+                <ul>
+                    <li><strong>Vraag 4 geüpdatet:</strong> Partijstandpunten over "Big Tech regulering" zijn vervangen met actuele citaten uit verkiezingsprogramma's 2025.</li>
+                    <li><strong>GL/PvdA:</strong> Nieuwe quote over Europese afhankelijkheid van Amerikaanse techgiganten en pleidooi voor opknippen van Big Tech en heffing op niet-Europese bedrijven.</li>
+                    <li><strong>VVD:</strong> Nieuwe quote over grip op sociale media, transparantie over algoritmes en verbod op verslavende algoritmes die haat en extremisme bevorderen.</li>
+                    <li><strong>Actuele bronnen:</strong> Beide partijen hebben nu directe verwijzingen naar hun officiële verkiezingsprogramma's 2025.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🇪🇺 Partijstandpunten geüpdatet: EU datasoevereiniteit (vraag 3)</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.5</span>
+                <ul>
+                    <li><strong>Vraag 3 geüpdatet:</strong> Partijstandpunten over "EU datasoevereiniteit" zijn vervangen met actuele citaten uit verkiezingsprogramma's 2025.</li>
+                    <li><strong>GL/PvdA:</strong> Nieuwe quote over bouwen van Europese alternatieven en investeren in Europese digitale diensten.</li>
+                    <li><strong>VVD:</strong> Nieuwe quote over minder afhankelijkheid van Amerikaanse software en clouddiensten, pleit voor eigen technologische alternatieven.</li>
+                    <li><strong>Actuele bronnen:</strong> Beide partijen hebben nu directe verwijzingen naar hun officiële verkiezingsprogramma's 2025.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>📊 Alle 27 vragen nu beschikbaar</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.4</span>
+                <ul>
+                    <li><strong>Vragen limiet verhoogd:</strong> De quiz toont nu alle 27 vragen in plaats van slechts 22.</li>
+                    <li><strong>questionsPerQuiz bijgewerkt:</strong> De hardcoded waarde is verhoogd van 22 naar 27.</li>
+                    <li><strong>Volledige quiz ervaring:</strong> Gebruikers krijgen nu de complete set van alle beschikbare vragen.</li>
+                    <li><strong>Dynamische progress bar:</strong> De progress bar toont correct "Vraag X van 27".</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🔧 BIJ1 logo fix en footer updates</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.3</span>
+                <ul>
+                    <li><strong>BIJ1 logo gefixed:</strong> Het BIJ1 logo wordt nu correct weergegeven in resultaten door toevoeging aan de getPartyLogo functie.</li>
+                    <li><strong>Footer updates:</strong> Alle HTML pagina's hebben nu BIJ1 toegevoegd aan de partijen lijst in de footer.</li>
+                    <li><strong>Logo mapping:</strong> De logo mapping in index.html is bijgewerkt om 'BIJ1': 'bij1.png' te bevatten.</li>
+                    <li><strong>Volledige integratie:</strong> BIJ1 is nu volledig geïntegreerd in alle delen van de website.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🆕 Nieuwe partij toegevoegd: BIJ1</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.2</span>
+                <ul>
+                    <li><strong>BIJ1 toegevoegd:</strong> De partij BIJ1 is toegevoegd aan de stemwijzer met placeholder standpunten voor alle 27 vragen.</li>
+                    <li><strong>Logo beschikbaar:</strong> Het BIJ1 logo (bij1.png) is al beschikbaar in de logos map.</li>
+                    <li><strong>Placeholder data:</strong> Alle standpunten zijn voorzien van neutrale scores (3) en placeholder tekst die nog onderzocht moet worden.</li>
+                    <li><strong>Volledige integratie:</strong> BIJ1 verschijnt nu in alle resultaten en vergelijkingen van de stemwijzer.</li>
+                    <li><strong>Partijen lijst uitgebreid:</strong> De partijen lijst in questions.json is bijgewerkt om BIJ1 te bevatten.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🔓 Partijstandpunten geüpdatet: Open source software (vraag 2)</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.1</span>
+                <ul>
+                    <li><strong>Vraag 2 geüpdatet:</strong> Alle partijstandpunten over "open source software" zijn vervangen met actuele citaten uit verkiezingsprogramma's 2025.</li>
+                    <li><strong>GL/PvdA:</strong> Nieuwe quote over ondersteuning van betrouwbare opensourcesoftware en -hardware via aanbestedingen en subsidies.</li>
+                    <li><strong>D66:</strong> Nieuwe quote over verplichte open-source licentie voor alle publiek gefinancierde software.</li>
+                    <li><strong>SP:</strong> Nieuwe quote over het bevorderen van open source-technologie en open standaarden als noodzakelijk.</li>
+                    <li><strong>BBB:</strong> Nieuwe quote over actieve ondersteuning van open source-ontwikkelingen door de overheid.</li>
+                    <li><strong>PvdD:</strong> Nieuwe quote over stimuleren van open standaarden, open-sourcesoftware en open hardware.</li>
+                    <li><strong>Volt:</strong> Nieuwe quote over verplichte open data- en open source-aanpak voor Europese overheidsdiensten.</li>
+                    <li><strong>Piratenpartij:</strong> Nieuwe quote over faciliteren van open source ontwikkeling in publieke en private sector.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🏛️ Partijstandpunten geüpdatet: Ministerie van Digitale Zaken (vraag 1)</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.0</span>
+                <ul>
+                    <li><strong>Vraag 1 geüpdatet:</strong> Alle partijstandpunten over "Ministerie van Digitale Zaken" zijn vervangen met actuele citaten uit verkiezingsprogramma's 2025.</li>
+                    <li><strong>GL/PvdA:</strong> Nieuwe quote over centrale coördinatie van digitalisering met minister van Digitale Zaken.</li>
+                    <li><strong>NSC:</strong> Nieuwe quote over ministerie van Digitale Zaken en Staatsmodernisering.</li>
+                    <li><strong>D66:</strong> Nieuwe quote over overkoepelend ministerie van Digitale Zaken.</li>
+                    <li><strong>BBB:</strong> Nieuwe quote over minister van Digitalisering als vitaal belang.</li>
+                    <li><strong>SP:</strong> Score verhoogd van 2 naar 5 met nieuwe quote over specifieke instantie voor digitale zaken.</li>
+                    <li><strong>PvdD:</strong> Score verlaagd van 5 naar 4 met nieuwe quote over domeinoverstijgende regie.</li>
+                    <li><strong>Volt:</strong> Nieuwe quote over eigen ministerie van Digitale Zaken.</li>
+                    <li><strong>Piratenpartij:</strong> Nieuwe quote over ICT-kennis in besluitvorming en ministerraad.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>♿ Grote toegankelijkheidsupdate: Focus management, landmarks en keyboard navigatie</h3>
+                <time>2025-09-14</time>
+                <span class="version-tag">v0.8.0</span>
+                <ul>
+                    <li><strong>Heading hierarchy gefixed:</strong> H3 headings vervangen door H2 voor juiste semantische structuur (H1 → H2 → H3).</li>
+                    <li><strong>Landmark elementen toegevoegd:</strong> Header, main, section, nav en footer landmarks voor betere screen reader navigatie.</li>
+                    <li><strong>Focus visibility verbeterd:</strong> Alle focusbare elementen hebben nu duidelijke focus indicators met witte outline en blauwe glow.</li>
+                    <li><strong>Slider focus styling:</strong> Rating slider en thumb krijgen extra focus styling met vergroting en glow effect.</li>
+                    <li><strong>Rating scale keyboard toegankelijk:</strong> Alle 1-5 rating elementen zijn nu tabbaar en reageren op Enter/Spatie.</li>
+                    <li><strong>Party cards keyboard navigatie:</strong> Alle partijkaarten op resultaten pagina zijn nu volledig keyboard toegankelijk.</li>
+                    <li><strong>Focus management gefixed:</strong> "Opnieuw beginnen" knop zet focus correct naar logo in plaats van Changelog link.</li>
+                    <li><strong>Close button toegevoegd:</strong> X knop op vragen pagina om terug te gaan naar homepage, met Escape toets ondersteuning.</li>
+                    <li><strong>Visuele vraag transities:</strong> Fade-out/fade-in effecten bij vraag wijzigingen voor duidelijkere feedback.</li>
+                    <li><strong>Progress bar animaties:</strong> Pulse effecten en highlights bij voortgang updates.</li>
+                    <li><strong>ARIA labels en roles:</strong> Uitgebreide screen reader ondersteuning met beschrijvende labels.</li>
+                    <li><strong>Consistente focus styling:</strong> Alle interactieve elementen gebruiken dezelfde focus ring stijl voor uniformiteit.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🌐 Partijstandpunten geüpdatet: Internettoegang als basisvoorziening (vraag 27)</h3>
+                <time>2025-09-11</time>
+                <span class="version-tag">v0.7.1</span>
+                <ul>
+                    <li><strong>Vraag 27 geüpdatet:</strong> Alle partijstandpunten over "internettoegang als basisvoorziening" zijn vervangen met actuele informatie uit verkiezingsprogramma's en partijstandpunten.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>✨ Nieuwe workflow: Prioriteitsvinkjes bij elke vraag</h3>
+                <time>2025-09-11</time>
+                <span class="version-tag">v0.7.0</span>
+                <ul>
+                    <li><strong>Nieuwe workflow:</strong> Vervangen van de 'Belangrijke Onderwerpen' stap door een vinkje bij elke vraag</li>
+                    <li><strong>Directe prioritering:</strong> Gebruikers kunnen nu direct tijdens het beantwoorden aangeven welke vragen ze extra belangrijk vinden</li>
+                    <li><strong>Mooie styling:</strong> Het nieuwe prioriteitsvinkje heeft gradient effecten en past perfect bij het design</li>
+                    <li><strong>Verbeterde UX:</strong> Minder stappen in het proces voor een vlottere gebruikerservaring</li>
+                    <li><strong>Aangepaste instructies:</strong> "Hoe het werkt" sectie is bijgewerkt om de nieuwe workflow te reflecteren</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🙏 Dankwoord pagina toegevoegd en beta-melding verbeterd</h3>
+                <time>2025-09-11</time>
+                <span class="version-tag">v0.6.9</span>
+                <ul>
+                    <li><strong>Nieuwe dankwoord pagina:</strong> Een nieuwe pagina toegevoegd die erkent en bedankt alle hulp bij de ontwikkeling van de NerdWijzer.</li>
+                    <li><strong>Dank aan Cursor:</strong> Erkenning voor alle hulp met het vibecoden en technische ontwikkeling.</li>
+                    <li><strong>Dank aan ChatGPT 5 Pro:</strong> Erkenning voor het denk- en uitzoekwerk bij politieke analyse en content creatie.</li>
+                    <li><strong>Dank aan Cindy, Han en Maartje:</strong> Erkenning voor het checken van veel stellingen en kwaliteitscontrole.</li>
+                    <li><strong>Footer integratie:</strong> Dankwoord link toegevoegd aan alle footers van de website voor eenvoudige toegang.</li>
+                    <li><strong>Beta-melding verbeterd:</strong> Contact informatie toegevoegd met link naar Slack van Met Nerds om Tafel kanaal #nerdwijzer-feedback.</li>
+                    <li><strong>Consistente styling:</strong> Dankwoord pagina gebruikt dezelfde opmaak als de changelog pagina voor visuele consistentie.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>📝 Stellingen geüpdatet: Vervangen en uitgebreid met nieuwe onderwerpen</h3>
+                <time>2025-09-10</time>
+                <span class="version-tag">v0.6.8</span>
+                <ul>
+                    <li><strong>Stelling 16 vervangen:</strong> "De overheid moet onderzoek naar geo-engineering financieren" is vervangen door "Verplichte leeftijdscheck voor sociale media" - een actueler onderwerp over online veiligheid en privacy.</li>
+                    <li><strong>Stelling 17 vervangen:</strong> "Vanaf 2030 mogen er geen nieuwe benzine- en dieselauto's meer worden verkocht" is vervangen door "Europese digitale identiteit en digitale euro invoeren" - focus op Europese digitale infrastructuur.</li>
+                    <li><strong>5 nieuwe stellingen toegevoegd (23-27):</strong> De stemwijzer is uitgebreid met belangrijke onderwerpen: beperking online porno, verzwaring stroomnet, salderingsregeling zonnepanelen, slimme energie-opslag, en internettoegang als basisvoorziening.</li>
+                    <li><strong>Placeholder partijstandpunten:</strong> Alle nieuwe en vervangen stellingen hebben placeholder partijstandpunten die nog onderzocht moeten worden.</li>
+                    <li><strong>Uitgebreide thema's:</strong> De stemwijzer behandelt nu 27 stellingen en dekt een breder spectrum van digitale, energie- en sociale onderwerpen.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🏠 Homepage verbeteringen: Start knop verplaatst en partijstandpunten knop toegevoegd</h3>
+                <time>2025-09-10</time>
+                <span class="version-tag">v0.6.7</span>
+                <ul>
+                    <li><strong>Start knop verplaatst:</strong> De "Start de NerdWijzer" knop staat nu hoger op de pagina, tussen de welkomsttekst en "Hoe het werkt" sectie.</li>
+                    <li><strong>Nieuwe partijstandpunten knop:</strong> Onderaan de homepage is een nieuwe knop "Bekijk de partijstandpunten" toegevoegd die direct naar de verantwoording pagina leidt.</li>
+                    <li><strong>Verbeterde gebruikerservaring:</strong> De start knop is nu prominenter zichtbaar en gebruikers kunnen eenvoudig de partijstandpunten bekijken zonder eerst de stemwijzer te doorlopen.</li>
+                    <li><strong>Visuele consistentie:</strong> De nieuwe knop heeft een subtiele styling die past bij het algemene design van de website.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>📝 Inhoudelijke correcties en B1-taalniveau update</h3>
+                <time>2025-09-08</time>
+                <span class="version-tag">v0.6.6</span>
+                <ul>
+                    <li><strong>Inhoudelijke correcties:</strong> Verschillende partijstandpunten zijn gecorrigeerd en geüpdatet met actuele informatie.</li>
+                    <li><strong>CDA Big Tech regulering:</strong> Tekst aangepast van "privacy schenden" naar "privacyschending" voor correcte spelling.</li>
+                    <li><strong>JA21 kernenergie:</strong> Oude bronlink vervangen door actuele link naar hun kernenergieplan "Hoogste tijd voor kernenergie!".</li>
+                    <li><strong>DENK kennismigratie:</strong> Verouderde bronlink vervangen door officiële standpuntenpagina over Migratie en Asiel.</li>
+                    <li><strong>Kwaliteitscontrole:</strong> Hele JSON-bestand gecontroleerd - alle scores, uitleg en bronnen zijn correct en consistent.</li>
+                    <li><strong>B1-taalniveau:</strong> Alle uitlegteksten herschreven naar B1-leesniveau voor betere toegankelijkheid.</li>
+                    <li><strong>Taalverbeteringen:</strong> Moeilijke termen versimpeld, lange zinnen opgesplitst en uitleg duidelijker gemaakt.</li>
+                    <li><strong>Backup bestand:</strong> Nieuwe versie opgeslagen als party_positions_b1.json voor referentie.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🏴‍☠️ Piratenpartij toegevoegd met goed onderzochte standpunten</h3>
+                <time>2025-09-07</time>
+                <span class="version-tag">v0.6.5</span>
+                <ul>
+                    <li><strong>Nieuwe partij toegevoegd:</strong> De Piratenpartij is nu volledig geïntegreerd in de stemwijzer met alle 22 stellingen.</li>
+                    <li><strong>Gedetailleerde standpunten:</strong> Elke positie is voorzien van uitgebreide verklaringen en bronverwijzingen naar hun partijprogramma.</li>
+                    <li><strong>Digitale focus:</strong> De partij brengt unieke standpunten over privacy, digitale rechten, open source en platformmacht.</li>
+                    <li><strong>Bronvermelding:</strong> Alle standpunten zijn gebaseerd op hun officiële partijprogramma en wiki-documentatie.</li>
+                    <li><strong>Volledige integratie:</strong> De partij verschijnt nu in alle resultaten en vergelijkingen van de stemwijzer.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🎨 Nieuwe slider design en visuele verbeteringen</h3>
+                <time>2025-09-07</time>
+                <span class="version-tag">v0.6.4</span>
+                <ul>
+                    <li><strong>Compleet nieuwe slider:</strong> Volledig nieuwe slider gebouwd from scratch met moderne design en betere UX.</li>
+                    <li><strong>Rode accentkleur thumb:</strong> Slider thumb gebruikt nu de rode/roze accentkleur (#ff6b6b) voor betere visuele consistentie.</li>
+                    <li><strong>Verbeterde zichtbaarheid:</strong> Thumb is nu volledig zichtbaar bovenop de slider zonder clipping problemen.</li>
+                    <li><strong>Enhanced visuals:</strong> Grotere container, betere typography, smooth animaties en verbeterde hover effects.</li>
+                    <li><strong>Responsive design:</strong> Aangepaste mobile styling voor optimale weergave op alle apparaten.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>📝 Vragen geüpdatet en UI verbeteringen</h3>
+                <time>2025-09-07</time>
+                <span class="version-tag">v0.6.3</span>
+                <ul>
+                    <li><strong>Volledige vraagherziening:</strong> Alle 22 vragen zijn geüpdatet met nieuwe B1-niveau uitleg voor betere toegankelijkheid.</li>
+                    <li><strong>Bredere vraag-uitleg:</strong> Max-width verhoogd van 600px naar 800px voor betere leesbaarheid tijdens het invullen.</li>
+                    <li><strong>Slider gradient fix:</strong> Uitlijning van de gradient achtergrond bij de slider is gerepareerd voor consistente visuele weergave.</li>
+                    <li><strong>Verbeterde gebruikservaring:</strong> Alle wijzigingen dragen bij aan een betere toegankelijkheid en gebruiksvriendelijkheid.</li>
+                </ul>
+            </div>
+            
+            <div class="changelog-entry">
+                <h3>🔄 Cachebuster geïmplementeerd voor alle JSON bestanden</h3>
+                <time>2025-09-07</time>
+                <span class="version-tag">v0.6.2</span>
+                <ul>
+                    <li><strong>Consistente cachebuster:</strong> Alle JSON bestanden (questions.json, party_positions.json, version.json) gebruiken nu een timestamp parameter voor cache busting.</li>
+                    <li><strong>Service worker update:</strong> JSON bestanden worden niet meer gecached door de service worker, zodat wijzigingen direct zichtbaar zijn.</li>
+                    <li><strong>Verbeterde cache strategie:</strong> Statische bestanden (HTML, CSS, afbeeldingen) worden nog steeds gecached voor betere prestaties.</li>
+                    <li><strong>Directe updates:</strong> Wijzigingen aan vragen, partijstandpunten en versie-informatie zijn nu direct beschikbaar zonder browser cache te hoeven legen.</li>
+                </ul>
+            </div>
+            
             <div class="changelog-entry">
                 <h3>🔧 Bugfixes en kleine verbeteringen</h3>
                 <time>2025-09-07</time>
@@ -101,7 +486,7 @@
             
             <div class="changelog-entry">
                 <h3>📝 Vragen volledig herzien en geüpdatet</h3>
-                <time>2025-01-27</time>
+                <time>2025-09-07</time>
                 <span class="version-tag">v0.6.0</span>
                 <ul>
                     <li><strong>Alle 22 vragen herzien:</strong> Nieuwe, duidelijkere formuleringen en toegankelijkere uitleg.</li>
@@ -352,7 +737,7 @@
                 <time>2025-09-03</time>
                 <span class="version-tag">v0.4.23</span>
                 <ul>
-                    <li>Drie nieuwe logo bestanden geïmplementeerd: nerdwijzer-logo-light.png, nerdwijzer-logo-dark.png, en nerdwijzer-mark-1024.png.</li>
+                    <li>Drie nieuwe logo bestanden geïmplementeerd: images/nerdwijzer-logo-light.png, images/nerdwijzer-logo-dark.png, en images/nerdwijzer-mark-1024.png.</li>
                     <li>Logo's toegevoegd aan alle pagina's: header, welcome screen, resultaten, prioriteiten, vergelijking en vragen.</li>
                     <li>Emoji gewijzigd van 🚀 naar 🤓 op de welcome screen.</li>
                     <li>Footer logo's verwijderd uit alle pagina's.</li>
@@ -683,7 +1068,7 @@
                 <time>2025-09-02</time>
                 <span class="version-tag">v0.2.3</span>
                 <ul>
-                    <li>Footer toegevoegd met disclaimer over Randal Peelen en entertainment doel.</li>
+                    <li>Footer toegevoegd met disclaimer over <a href="https://www.linkedin.com/in/randalpeelen/" target="_blank" rel="noopener noreferrer">Randal Peelen</a> en entertainment doel.</li>
                     <li>Versie-informatie toegevoegd en wordt bijgewerkt bij elke wijziging.</li>
                     <li>Changelog pagina toegevoegd met overzicht van alle wijzigingen.</li>
                 </ul>
@@ -713,7 +1098,7 @@
                 <time>2025-08-31</time>
                 <span class="version-tag">v0.1.0</span>
                 <ul>
-                    <li>Eerste versie van NerdWijzer gemaakt door Randal Peelen.</li>
+                    <li>Eerste versie van NerdWijzer gemaakt door <a href="https://www.linkedin.com/in/randalpeelen/" target="_blank" rel="noopener noreferrer">Randal Peelen</a>.</li>
                     <li>Basis functionaliteit: 5-punts schaal voor antwoorden.</li>
                     <li>Dummy data toegevoegd voor vragen en partijstandpunten.</li>
                     <li>Resultaten pagina geïmplementeerd.</li>
@@ -726,8 +1111,49 @@
         </div>
     </div>
 
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-text">
+                Deze website is gemaakt door <a href="https://www.linkedin.com/in/randalpeelen/" target="_blank" rel="noopener noreferrer">Randal Peelen</a> en bedoeld voor vermaak. Hoewel de informatie met zorg is samengesteld, kan deze fouten bevatten en is niet gegarandeerd juist of afgestemd met politieke partijen.
+            </p>
+            <div class="footer-meta">
+                <a href="changelog.html" class="footer-link">Changelog</a>
+                <span class="footer-sep">•</span>
+                <a href="dankwoord.html" class="footer-link">Dankwoord</a>
+                <span class="footer-sep">•</span>
+                <a href="verantwoording.html" class="footer-link">Partijstandpunten</a>
+                <span class="footer-sep">•</span>
+                <a href="digitale-agenda.html" class="footer-link">Digitale Agenda</a>
+                <span class="footer-sep">•</span>
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <span class="footer-sep">•</span>
+                <span id="app-version">Versie: –</span>
+            </div>
+            <div class="footer-parties">
+                <small>NerdWijzer vergelijkt de standpunten van de volgende partijen: 50PLUS, BBB, BIJ1, CDA, CU, D66, Denk, FvD, GL/PvdA, JA21, NSC, Piratenpartij, PvdD, PVV, SGP, SP, Volt, VVD</small>
+            </div>
+        </div>
+    </footer>
+
     <!-- Service Worker registratie voor PWA functionaliteit -->
     <script>
+        // Load version info for footer
+        async function loadVersionInfo() {
+            try {
+                const response = await fetch(`version.json?ts=${Date.now()}`, { cache: 'no-store' });
+                const data = await response.json();
+                const el = document.getElementById('app-version');
+                if (el && data && data.version) {
+                    el.textContent = `Versie: ${data.version} (${data.date || ''})`.trim();
+                }
+            } catch (e) {
+                // Stil falen; footer is niet kritisch
+            }
+        }
+
+        // Load version info when page loads
+        document.addEventListener('DOMContentLoaded', loadVersionInfo);
+
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js')

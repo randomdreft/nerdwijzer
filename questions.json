@@ -2,113 +2,138 @@
   "questions": [
     {
       "id": 1,
-      "question": "Richt een ministerie van Digitale Zaken op.",
-      "explanation": "Digitale taken zijn nu verspreid over meerdere ministeries. Dat maakt beleid traag en onduidelijk. Eén ministerie met eigen budget en mandaat zorgt voor duidelijke regie en aanspreekbaarheid."
+      "question": "Er moet een ministerie van Digitale Zaken komen.",
+      "explanation": "Digitale onderwerpen zoals internetveiligheid, data, AI en netwerken vallen nu onder verschillende ministeries. Daardoor is beleid vaak traag en onduidelijk. Veel mensen zien IT nog als een hulpmiddel, terwijl het inmiddels overal in de samenleving zit: in zorg, onderwijs, werk en zelfs in verkiezingen. Voorstanders vinden dat digitalisering groot en belangrijk genoeg is voor een eigen ministerie. Tegenstanders zeggen dat het ook kan worden geregeld binnen de bestaande ministeries. Deze vraag zit in de stemwijzer omdat digitalisering steeds meer invloed heeft op ons dagelijks leven."
     },
     {
       "id": 2,
-      "question": "Maak open source de norm bij overheidssoftware.",
-      "explanation": "Open source voorkomt afhankelijkheid van één leverancier, maakt controle en hergebruik makkelijker en vergroot transparantie. Alleen afwijken als veiligheid of privacy dat echt eisen."
+      "question": "De overheid gebruikt open source, tenzij dat niet kan.",
+      "explanation": "De overheid werkt veel met software. Vaak is die gesloten en daardoor afhankelijk van grote bedrijven. Open source betekent dat de broncode openstaat voor controle en hergebruik. Voorstanders vinden dat dit veiliger, goedkoper en transparanter is. Tegenstanders zeggen dat open source niet altijd past, bijvoorbeeld bij systemen die extreem gevoelig of complex zijn. Deze vraag zit in de stemwijzer omdat software de basis vormt van veel overheidstaken."
     },
     {
       "id": 3,
-      "question": "Host overheidsdata alleen bij EU-leveranciers zonder Amerikaanse moeder.",
-      "explanation": "EU-hosting helpt, maar beschermt niet als een bedrijf onder de Amerikaanse CLOUD Act valt. Kies leveranciers met een volledige EU-juridische basis en gebruik versleuteling met eigen sleutels."
+      "question": "Overheidsdata en belangrijke processen moeten in de EU worden gehost.",
+      "explanation": "De overheid gebruikt veel data en systemen, bijvoorbeeld voor belastingen, paspoorten en gezondheidszorg. Soms staan die bij bedrijven die onder Amerikaanse wetgeving vallen, zoals Microsoft of Amazon. Dan kan de Amerikaanse overheid toch toegang eisen, ook als de servers in Europa staan. Voorstanders vinden dat hosting binnen de EU bij echt Europese leveranciers het veiligst is. Tegenstanders zeggen dat dat duurder kan zijn en dat je dan minder keuze hebt uit leveranciers. Deze vraag zit in de stemwijzer omdat digitale soevereiniteit belangrijk is voor de veiligheid en onafhankelijkheid van Nederland."
     },
     {
       "id": 4,
-      "question": "Reguleer big tech en splits bedrijven op als dat nodig is.",
-      "explanation": "Enkele techreuzen controleren toegang tot markten en standaarden. Strenge regels en handhaving zijn nodig. Als dat niet genoeg werkt, moet opsplitsen van bedrijven mogelijk zijn."
+      "question": "Big Tech moet streng worden gereguleerd en zo nodig worden opgesplitst.",
+      "explanation": "Bedrijven als Google, Apple, Amazon en Meta hebben veel macht. Ze bepalen welke apps of diensten toegang krijgen tot de markt en welke standaarden we gebruiken. Daardoor is het bijna onmogelijk om Europese of Nederlandse alternatieven te ontwikkelen, omdat die in het begin vaak veel duurder zijn. Voorstanders vinden dat strenge regels en eventueel opsplitsen nodig zijn om concurrentie en keuzevrijheid te beschermen. Tegenstanders zeggen dat te strenge regels innovatie kunnen remmen en bedrijven uit Europa wegjagen. Deze vraag zit in de stemwijzer omdat de macht van Big Tech directe gevolgen heeft voor innovatie en keuzevrijheid."
     },
     {
       "id": 5,
-      "question": "Investeer in eigen ontwikkelteams bij de overheid.",
-      "explanation": "De overheid leunt zwaar op dure externen. Dat leidt tot kennisverlies en afhankelijkheid. Sterke interne teams vergroten veiligheid, continuïteit en onderhandelingsmacht."
+      "question": "De overheid moet minder uitbesteden en meer eigen IT-teams bouwen.",
+      "explanation": "De overheid besteedt veel IT-projecten uit aan externe bedrijven. Daardoor gaat kennis verloren en wordt de overheid afhankelijk van dure leveranciers. Voorstanders vinden dat sterke interne teams meer controle, veiligheid en continuïteit bieden. Tegenstanders zeggen dat het duurder is om veel specialisten zelf in dienst te nemen en dat externe kennis soms nodig is. Deze vraag zit in de stemwijzer omdat de manier waarop de overheid IT organiseert grote invloed heeft op kosten en betrouwbaarheid van digitale diensten."
     },
     {
       "id": 6,
       "question": "Geen chatcontrol of scannen van privéberichten.",
-      "explanation": "Scannen van apparaten breekt versleuteling en opent de deur naar massasurveillance. Misbruik moet gericht worden bestreden, niet door universeel meekijken in ieders berichten."
+      "explanation": "De EU bespreekt plannen voor \"chatcontrol\". Dat betekent dat berichten op je telefoon of computer automatisch worden gescand, ook als ze versleuteld zijn. Voorstanders vinden dat dit helpt bij de opsporing van misbruik. Tegenstanders zeggen dat dit massale surveillance is en dat iedereen zo zijn recht op privé-communicatie verliest. Deze vraag zit in de stemwijzer omdat het gaat over de balans tussen veiligheid en privacy."
     },
     {
       "id": 7,
       "question": "Geen ruimere bevoegdheden voor bulkinterceptie.",
-      "explanation": "Ongericht verzamelen van communicatiegegevens raakt ook onschuldige burgers. Kies voor gerichte interceptie met sterk onafhankelijk toezicht."
+      "explanation": "De geheime diensten mogen communicatie onderscheppen. Met bulkinterceptie verzamelen ze grote hoeveelheden data tegelijk, ook van onschuldige burgers die nergens van worden verdacht. Dit staat bekend als de \"Sleepwet\". Voorstanders vinden dat dit nodig kan zijn om terrorisme of spionage te bestrijden. Tegenstanders zeggen dat het te ver gaat en de privacy van burgers aantast. Deze vraag zit in de stemwijzer omdat het gaat over de balans tussen veiligheid en vrijheid."
     },
     {
       "id": 8,
-      "question": "Politie mag alleen hacken na toets door een toezichthouder.",
-      "explanation": "Hackbevoegdheid is ingrijpend en foutgevoelig. Vereis een onafhankelijke toets op noodzaak en proportionaliteit. Logging en een openbaar jaarverslag zorgen voor verantwoording achteraf."
+      "question": "Politie mag alleen hacken na toets door een onafhankelijke toezichthouder.",
+      "explanation": "De politie mag bij onderzoeken computers en telefoons hacken om bewijs te vinden. Dat heet de hackbevoegdheid. Voorstanders vinden dat dit helpt bij opsporing en dat het nodig is bij zware misdrijven. Tegenstanders zeggen dat hacken ingrijpend en foutgevoelig is en dat een onafhankelijke toets noodzakelijk is. Deze vraag zit in de stemwijzer omdat hacken de privacy en veiligheid van iedereen kan raken."
     },
     {
       "id": 9,
-      "question": "Bescherm ethische hackers wettelijk.",
-      "explanation": "Meldingen van beveiligingslekken gebeuren nu vaak op basis van afspraken, niet via wet. Leg vast dat goedwillende hackers beschermd zijn en stimuleer beloningen of erkenning."
+      "question": "Bescherm ethische hackers en responsible disclosure wettelijk.",
+      "explanation": "Ethische hackers melden vrijwillig beveiligingslekken. Dat heet responsible disclosure. Voorstanders vinden dat ze wettelijke bescherming verdienen, zodat ze niet gestraft worden en meer meldingen durven doen. Tegenstanders zeggen dat dit ruimte kan geven aan hackers die niet altijd zorgvuldig werken. Deze vraag zit in de stemwijzer omdat zulke meldingen bijdragen aan een veiligere digitale samenleving."
     },
     {
       "id": 10,
       "question": "Verbied realtime gezichtsherkenning en massale biometrie in de openbare ruimte.",
-      "explanation": "Deze technologie tast grondrechten aan en vergroot de kans op fouten. Een hard verbod voorkomt massasurveillance. Wie het daar niet mee eens is, kan nuance zoeken in uitzonderingen."
+      "explanation": "Gezichtsherkenning kan mensen op straat direct identificeren. Voorstanders vinden dat dit nuttig is voor opsporing en veiligheid. Tegenstanders zeggen dat de foutkans groot is en dat dit leidt tot discriminatie en massasurveillance. Deze vraag zit in de stemwijzer omdat biometrie direct invloed heeft op vrijheid en gelijkheid."
     },
     {
       "id": 11,
-      "question": "Pauzeer frontier-AI tot toezicht en normen op orde zijn.",
-      "explanation": "Frontier-AI zijn de meest geavanceerde modellen, zoals ChatGPT of Gemini, die grote risico's kunnen hebben. Zet een pauze totdat duidelijke veiligheidsnormen en toezicht geregeld zijn."
+      "question": "Zet een pauze op de ontwikkeling en uitrol van frontier-AI tot toezicht en regels op orde zijn.",
+      "explanation": "Frontier-AI zijn de meest geavanceerde modellen, zoals ChatGPT of Gemini. Ze brengen grote risico's mee, zoals verkeerde informatie of misbruik. Sommige experts vrezen zelfs dat dit kan leiden tot kunstmatige algemene intelligentie (AGI), die de mens fataal kan worden. Voorstanders vinden dat een pauze nodig is om eerst goede veiligheidsnormen en toezicht te regelen. Tegenstanders zeggen dat dit innovatie remt en dat Nederland zichzelf buitenspel zet. Deze vraag zit in de stemwijzer omdat AI snel invloed krijgt op werk, onderwijs en democratie."
     },
     {
       "id": 12,
-      "question": "Investeer fors in AI, chips en fotonica in Nederland.",
-      "explanation": "Nederland heeft sterke kennis en bedrijven in deze sectoren. Door fors te investeren blijft ons land concurrerend en verkleinen we afhankelijkheid van andere regio's."
+      "question": "Nederland moet fors investeren in AI, chips en fotonica.",
+      "explanation": "AI, chips en fotonica zijn sleuteltechnologieën. AI gaat over slimme software. Chips zijn de rekenkernen in apparaten. Fotonica gebruikt licht in plaats van elektriciteit om informatie te versturen. Voorstanders vinden dat investeren hierin nodig is om minder afhankelijk te zijn van landen als China en de VS. Tegenstanders zeggen dat Nederland niet alles zelf kan en dat investeringen beter in andere sectoren kunnen gaan. Deze vraag zit in de stemwijzer omdat technologie en economie steeds meer samenhangen."
     },
     {
       "id": 13,
-      "question": "Verplicht uitleg en documentatie bij elke overheids-AI.",
-      "explanation": "Burgers moeten weten wanneer AI meebeslist. Documenteer datasets, doelen en werking. Maak bezwaar en controle mogelijk. Transparantie hoort standaard te zijn."
+      "question": "Maak uitleg en documentatie verplicht bij elke inzet van AI door de overheid.",
+      "explanation": "De overheid gebruikt steeds vaker AI, bijvoorbeeld voor toeslagen of fraude­detectie. Voorstanders vinden dat uitleg en documentatie verplicht moeten zijn, zodat burgers weten hoe besluiten worden genomen en fouten sneller ontdekt worden. Tegenstanders zeggen dat dit te veel tijd en geld kost en dat niet alles altijd uit te leggen is. Deze vraag zit in de stemwijzer omdat transparantie nodig is voor vertrouwen en gelijke behandeling."
     },
     {
       "id": 14,
-      "question": "Verbied dodelijke autonome wapens internationaal.",
-      "explanation": "Nederland steunde al VN-stappen richting regulering. Leg vast dat er altijd menselijke controle is bij het gebruik van wapens."
+      "question": "Nederland moet een internationaal verbod op dodelijke autonome wapens steunen.",
+      "explanation": "Autonome wapens zijn systemen die zonder menselijk ingrijpen doelen kunnen aanvallen. Voorstanders vinden dat zulke wapens nooit gebruikt mogen worden en dat een verbod nodig is om mensenrechten te beschermen. Tegenstanders zeggen dat een verbod moeilijk te handhaven is en dat landen zonder verbod een militair voordeel krijgen. Deze vraag zit in de stemwijzer omdat het gaat over oorlog, vrede en menselijke controle."
     },
     {
       "id": 15,
-      "question": "Bouw nieuwe kerncentrales met publieke regie en realistische planning.",
-      "explanation": "Het kabinet wil meer kernenergie. Doorlooptijd en kosten zijn hoog, dus publieke regie en strakke projectbegeleiding zijn nodig. Kies technologie-neutraal."
+      "question": "Nederland moet meer kerncentrales bouwen.",
+      "explanation": "Kernenergie kan zorgen voor stabiele energie en minder CO₂-uitstoot. Voorstanders vinden dat Nederland snel meer kerncentrales moet bouwen om klimaatdoelen te halen en energiezekerheid te garanderen. Tegenstanders zeggen dat kerncentrales te duur zijn, te lang duren en dat er gevaarlijk kernafval overblijft. Omdat de keuzes groot en kostbaar zijn, is duidelijke publieke regie en planning belangrijk. Deze vraag zit in de stemwijzer omdat kernenergie een grote rol kan spelen in klimaat en energie."
     },
     {
       "id": 16,
-      "question": "Financier onderzoek naar geo-engineering onder strikte voorwaarden.",
-      "explanation": "Klimaatverandering vraagt om kennis van mogelijke ingrepen, zoals zonlicht terugkaatsen. Doe alleen kleine, gecontroleerde onderzoeken met open data en strikte ethische regels."
+      "question": "Verplichte leeftijdscheck voor sociale media",
+      "explanation": "Kinderen komen te makkelijk op sociale media. Voorstanders willen een harde leeftijdscheck door platforms zelf. Tegenstanders vinden dat dit privacy schaadt en eenvoudig te omzeilen is. Deze vraag raakt online veiligheid, privacy en handhaving."
     },
     {
       "id": 17,
-      "question": "Stop verkoop van nieuwe benzine- en dieselauto's en -bestelauto's in 2030.",
-      "explanation": "De EU stopt in 2035. Nederland kan eerder stoppen en zo laadnetwerken en innovatie versnellen. Combineer met betaalbare elektrische alternatieven."
+      "question": "Europese digitale identiteit en digitale euro invoeren",
+      "explanation": "Een EU-digitale ID en digitale euro moeten inloggen en betalen makkelijker maken. Voorstanders zien gemak en minder fraude. Tegenstanders vrezen controle en datamisbruik. Deze keuze gaat over vertrouwen in Europese digitale infrastructuur."
     },
     {
       "id": 18,
-      "question": "Voer een hoge, voorspelbare CO2-prijs voor industrie.",
-      "explanation": "De CO2-heffing bestaat al, maar uitzonderingen maken haar zwak. Maak de prijs hoog en stabiel, zodat bedrijven echt investeren in schonere productie."
+      "question": "Voer een stevige en voorspelbare extra CO₂-prijs voor de industrie in.",
+      "explanation": "Nederland heeft al een CO₂-heffing naast het Europese handelssysteem (ETS). Voorstanders vinden dat de prijs hoger en voorspelbaar moet zijn, zodat bedrijven echt investeren in schone productie. Tegenstanders zeggen dat dit banen kan kosten, bedrijven kan wegjagen en de internationale concurrentie kan schaden. Deze vraag zit in de stemwijzer omdat de industrie een groot deel van de uitstoot veroorzaakt."
     },
     {
       "id": 19,
       "question": "Stop alle subsidies voor laagwaardige biomassa.",
-      "explanation": "Biomassa levert vaak weinig klimaatwinst op. Stop met subsidiëren van laagwaardige toepassingen en richt steun op alternatieven die wél effectief zijn."
+      "explanation": "Biomassa is organisch materiaal dat wordt verbrand voor energie, zoals houtpellets. Voorstanders vinden dat dit te weinig klimaatwinst oplevert en dat subsidie beter naar zon en wind kan gaan. Tegenstanders zeggen dat biomassa nog steeds een rol kan spelen in de energiemix en dat stoppen te snel gaat. Er bestaat ook hoogwaardige biomassa, bijvoorbeeld biogas uit afvalstromen, maar dat valt niet onder deze stelling. Deze vraag zit in de stemwijzer omdat subsidie­keuzes bepalen welke energiebronnen Nederland stimuleert."
     },
     {
       "id": 20,
-      "question": "Maak digitale geletterdheid en programmeren verplichte vakken.",
-      "explanation": "Digitale basisvaardigheden zijn net zo belangrijk als taal en rekenen. Verplicht en toetsbaar onderwijs voorkomt dat jongeren achterblijven."
+      "question": "Alle scholen moeten leerlingen meer digitaal vaardig maken.",
+      "explanation": "Digitale geletterdheid betekent dat je kunt omgaan met computers, internet en data. Dat is net zo belangrijk als kunnen lezen of rekenen. Voorstanders vinden dat alle scholen dit verplicht moeten geven, inclusief basiskennis programmeren voor kinderen die eraan toe zijn. Tegenstanders zeggen dat er al te veel vakken zijn en dat scholen dit zelf moeten bepalen. Deze vraag zit in de stemwijzer omdat digitale vaardigheden onmisbaar zijn voor school, werk en dagelijks leven."
     },
     {
       "id": 21,
-      "question": "Versnel kennismigratie en maak de EU Blue Card toegankelijker.",
-      "explanation": "Erken ook werkervaring in plaats van alleen diploma's, hanteer duidelijke salarisgrenzen en verkort de procedure. Zo kan Nederland sneller internationaal talent aantrekken."
+      "question": "Nederland moet kennismigratie makkelijker maken.",
+      "explanation": "Kennismigratie maakt het mogelijk dat specialisten uit het buitenland hier komen werken. Het gaat vaak om banen in de technologie en ICT, waar veel tekorten zijn. Voorstanders vinden dat regels eenvoudiger en sneller moeten, zodat Nederland aantrekkelijk blijft voor talent en bedrijven. Tegenstanders zeggen dat dit druk legt op woningen en voorzieningen, en dat Nederland eerst eigen mensen moet opleiden. Deze vraag zit in de stemwijzer omdat kennismigratie bepaalt hoe Nederland zich ontwikkelt als kenniseconomie."
     },
     {
       "id": 22,
-      "question": "Zet nationaal door als EU-handhaving van de DMA stokt.",
-      "explanation": "Nederland kan via consumenten- en mededingingsrecht appstores openen, sideloading toestaan en bundeling tegengaan. Zo doorbreek je machtsposities sneller."
+      "question": "Als Europese regels tegen Big Tech niet werken, moet Nederland zelf ingrijpen.",
+      "explanation": "De EU heeft met de Digital Markets Act (DMA) afspraken gemaakt om bedrijven zoals Apple en Google te reguleren. Voorstanders vinden dat Nederland zelf moet ingrijpen als de EU te traag is, zodat consumenten meer keuze en eerlijkere prijzen krijgen. Tegenstanders zeggen dat Nederland dit niet alleen moet doen, omdat losse nationale regels kunnen zorgen voor verwarring en minder investeringen. Deze vraag zit in de stemwijzer omdat het gaat over de rol van Nederland in Europa en hoe ver we willen gaan om Big Tech aan te pakken."
+    },
+    {
+      "id": 23,
+      "question": "Beperk online porno en schadelijke content voor jongeren",
+      "explanation": "Platforms moeten kinderen beter beschermen. Voorstanders willen leeftijdsverificatie, blokkades en boetes. Tegenstanders waarschuwen voor censuur en foutpositieven. Dit draait om jeugdprotectie, vrijheid en uitvoerbaarheid."
+    },
+    {
+      "id": 24,
+      "question": "Versnel de verzwaring van het stroomnet",
+      "explanation": "Het net zit vol. Voorstanders willen procedures inkorten, meer geld en landelijke regie, desnoods regels tijdelijk versoepelen. Tegenstanders vrezen hoge kosten en juridische risico's. Dit bepaalt tempo en haalbaarheid van de energietransitie."
+    },
+    {
+      "id": 25,
+      "question": "Houd de salderingsregeling voor zonnepanelen in stand",
+      "explanation": "Salderen maakt panelen rendabel. Voorstanders willen pas afbouwen als iedereen eerlijk kon meedoen en er een redelijke terugleververgoeding is. Tegenstanders willen sneller afbouwen omdat het duur is en het net belast. Dit raakt betaalbaarheid en tempo van de transitie."
+    },
+    {
+      "id": 26,
+      "question": "Stimuleer slimme sturing en opslag van energie",
+      "explanation": "Batterijen en piek-daltarieven kunnen het net verlichten. Voorstanders willen fiscale prikkels, heldere regels en schaalbare pilots. Tegenstanders vrezen hogere kosten en complexiteit voor huishoudens. Dit gaat over efficiëntie en techniek in de praktijk."
+    },
+    {
+      "id": 27,
+      "question": "Internettoegang als basisvoorziening",
+      "explanation": "Zonder internet doe je niet mee. Voorstanders willen betaalbaar, liefst gratis basisinternet voor iedereen. Tegenstanders vinden dat onnodig en duur. Dit raakt kansengelijkheid, onderwijs en werk."
     }
   ],
   "parties": [
@@ -126,6 +151,8 @@
     "SGP",
     "CU",
     "Volt",
-    "JA21"
+    "JA21",
+    "Piratenpartij",
+    "BIJ1"
   ]
 }

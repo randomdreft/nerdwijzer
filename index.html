@@ -2,13 +2,16 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="NerdWijzer is de nerdy stemhulp met 22 vragen over IT, privacy en technologie.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="description" content="NerdWijzer is de nerdy stemhulp met vragen over IT, privacy en technologie.">
     <meta name="theme-color" content="#1e3c72">
     <meta name="msapplication-TileColor" content="#1e3c72">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="NerdWijzer">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
     <title>NerdWijzer - Stemwijzer voor Nerds</title>
     
     <!-- Canonical URL -->
@@ -16,17 +19,17 @@
     
     <!-- Open Graph tags -->
     <meta property="og:title" content="NerdWijzer - Stemwijzer voor Nerds">
-    <meta property="og:description" content="NerdWijzer is de nerdy stemhulp met 22 vragen over IT, privacy en technologie.">
-    <meta property="og:image" content="/nerdwijzer-logo-light.png">
+    <meta property="og:description" content="NerdWijzer is de nerdy stemhulp met vragen over IT, privacy en technologie.">
+    <meta property="og:image" content="/images/nerdwijzer-logo-light.png">
     <meta property="og:url" content="/index.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NerdWijzer">
     
     <!-- Favicon voor alle apparaten -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="nerdwijzer-favicon.svg">
-    <link rel="apple-touch-icon" href="nerdwijzer-favicon.svg">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="images/nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="manifest" href="manifest.json">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,30 +39,40 @@
 </head>
 <body>
     <div class="container">
-
-        <!-- Welcome Screen -->
-        <div id="welcome-screen" class="welcome-screen">
-            <div class="welcome-logo">
-                <h1><img src="nerdwijzer-logo-dark.png" alt="NerdWijzer" class="welcome-logo-img"></h1>
+        <!-- Header -->
+        <header id="main-header">
+            <!-- Welcome Screen -->
+            <div id="welcome-screen" class="welcome-screen">
+            <nav class="welcome-logo" aria-label="Hoofdnavigatie">
+                <h1><a href="index.html"><img src="images/nerdwijzer-logo-dark.png" alt="NerdWijzer" class="welcome-logo-img"></a></h1>
+            </nav>
+            
+            <!-- Beta Notification Banner -->
+            <div class="beta-notification">
+                <div class="beta-badge">Live!</div>
+                <div class="beta-text">Deze website is nog kakelvers. Feedback is welkom! Liefst via <a href="https://metnerdsomtafel.nl/slack" target="_blank" rel="noopener noreferrer" style="color: #00d4ff; text-decoration: underline;">Slack&nbsp;van&nbsp;Met&nbsp;Nerds&nbsp;om&nbsp;Tafel</a> kanaal #nerdwijzer-feedback.</div>
             </div>
+            
             <div class="welcome-content">
                 <div class="welcome-description">
                     <p class="welcome-subtitle">Welkom, nerd 🤓</p>
-                    <p>Vind in 2 minuten de partij die het beste matcht met jouw nerdy idealen. 22 vragen over IT, privacy, mensenrechten en technologie.</p>
-                    <p><em>Kleine noot: dit is een onafhankelijke, nerdy stemhulp. Handig, niet heilig.</em></p>
+                    <p>Vind in een paar minuten de partij die het beste matcht met jouw nerdy idealen. Vragen over IT, privacy, mensenrechten en technologie.</p>
+                    <p><em>Let op: dit is een onafhankelijke, nerdy stemhulp. Handig, geen bindend advies.</em></p>
                 </div>
                 
+                <button id="start-btn" class="start-btn">Start de NerdWijzer</button>
+                
                 <div class="how-it-works">
-                    <h3>Hoe het werkt</h3>
+                    <h2>Hoe het werkt</h2>
                     <ol>
-                        <li>Beantwoord 22 stellingen met de slider van 1 tot 5</li>
+                        <li>Beantwoord stellingen met de slider van 1 tot 5</li>
                         <li>Kies jouw belangrijke onderwerpen</li>
                         <li>Bekijk je match en de onderbouwing per thema</li>
                     </ol>
                 </div>
                 
                 <div class="why-nerdwijzer">
-                    <h3>Waarom NerdWijzer</h3>
+                    <h2>Waarom NerdWijzer</h2>
                     <ul>
                         <li>Focus op digitale thema's</li>
                         <li>Transparant over bronnen en scoring</li>
@@ -84,19 +97,26 @@
                         <span>Klimaat & Transitie</span>
                     </div>
                 </div>
-                <button id="start-btn" class="start-btn">Start de NerdWijzer</button>
+                <a href="verantwoording.html" class="party-positions-btn">Bekijk de partijstandpunten</a>
+                <a href="digitale-agenda.html" class="digital-agenda-btn">📊 Digitale Agenda</a>
             </div>
         </div>
+        </header>
 
+        <!-- Main Content -->
+        <main id="main-content">
         <!-- Question Screen -->
-        <div id="question-screen" class="question-screen">
+        <section id="question-screen" class="question-screen" aria-label="Vragen beantwoorden">
             <div class="progress-container">
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
                 </div>
                 <div class="progress-text">
-                    <span id="progress-current">1</span> van <span id="progress-total">22</span>
+                    <span id="progress-current">1</span> van <span id="progress-total">-</span>
                 </div>
+                <button id="close-questions-btn" class="close-btn" aria-label="Sluit vragen en ga terug naar homepage">
+                    <span class="btn-icon">✕</span>
+                </button>
             </div>
             
             <div class="question-header">
@@ -110,33 +130,46 @@
                     <div id="slider-value" class="slider-value">3</div>
                     <span class="slider-label-right">👍</span>
                 </div>
-                <input type="range" id="answer-slider" class="slider" min="1" max="5" value="3">
+                <div class="slider-track">
+                    <div class="slider-progress" id="slider-progress"></div>
+                    <input type="range" id="answer-slider" class="slider" min="1" max="5" value="3">
+                    <div class="slider-thumb" id="slider-thumb"></div>
+                </div>
                 <div class="slider-scale">
-                    <span>
+                    <div tabindex="0" role="button" aria-label="Rating 1: Helemaal oneens">
                         <div class="scale-number">1</div>
                         <div class="scale-description">Helemaal oneens</div>
-                    </span>
-                    <span>
+                    </div>
+                    <div tabindex="0" role="button" aria-label="Rating 2: Oneens">
                         <div class="scale-number">2</div>
-                        <div class="scale-description">Eens</div>
-                    </span>
-                    <span>
+                        <div class="scale-description">Oneens</div>
+                    </div>
+                    <div tabindex="0" role="button" aria-label="Rating 3: Neutraal">
                         <div class="scale-number">3</div>
                         <div class="scale-description">Neutraal</div>
-                    </span>
-                    <span>
+                    </div>
+                    <div tabindex="0" role="button" aria-label="Rating 4: Eens">
                         <div class="scale-number">4</div>
                         <div class="scale-description">Eens</div>
-                    </span>
-                    <span>
+                    </div>
+                    <div tabindex="0" role="button" aria-label="Rating 5: Helemaal eens">
                         <div class="scale-number">5</div>
                         <div class="scale-description">Helemaal eens</div>
-                    </span>
+                    </div>
                 </div>
-                <div class="keyboard-tip desktop-only">
-                    <span class="tip-icon">⌨️</span>
-                    <span>Tip: Gebruik pijltjestoetsen, en Enter om te bevestigen.</span>
+                
+                <!-- Priority checkbox -->
+                <div class="priority-checkbox-container">
+                    <label class="priority-checkbox-label">
+                        <input type="checkbox" id="priority-checkbox" class="priority-checkbox">
+                        <span class="priority-checkbox-text">Deze vraag vind ik extra belangrijk</span>
+                    </label>
                 </div>
+            </div>
+
+            <div class="keyboard-tip desktop-only">
+                <span class="tip-icon">⌨️</span>
+                <span>Tip: Gebruik pijltjestoetsen, en Enter om te bevestigen.</span>
             </div>
 
             <div class="navigation-buttons">
@@ -149,12 +182,12 @@
                     <span class="btn-icon">→</span>
                 </button>
             </div>
-        </div>
+        </section>
 
         <!-- Priority Questions Screen -->
-        <div id="priority-screen" class="priority-screen">
+        <section id="priority-screen" class="priority-screen" aria-label="Belangrijke onderwerpen selecteren">
             <div class="results-header">
-                <img src="nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <img src="images/nerdwijzer-mark-1024.png" alt="" class="results-mark">
                 <h2 class="results-title">Belangrijke Onderwerpen</h2>
             </div>
             <div class="priority-intro">
@@ -179,12 +212,58 @@
                     <span>Bekijk resultaat</span>
                 </button>
             </div>
-        </div>
+        </section>
+
+        <!-- Digital Agenda Importance Screen -->
+        <section id="digital-agenda-screen" class="digital-agenda-screen" aria-label="Belang van digitale onderwerpen">
+            <div class="results-header">
+                <img src="images/nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <h2 class="results-title">Digitale Onderwerpen</h2>
+            </div>
+            <div class="digital-agenda-intro">
+                <p>Hoe belangrijk vind je het dat jouw partij in hun partijprogramma veel aandacht besteed aan de onderwerpen die in deze vragen zijn behandeld?</p>
+                <div class="digital-agenda-tip">
+                    <span class="tip-icon">💡</span>
+                    <span>Als je dit heel belangrijk vindt, wordt de digitale score van partijen meegenomen in je resultaat</span>
+                </div>
+            </div>
+            
+            <div class="digital-agenda-options">
+                <div class="digital-agenda-option">
+                    <input type="radio" id="digital-very-important" name="digital-importance" value="very-important">
+                    <label for="digital-very-important">
+                        <span class="option-title">💯 Heel belangrijk</span>
+                        <span class="option-description">Digitale onderwerpen zijn cruciaal voor mijn stemkeuze</span>
+                    </label>
+                </div>
+                <div class="digital-agenda-option">
+                    <input type="radio" id="digital-somewhat-important" name="digital-importance" value="somewhat-important">
+                    <label for="digital-somewhat-important">
+                        <span class="option-title">🤔 Redelijk belangrijk</span>
+                        <span class="option-description">Digitale onderwerpen spelen een rol in mijn overweging</span>
+                    </label>
+                </div>
+                <div class="digital-agenda-option">
+                    <input type="radio" id="digital-not-important" name="digital-importance" value="not-important">
+                    <label for="digital-not-important">
+                        <span class="option-title">🤷 Niet belangrijk</span>
+                        <span class="option-description">Digitale onderwerpen zijn niet doorslaggevend voor mijn stem</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="digital-agenda-buttons">
+                <button id="continue-digital-agenda-btn" class="action-btn">
+                    <span class="btn-icon">✅</span>
+                    <span>Bekijk resultaat</span>
+                </button>
+            </div>
+        </section>
 
         <!-- Comparison Screen -->
-        <div id="comparison-screen" class="comparison-screen">
+        <section id="comparison-screen" class="comparison-screen" aria-label="Partijen vergelijken">
             <div class="results-header">
-                <img src="nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <img src="images/nerdwijzer-mark-1024.png" alt="" class="results-mark">
                 <h2 class="results-title">Vergelijk Partijen</h2>
             </div>
             <div class="comparison-intro">
@@ -200,20 +279,50 @@
                     <span>Terug naar resultaten</span>
                 </button>
             </div>
-        </div>
+        </section>
 
         <!-- Results Screen -->
-        <div id="results-screen" class="results-screen">
+        <section id="results-screen" class="results-screen" aria-label="Stemwijzer resultaten">
             <div class="results-header">
-                <img src="nerdwijzer-mark-1024.png" alt="" class="results-mark">
+                <img src="images/nerdwijzer-mark-1024.png" alt="" class="results-mark">
                 <h2 class="results-title">Jouw NerdWijzer Resultaat</h2>
             </div>
             <div class="results-intro">
                 <p>Hier zijn de politieke partijen gerangschikt op basis van jouw antwoorden:</p>
+                
+                <!-- Formula Explanation (hidden by default) -->
+                <div id="formula-explanation" class="formula-explanation" style="display: none;">
+                    <h3>📐 Hoe wordt de score berekend?</h3>
+                    <div class="formula-details">
+                        <p><strong>Basis formule per vraag:</strong></p>
+                        <ul>
+                            <li><strong>Afstand</strong> = |jouw_antwoord - partij_antwoord| (0-4)</li>
+                            <li><strong>Match percentage</strong> = max(0, 100 - (afstand × 25))</li>
+                            <li>Afstand 0 = 100% match, afstand 1 = 75%, afstand 2 = 50%, afstand 3 = 25%, afstand 4 = 0%</li>
+                        </ul>
+                        
+                        <p><strong>Gewichting:</strong></p>
+                        <ul>
+                            <li>Standaard vragen: <strong>gewicht 1x</strong></li>
+                            <li>Belangrijke vragen (die je selecteerde): <strong>gewicht 3x</strong></li>
+                            <li>Digitale vragen (als je digitale zaken "heel belangrijk" vindt): <strong>extra gewicht 1.5x</strong></li>
+                        </ul>
+                        
+                        <p><strong>Eindscore berekening:</strong></p>
+                        <ul>
+                            <li><strong>Gewogen gemiddelde</strong> = (totaal_match_score × gewicht) / totaal_gewicht</li>
+                            <li><strong>Digitale bonus</strong> = (digitale_score / 15) × 100 × 0.2 (max 20%)</li>
+                            <li><strong>Eindscore</strong> = min(100, gewogen_gemiddelde + digitale_bonus)</li>
+                        </ul>
+                        
+                        <p><strong>Voorbeeld:</strong> Jij geeft 3, partij geeft 4 → afstand 1 → 75% match. Als dit een belangrijke digitale vraag is: gewicht = 3 × 1.5 = 4.5x</p>
+                    </div>
+                </div>
+                
                 <div class="results-summary">
                     <span class="summary-item">
                         <span class="summary-icon">📊</span>
-                        <span>22 vragen beantwoord</span>
+                        <span id="questions-answered-count">vragen beantwoord</span>
                     </span>
                     <span class="summary-item">
                         <span class="summary-icon">🎯</span>
@@ -228,8 +337,8 @@
             
             <!-- Screen reader table view -->
             <div class="sr-only">
-                <h3>Resultaten in tabelvorm</h3>
-                <table id="results-table" class="results-table" role="table" aria-label="Stemwijzer resultaten per partij">
+                <h2>Resultaten in tabelvorm</h2>
+                <table id="results-table" class="results-table" aria-label="Stemwijzer resultaten per partij">
                     <thead>
                         <tr>
                             <th scope="col">Rang</th>
@@ -243,7 +352,7 @@
                     </tbody>
                 </table>
                 
-                <h3>Resultaten per thema</h3>
+                <h2>Resultaten per thema</h2>
                 <div id="theme-results" class="theme-results">
                     <!-- Theme-based results will be populated here -->
                 </div>
@@ -260,6 +369,10 @@
                     <span class="btn-icon">📋</span>
                     <span>Meer uitslagen</span>
                 </button>
+                <button id="formula-btn" class="action-btn">
+                    <span class="btn-icon">📐</span>
+                    <span>Berekening</span>
+                </button>
                 <button id="share-btn" class="action-btn">
                     <span class="btn-icon">📤</span>
                     <span>Resultaten delen</span>
@@ -269,20 +382,30 @@
                     <span>Opnieuw beginnen</span>
                 </button>
             </div>
-        </div>
+        </section>
+        </main>
     </div>
 
     <footer class="site-footer">
         <div class="footer-inner">
             <p class="footer-text">
-                Deze website is gemaakt door Randal Peelen en bedoeld voor vermaak. Hoewel de informatie met zorg is samengesteld, kan deze fouten bevatten en is niet gegarandeerd juist of afgestemd met politieke partijen.
+                Deze website is gemaakt door <a href="https://www.linkedin.com/in/randalpeelen/" target="_blank" rel="noopener noreferrer">Randal Peelen</a> en bedoeld voor vermaak. Hoewel de informatie met zorg is samengesteld, kan deze fouten bevatten en is niet gegarandeerd juist of afgestemd met politieke partijen.
             </p>
-            <div class="footer-meta">
-                <span id="app-version">Versie: –</span>
-                <span class="footer-sep">•</span>
+            <nav class="footer-meta" aria-label="Footer navigatie">
                 <a href="changelog.html" class="footer-link">Changelog</a>
                 <span class="footer-sep">•</span>
-                <a href="verantwoording.html" class="footer-link">Verantwoording</a>
+                <a href="dankwoord.html" class="footer-link">Dankwoord</a>
+                <span class="footer-sep">•</span>
+                <a href="verantwoording.html" class="footer-link">Partijstandpunten</a>
+                <span class="footer-sep">•</span>
+                <a href="digitale-agenda.html" class="footer-link">Digitale Agenda</a>
+                <span class="footer-sep">•</span>
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <span class="footer-sep">•</span>
+                <span id="app-version">Versie: –</span>
+            </nav>
+            <div class="footer-parties">
+                <small>NerdWijzer vergelijkt de standpunten van de volgende partijen: 50PLUS, BBB, BIJ1, CDA, CU, D66, Denk, FvD, GL/PvdA, JA21, NSC, Piratenpartij, PvdD, PVV, SGP, SP, Volt, VVD</small>
             </div>
         </div>
     </footer>
@@ -293,8 +416,17 @@
                 this.questions = [];
                 this.currentQuestionIndex = 0;
                 this.answers = {};
+                this.priorities = {}; // Track priority questions
                 this.parties = [];
-                this.questionsPerQuiz = 22;
+                this.questionsPerQuiz = 27; // Will be updated dynamically based on available questions
+                this.totalQuestionsAvailable = 0; // Track total number of available questions
+                this.digitalAgendaData = {}; // Store digital agenda scores
+                this.digitalImportance = null; // Store user's digital importance preference
+                
+                // Konami code tracking
+                this.konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+                this.konamiInput = [];
+                this.konamiActivated = false;
                 
                 this.init();
             }
@@ -304,11 +436,16 @@
                     await Promise.all([
                         this.loadQuestions(),
                         this.loadPartyPositions(),
-                        this.loadVersion()
+                        this.loadVersion(),
+                        this.loadDigitalAgendaData()
                     ]);
                     // Zorg dat we alleen vragen tonen waarvoor partijdata bestaat
                     this.alignQuestionsWithPartyPositions();
                     this.setupEventListeners();
+                    
+                    // Preload alle partij logos in willekeurige volgorde voor privacy
+                    this.preloadPartyLogos();
+                    
                     this.showWelcomeScreen();
                 } catch (error) {
                     console.error('Error initializing NerdWijzer:', error);
@@ -318,7 +455,7 @@
 
             async loadVersion() {
                 try {
-                    const res = await fetch('version.json', { cache: 'no-store' });
+                    const res = await fetch(`version.json?ts=${Date.now()}`, { cache: 'no-store' });
                     if (!res.ok) return;
                     const data = await res.json();
                     const el = document.getElementById('app-version');
@@ -327,6 +464,23 @@
                     }
                 } catch (e) {
                     // Stil falen; footer is niet kritisch
+                }
+            }
+
+            async loadDigitalAgendaData() {
+                try {
+                    const res = await fetch(`digitale-agenda-data.json?ts=${Date.now()}`, { cache: 'no-store' });
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    if (data && data.digitale_agenda) {
+                        // Convert array to object for easy lookup
+                        this.digitalAgendaData = {};
+                        data.digitale_agenda.forEach(party => {
+                            this.digitalAgendaData[party.partij] = party.digitaleScore;
+                        });
+                    }
+                } catch (e) {
+                    console.warn('Could not load digital agenda data:', e);
                 }
             }
 
@@ -356,6 +510,7 @@
             alignQuestionsWithPartyPositions() {
                 if (!this.questions || !this.questions.length || !this.partyPositions) return;
                 const filtered = this.questions.filter(q => this.partyPositions[String(q.id)]);
+                this.totalQuestionsAvailable = filtered.length; // Store total available questions
                 this.shuffleArray(filtered);
                 this.questions = filtered.slice(0, Math.min(this.questionsPerQuiz, filtered.length));
             }
@@ -386,11 +541,17 @@
                 document.addEventListener('keydown', (e) => {
                     const questionScreen = document.getElementById('question-screen');
                     const priorityScreen = document.getElementById('priority-screen');
+                    const digitalAgendaScreen = document.getElementById('digital-agenda-screen');
                     
-                    if (e.key === 'Enter') {
+                    // Konami code detection
+                    this.handleKonamiCode(e);
+                    
+                    if (e.key === 'Escape' && questionScreen.style.display === 'block') {
+                        this.closeQuestions();
+                    } else if (e.key === 'Enter') {
                         if (questionScreen.style.display === 'block') {
                             this.nextQuestion();
-                        } else if (priorityScreen.style.display === 'block') {
+                        } else if (digitalAgendaScreen.style.display === 'block') {
                             this.showResults();
                         }
                     } else if (e.key === 'ArrowLeft' && questionScreen.style.display === 'block') {
@@ -413,8 +574,17 @@
                 });
 
                 // Slider
-                document.getElementById('answer-slider').addEventListener('input', (e) => {
+                const slider = document.getElementById('answer-slider');
+                slider.addEventListener('input', (e) => {
                     this.updateSliderValue(e.target.value);
+                });
+                
+                // Add drag functionality for desktop
+                this.setupSliderDrag();
+                
+                // Priority checkbox
+                document.getElementById('priority-checkbox').addEventListener('change', (e) => {
+                    this.updatePriority(e.target.checked);
                 });
                 
                 // Scale label clicks
@@ -423,6 +593,11 @@
                 // Restart
                 document.getElementById('restart-btn').addEventListener('click', () => {
                     this.restart();
+                });
+
+                // Close questions
+                document.getElementById('close-questions-btn').addEventListener('click', () => {
+                    this.closeQuestions();
                 });
 
                 // More results
@@ -435,13 +610,41 @@
                     this.shareResults();
                 });
 
-                // Priority questions
+                // Formula explanation toggle
+                document.getElementById('formula-btn').addEventListener('click', () => {
+                    this.toggleFormulaExplanation();
+                });
+
+                // Priority questions (now skipped, but keep for backward compatibility)
                 document.getElementById('skip-priority-btn').addEventListener('click', () => {
-                    this.showResults();
+                    this.showDigitalAgendaScreen();
                 });
 
                 document.getElementById('continue-priority-btn').addEventListener('click', () => {
+                    this.showDigitalAgendaScreen();
+                });
+
+                // Digital agenda importance
+                document.getElementById('continue-digital-agenda-btn').addEventListener('click', () => {
                     this.showResults();
+                });
+
+                // Make digital agenda options fully clickable
+                document.querySelectorAll('.digital-agenda-option').forEach(option => {
+                    option.addEventListener('click', (e) => {
+                        // Don't trigger if clicking on the label (to avoid double-triggering)
+                        if (e.target.tagName === 'LABEL' || e.target.closest('label')) {
+                            return;
+                        }
+                        
+                        // Find the radio input within this option and click it
+                        const radioInput = option.querySelector('input[type="radio"]');
+                        if (radioInput) {
+                            radioInput.checked = true;
+                            // Trigger change event to ensure any other listeners are notified
+                            radioInput.dispatchEvent(new Event('change', { bubbles: true }));
+                        }
+                    });
                 });
 
                 // Back to results
@@ -454,13 +657,39 @@
                 document.getElementById('welcome-screen').style.display = 'block';
                 document.getElementById('question-screen').style.display = 'none';
                 document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('digital-agenda-screen').style.display = 'none';
                 document.getElementById('comparison-screen').style.display = 'none';
                 document.getElementById('results-screen').style.display = 'none';
+            }
+
+            closeQuestions() {
+                // Reset current progress
+                this.currentQuestionIndex = 0;
+                this.answers = {};
+                this.priorities = {};
+                
+                // Show welcome screen
+                this.showWelcomeScreen();
+                
+                // Set focus to the logo after a short delay
+                setTimeout(() => {
+                    const logoLink = document.querySelector('.welcome-logo a');
+                    if (logoLink) {
+                        logoLink.focus();
+                    } else {
+                        // Fallback: focus to the start button if logo link is not found
+                        const startBtn = document.getElementById('start-btn');
+                        if (startBtn) {
+                            startBtn.focus();
+                        }
+                    }
+                }, 100);
             }
 
             startQuiz() {
                 this.currentQuestionIndex = 0;
                 this.answers = {};
+                this.priorities = {};
                 this.showQuestion();
             }
 
@@ -470,17 +699,25 @@
                 document.getElementById('welcome-screen').style.display = 'none';
                 document.getElementById('question-screen').style.display = 'block';
                 document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('digital-agenda-screen').style.display = 'none';
                 document.getElementById('comparison-screen').style.display = 'none';
                 document.getElementById('results-screen').style.display = 'none';
 
-                document.getElementById('question-text').textContent = question.question;
-                document.getElementById('question-explanation').textContent = question.explanation;
+                this.updateQuestionContent(question);
 
                 // Set slider value
                 const savedAnswer = this.answers[this.currentQuestionIndex];
                 const slider = document.getElementById('answer-slider');
                 slider.value = savedAnswer || 3;
                 this.updateSliderValue(slider.value);
+                
+                // Set priority checkbox
+                const savedPriority = this.priorities[this.currentQuestionIndex];
+                const priorityCheckbox = document.getElementById('priority-checkbox');
+                priorityCheckbox.checked = savedPriority || false;
+                
+                // Initialize slider visuals
+                this.updateSliderVisuals(slider.value);
                 
                 // Initialize scale highlighting
                 this.updateScaleHighlight(slider.value);
@@ -490,9 +727,17 @@
 
                 // Update progress bar
                 const progress = ((this.currentQuestionIndex + 1) / this.questions.length) * 100;
-                document.getElementById('progress-fill').style.width = `${progress}%`;
-        document.getElementById('progress-current').textContent = this.currentQuestionIndex + 1;
-        document.getElementById('progress-total').textContent = this.questions.length;
+                const progressFill = document.getElementById('progress-fill');
+                progressFill.style.width = `${progress}%`;
+                progressFill.classList.add('updating');
+                setTimeout(() => progressFill.classList.remove('updating'), 500);
+                
+                const progressText = document.querySelector('.progress-text');
+                progressText.classList.add('updating');
+                setTimeout(() => progressText.classList.remove('updating'), 300);
+                
+                document.getElementById('progress-current').textContent = this.currentQuestionIndex + 1;
+                document.getElementById('progress-total').textContent = this.questions.length;
 
                 // Update navigation buttons
                 document.getElementById('prev-btn').disabled = this.currentQuestionIndex === 0;
@@ -500,35 +745,215 @@
                     this.currentQuestionIndex === this.questions.length - 1 ? 'Bekijk resultaat' : 'Volgende';
             }
 
+            updateQuestionContent(question) {
+                const questionText = document.getElementById('question-text');
+                const questionExplanation = document.getElementById('question-explanation');
+                
+                // Check if this is the first question (no transition needed)
+                if (this.currentQuestionIndex === 0 && !questionText.classList.contains('fade-out')) {
+                    // First question - no transition
+                    questionText.textContent = question.question;
+                    questionExplanation.textContent = question.explanation;
+                    return;
+                }
+                
+                // Add fade-out class
+                questionText.classList.add('fade-out');
+                questionExplanation.classList.add('fade-out');
+                
+                // After fade-out completes, update content and fade-in
+                setTimeout(() => {
+                    questionText.textContent = question.question;
+                    questionExplanation.textContent = question.explanation;
+                    
+                    // Remove fade-out and add fade-in
+                    questionText.classList.remove('fade-out');
+                    questionExplanation.classList.remove('fade-out');
+                    questionText.classList.add('fade-in');
+                    questionExplanation.classList.add('fade-in');
+                    
+                    // Remove fade-in class after transition completes
+                    setTimeout(() => {
+                        questionText.classList.remove('fade-in');
+                        questionExplanation.classList.remove('fade-in');
+                    }, 300);
+                }, 300);
+            }
+
             updateSliderValue(value) {
                 document.getElementById('slider-value').textContent = value;
                 this.answers[this.currentQuestionIndex] = parseInt(value);
+                
+                // Update slider progress and thumb position
+                this.updateSliderVisuals(value);
                 
                 // Update active scale highlighting
                 this.updateScaleHighlight(value);
             }
             
+            updatePriority(isPriority) {
+                this.priorities[this.currentQuestionIndex] = isPriority;
+            }
+            
+            updateSliderVisuals(value) {
+                const progress = document.getElementById('slider-progress');
+                const thumb = document.getElementById('slider-thumb');
+                
+                if (progress && thumb) {
+                    // Calculate percentage (1-5 to 0-100%)
+                    const percentage = ((value - 1) / 4) * 100;
+                    progress.style.width = percentage + '%';
+                    thumb.style.left = percentage + '%';
+                }
+            }
+            
             updateScaleHighlight(value) {
                 // Remove all active classes
-                const scaleSpans = document.querySelectorAll('.slider-scale span');
-                scaleSpans.forEach(span => span.classList.remove('active'));
+                const scaleDivs = document.querySelectorAll('.slider-scale > div');
+                scaleDivs.forEach(div => div.classList.remove('active'));
                 
                 // Add active class to current value
-                const activeSpan = document.querySelector(`.slider-scale span:nth-child(${value})`);
-                if (activeSpan) {
-                    activeSpan.classList.add('active');
+                const activeDiv = document.querySelector(`.slider-scale > div:nth-child(${value})`);
+                if (activeDiv) {
+                    activeDiv.classList.add('active');
                 }
             }
             
             setupScaleClickEvents() {
-                const scaleSpans = document.querySelectorAll('.slider-scale span');
-                scaleSpans.forEach((span, index) => {
-                    span.addEventListener('click', () => {
-                        const value = index + 1;
+                const scaleDivs = document.querySelectorAll('.slider-scale > div');
+                scaleDivs.forEach((div, index) => {
+                    const value = index + 1;
+                    
+                    // Click event
+                    div.addEventListener('click', () => {
                         const slider = document.getElementById('answer-slider');
                         slider.value = value;
                         this.updateSliderValue(value);
                     });
+                    
+                    // Keyboard event (Enter and Space)
+                    div.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            const slider = document.getElementById('answer-slider');
+                            slider.value = value;
+                            this.updateSliderValue(value);
+                        }
+                    });
+                });
+            }
+            
+            setupSliderDrag() {
+                const slider = document.getElementById('answer-slider');
+                const sliderTrack = document.querySelector('.slider-track');
+                let isDragging = false;
+                let isTouching = false;
+                
+                // Helper function to calculate value from position (works for both mouse and touch)
+                const getValueFromPosition = (clientX) => {
+                    const rect = sliderTrack.getBoundingClientRect();
+                    const x = clientX - rect.left;
+                    const percentage = Math.max(0, Math.min(1, x / rect.width));
+                    return Math.round(1 + percentage * 4); // Convert to 1-5 range
+                };
+                
+                // Helper function to start dragging
+                const startDrag = (clientX) => {
+                    isDragging = true;
+                    sliderTrack.style.cursor = 'grabbing';
+                    sliderTrack.classList.add('dragging');
+                    
+                    // Calculate new value based on position
+                    const newValue = getValueFromPosition(clientX);
+                    slider.value = newValue;
+                    this.updateSliderValue(newValue);
+                };
+                
+                // Helper function to update drag
+                const updateDrag = (clientX) => {
+                    if (!isDragging) return;
+                    
+                    const newValue = getValueFromPosition(clientX);
+                    slider.value = newValue;
+                    this.updateSliderValue(newValue);
+                };
+                
+                // Helper function to end drag
+                const endDrag = () => {
+                    if (isDragging) {
+                        isDragging = false;
+                        isTouching = false;
+                        sliderTrack.style.cursor = 'grab';
+                        sliderTrack.classList.remove('dragging');
+                    }
+                };
+                
+                // Mouse events for desktop drag functionality
+                sliderTrack.addEventListener('mousedown', (e) => {
+                    // Only handle left mouse button
+                    if (e.button !== 0) return;
+                    
+                    startDrag(e.clientX);
+                    e.preventDefault();
+                });
+                
+                document.addEventListener('mousemove', (e) => {
+                    updateDrag(e.clientX);
+                });
+                
+                document.addEventListener('mouseup', endDrag);
+                
+                // Touch events for mobile drag functionality
+                sliderTrack.addEventListener('touchstart', (e) => {
+                    if (e.touches.length !== 1) return; // Only handle single touch
+                    
+                    isTouching = true;
+                    startDrag(e.touches[0].clientX);
+                    e.preventDefault(); // Prevent scrolling
+                }, { passive: false });
+                
+                document.addEventListener('touchmove', (e) => {
+                    if (!isTouching || e.touches.length !== 1) return;
+                    
+                    updateDrag(e.touches[0].clientX);
+                    e.preventDefault(); // Prevent scrolling during drag
+                }, { passive: false });
+                
+                document.addEventListener('touchend', (e) => {
+                    if (isTouching) {
+                        endDrag();
+                        e.preventDefault();
+                    }
+                }, { passive: false });
+                
+                // Handle touch cancel (e.g., when user scrolls or switches apps)
+                document.addEventListener('touchcancel', (e) => {
+                    if (isTouching) {
+                        endDrag();
+                    }
+                });
+                
+                // Add visual feedback for drag state
+                sliderTrack.addEventListener('mouseenter', () => {
+                    if (!isDragging) {
+                        sliderTrack.style.cursor = 'grab';
+                    }
+                });
+                
+                sliderTrack.addEventListener('mouseleave', () => {
+                    if (!isDragging) {
+                        sliderTrack.style.cursor = 'default';
+                    }
+                });
+                
+                // Prevent text selection during drag
+                sliderTrack.addEventListener('selectstart', (e) => {
+                    e.preventDefault();
+                });
+                
+                // Prevent context menu on long press (mobile)
+                sliderTrack.addEventListener('contextmenu', (e) => {
+                    e.preventDefault();
                 });
             }
 
@@ -544,7 +969,7 @@
                     this.currentQuestionIndex++;
                     this.showQuestion();
                 } else {
-                    this.showPriorityScreen();
+                    this.showDigitalAgendaScreen();
                 }
             }
 
@@ -552,10 +977,20 @@
                 document.getElementById('welcome-screen').style.display = 'none';
                 document.getElementById('question-screen').style.display = 'none';
                 document.getElementById('priority-screen').style.display = 'block';
+                document.getElementById('digital-agenda-screen').style.display = 'none';
                 document.getElementById('comparison-screen').style.display = 'none';
                 document.getElementById('results-screen').style.display = 'none';
 
                 this.displayPriorityQuestions();
+            }
+
+            showDigitalAgendaScreen() {
+                document.getElementById('welcome-screen').style.display = 'none';
+                document.getElementById('question-screen').style.display = 'none';
+                document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('digital-agenda-screen').style.display = 'block';
+                document.getElementById('comparison-screen').style.display = 'none';
+                document.getElementById('results-screen').style.display = 'none';
             }
 
             displayPriorityQuestions() {
@@ -582,9 +1017,16 @@
             }
 
             showResults() {
+                // Get digital importance preference
+                const digitalImportanceRadio = document.querySelector('input[name="digital-importance"]:checked');
+                if (digitalImportanceRadio) {
+                    this.digitalImportance = digitalImportanceRadio.value;
+                }
+
                 document.getElementById('welcome-screen').style.display = 'none';
                 document.getElementById('question-screen').style.display = 'none';
                 document.getElementById('priority-screen').style.display = 'none';
+                document.getElementById('digital-agenda-screen').style.display = 'none';
                 document.getElementById('comparison-screen').style.display = 'none';
                 document.getElementById('results-screen').style.display = 'block';
 
@@ -595,49 +1037,128 @@
             calculateResults() {
                 const partyScores = {};
                 
-                // Initialize scores
+                // Initialize scores with detailed tracking
                 this.parties.forEach(party => {
-                    partyScores[party] = 0;
+                    partyScores[party] = {
+                        totalMatch: 0,
+                        totalWeight: 0,
+                        questionCount: 0,
+                        digitalBonus: 0
+                    };
                 });
 
-                // Get priority questions
+                // Get priority questions from stored priorities
                 const priorityQuestions = [];
                 this.questions.forEach((question, index) => {
-                    const checkbox = document.getElementById(`priority-${index}`);
-                    if (checkbox && checkbox.checked) {
+                    if (this.priorities[index]) {
                         priorityQuestions.push(index);
                     }
                 });
 
-                // Calculate scores for each question
+                // Calculate maximum possible score based on user settings
+                let maxPossibleScore = 0;
+                this.questions.forEach((question, questionIndex) => {
+                    const isPriority = priorityQuestions.includes(questionIndex);
+                    let weight = isPriority ? 3 : 1; // Priority questions count 3x
+                    
+                    // Apply digital agenda weighting to digital-related questions
+                    if (this.digitalImportance === 'very-important' && this.isDigitalQuestion(question)) {
+                        weight *= 1.5; // Increase weight for digital questions when user finds them important
+                    }
+                    
+                    maxPossibleScore += (100 * weight); // 100% match for each question
+                });
+
+                // Add digital bonus to max possible score if applicable
+                let maxDigitalBonus = 0;
+                if (this.digitalImportance === 'very-important') {
+                    // Digital bonus is calculated as percentage of the base score, not absolute points
+                    maxDigitalBonus = maxPossibleScore * 0.2; // 20% bonus on top of base score
+                }
+                maxPossibleScore += maxDigitalBonus;
+
+                // Calculate match percentage for each question
                 this.questions.forEach((question, questionIndex) => {
                     const userAnswer = this.answers[questionIndex];
                     const isPriority = priorityQuestions.includes(questionIndex);
-                    const weight = isPriority ? 3 : 1; // Priority questions count 3x
+                    let weight = isPriority ? 3 : 1; // Priority questions count 3x
+                    
+                    // Apply digital agenda weighting to digital-related questions
+                    if (this.digitalImportance === 'very-important' && this.isDigitalQuestion(question)) {
+                        weight *= 1.5; // Increase weight for digital questions when user finds them important
+                    }
                     
                     this.parties.forEach(party => {
                         const questionId = question.id.toString();
                         const partyData = this.partyPositions[questionId]?.positions[party];
                         
-                                    if (partyData && partyData.score !== undefined) {
-                const partyPosition = partyData.score;
-                            const difference = Math.abs(userAnswer - partyPosition);
-                            const score = (5 - difference) * weight; // Apply weight
-                            partyScores[party] += score;
+                        if (partyData && partyData.score !== undefined) {
+                            const partyPosition = partyData.score;
+                            
+                            // Calculate match percentage based on distance
+                            // Distance 0 = 100% match, distance 4 = 0% match
+                            const distance = Math.abs(userAnswer - partyPosition);
+                            const matchPercentage = Math.max(0, 100 - (distance * 25)); // 25% per step difference
+                            
+                            // Add weighted match to total
+                            partyScores[party].totalMatch += (matchPercentage * weight);
+                            partyScores[party].totalWeight += weight;
+                            partyScores[party].questionCount++;
                         }
                     });
                 });
 
-                // Convert to percentages and sort
-                const totalWeight = this.questions.length + (priorityQuestions.length * 2); // Extra weight for priority questions
-                const maxPossibleScore = totalWeight * 5;
-                const results = this.parties.map(party => ({
-                    name: party,
-                    score: partyScores[party],
-                    percentage: Math.round((partyScores[party] / maxPossibleScore) * 100)
-                }));
+                // Apply balanced digital agenda bonus if user finds it very important
+                if (this.digitalImportance === 'very-important') {
+                    this.parties.forEach(party => {
+                        const digitalScore = this.digitalAgendaData[party];
+                        if (digitalScore !== undefined) {
+                            // Convert digital score to percentage (0-15 scale to 0-100%)
+                            const digitalPercentage = (digitalScore / 15) * 100;
+                            // Calculate base score without digital bonus
+                            const baseMaxScore = maxPossibleScore - (maxPossibleScore * 0.2);
+                            // Apply as percentage of base score
+                            const digitalBonus = (digitalPercentage / 100) * (baseMaxScore * 0.2);
+                            partyScores[party].digitalBonus = digitalBonus;
+                        }
+                    });
+                }
+
+                // Calculate final percentages
+                const results = this.parties.map(party => {
+                    const partyData = partyScores[party];
+                    let finalPercentage = 0;
+                    
+                    if (partyData.totalWeight > 0) {
+                        // Calculate total score including digital bonus
+                        const totalScore = partyData.totalMatch + (partyData.digitalBonus || 0);
+                        // Calculate percentage based on dynamic maximum
+                        finalPercentage = (totalScore / maxPossibleScore) * 100;
+                    }
+                    
+                    return {
+                        name: party,
+                        score: partyData.totalMatch,
+                        percentage: Math.round(finalPercentage * 10) / 10, // Round to 1 decimal place
+                        questionCount: partyData.questionCount,
+                        digitalBonus: partyData.digitalBonus,
+                        maxPossibleScore: maxPossibleScore
+                    };
+                });
 
                 return results.sort((a, b) => b.percentage - a.percentage);
+            }
+
+            // Helper function to determine if a question is digital-related
+            isDigitalQuestion(question) {
+                const digitalKeywords = [
+                    'privacy', 'data', 'internet', 'digitale', 'online', 'ai', 'kunstmatige intelligentie',
+                    'algoritme', 'surveillance', 'encryptie', 'cyber', 'platform', 'tech', 'technologie',
+                    'digitale rechten', 'netneutraliteit', 'open source', 'software', 'hardware'
+                ];
+                
+                const questionText = (question.question + ' ' + (question.description || '')).toLowerCase();
+                return digitalKeywords.some(keyword => questionText.includes(keyword));
             }
 
             getPartyLogo(partyName) {
@@ -656,9 +1177,55 @@
                     'SGP': 'sgp.png',
                     'CU': 'cu.png',
                     'Volt': 'volt.png',
-                    'JA21': 'ja21.png'
+                    'JA21': 'ja21.png',
+                    'Piratenpartij': 'piratenpartij.png',
+                    'BIJ1': 'bij1.png',
+                    '50PLUS': '50plus.png'
                 };
                 return logoMap[partyName] || 'default.png';
+            }
+
+            // Preload alle partij logos in willekeurige volgorde voor privacy
+            preloadPartyLogos() {
+                const logoMap = {
+                    'PVV': 'pvv.png',
+                    'GL/PvdA': 'glpvda.png',
+                    'VVD': 'vvd.png',
+                    'NSC': 'nsc.svg',
+                    'D66': 'd66.png',
+                    'BBB': 'bbb.png',
+                    'CDA': 'cda.png',
+                    'SP': 'sp.png',
+                    'Denk': 'denk.svg',
+                    'PvdD': 'pvdd.png',
+                    'FvD': 'fvd.png',
+                    'SGP': 'sgp.png',
+                    'CU': 'cu.png',
+                    'Volt': 'volt.png',
+                    'JA21': 'ja21.png',
+                    'Piratenpartij': 'piratenpartij.png',
+                    'BIJ1': 'bij1.png',
+                    '50PLUS': '50plus.png'
+                };
+
+                // Maak een array van alle logo bestanden
+                const logoFiles = Object.values(logoMap);
+                
+                // Shuffle de array voor willekeurige volgorde
+                const shuffledLogos = logoFiles.sort(() => Math.random() - 0.5);
+                
+                // Preload alle logos in de willekeurige volgorde
+                shuffledLogos.forEach(logoFile => {
+                    const img = new Image();
+                    img.src = `logos/${logoFile}`;
+                    // Voeg een kleine delay toe tussen requests om server load te spreiden
+                    img.onload = () => {
+                        // Logo is geladen, kan eventueel logging toevoegen voor debugging
+                    };
+                    img.onerror = () => {
+                        // Logo kon niet geladen worden, maar dat is oké
+                    };
+                });
             }
 
             populateResultsTable(results) {
@@ -672,7 +1239,7 @@
                     row.innerHTML = `
                         <td>${rank}</td>
                         <td>${result.name}</td>
-                        <td>${result.percentage}%</td>
+                        <td>${result.percentage.toFixed(1)}%</td>
                         <td>${result.score}</td>
                     `;
                     
@@ -687,12 +1254,12 @@
                 const themeContainer = document.getElementById('theme-results');
                 themeContainer.innerHTML = '';
 
-                // Define themes based on question categories
+                // Define themes based on question categories - using actual question IDs from the loaded questions
                 const themes = {
-                    'Digitale Overheid': [1, 2, 3, 4],
-                    'Privacy & Cybersecurity': [5, 6, 7, 8, 9, 10],
-                    'AI & Digitalisering': [11, 12, 13, 14, 15],
-                    'Internet & Rechten': [16, 17, 18, 19, 20, 21, 22]
+                    'Digitale Overheid': this.questions.slice(0, 4).map(q => q.id),
+                    'Privacy & Cybersecurity': this.questions.slice(4, 10).map(q => q.id),
+                    'AI & Digitalisering': this.questions.slice(10, 15).map(q => q.id),
+                    'Internet & Rechten': this.questions.slice(15).map(q => q.id)
                 };
 
                 Object.entries(themes).forEach(([themeName, questionIds]) => {
@@ -742,22 +1309,30 @@
             }
 
             calculateThemeScore(partyName, questionIds) {
-                let totalScore = 0;
+                let totalMatch = 0;
                 let count = 0;
                 
                 questionIds.forEach(questionId => {
-                    if (this.answers[questionId] !== undefined && this.partyPositions[questionId] && this.partyPositions[questionId][partyName]) {
-                        const userAnswer = this.answers[questionId];
-                        const partyScore = this.partyPositions[questionId][partyName].score;
-                        const difference = Math.abs(userAnswer - partyScore);
-                        const match = Math.max(0, 100 - (difference * 25)); // 25 points per step difference
+                    // Find the question index for this question ID
+                    const questionIndex = this.questions.findIndex(q => q.id === questionId);
+                    if (questionIndex !== -1 && this.answers[questionIndex] !== undefined) {
+                        const userAnswer = this.answers[questionIndex];
+                        const partyData = this.partyPositions[questionId.toString()]?.positions[partyName];
                         
-                        totalScore += match;
-                        count++;
+                        if (partyData && partyData.score !== undefined) {
+                            const partyScore = partyData.score;
+                            
+                            // Calculate match percentage based on distance
+                            const distance = Math.abs(userAnswer - partyScore);
+                            const matchPercentage = Math.max(0, 100 - (distance * 25)); // 25% per step difference
+                            
+                            totalMatch += matchPercentage;
+                            count++;
+                        }
                     }
                 });
                 
-                const average = count > 0 ? totalScore / count : 0;
+                const average = count > 0 ? Math.max(0, Math.min(100, totalMatch / count)) : 0;
                 const match = Math.round(average);
                 
                 return { average, count, match };
@@ -768,6 +1343,12 @@
                 const container = document.getElementById('party-results');
                 container.innerHTML = '';
 
+                // Update questions answered count
+                const questionsAnsweredElement = document.getElementById('questions-answered-count');
+                if (questionsAnsweredElement) {
+                    questionsAnsweredElement.textContent = `${this.totalQuestionsAvailable} vragen beantwoord`;
+                }
+
                 // Populate screen reader table
                 this.populateResultsTable(results);
 
@@ -776,6 +1357,9 @@
                     card.className = 'party-card';
                     card.style.cursor = 'pointer';
                     card.dataset.partyName = result.name;
+                    card.tabIndex = 0;
+                    card.setAttribute('role', 'button');
+                    card.setAttribute('aria-label', `Bekijk details voor ${result.name} (${result.percentage}% match)`);
                     
                     const rank = index + 1;
                     const rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `${rank}.`;
@@ -784,7 +1368,7 @@
                     card.innerHTML = `
                         <div class="party-info">
                             <div class="party-name">${rankEmoji} ${result.name}</div>
-                            <div class="party-score">${result.percentage}%</div>
+                            <div class="party-score">${result.percentage.toFixed(1)}%</div>
                         </div>
                         <div class="party-logo">
                             <img src="logos/${logoFile}" alt="${result.name} logo" onerror="this.style.display='none'">
@@ -794,6 +1378,14 @@
                     // Add click event
                     card.addEventListener('click', () => {
                         this.showPartyComparison(result.name);
+                    });
+                    
+                    // Add keyboard event
+                    card.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            this.showPartyComparison(result.name);
+                        }
                     });
                     
                     container.appendChild(card);
@@ -823,6 +1415,9 @@
                 header.className = 'comparison-header';
                 container.appendChild(header);
 
+                // Add calculation breakdown
+                this.displayCalculationBreakdown(partyName, container);
+
                 // Table
                 const table = document.createElement('table');
                 table.className = 'comparison-table';
@@ -832,8 +1427,9 @@
                 thead.innerHTML = `
                     <tr>
                         <th>Vraag</th>
-                        <th>Jouw antwoord</th>
+                        <th>Jij</th>
                         <th>${partyName}</th>
+                        <th>Score</th>
                         <th>Verschil</th>
                         <th>Verklaring</th>
                         <th>Bron</th>
@@ -864,11 +1460,24 @@
                     
                     const difference = Math.abs(userAnswer - partyAnswer);
                     
+                    // Calculate score based on the same logic as in calculatePartyBreakdown
+                    const distance = Math.abs(userAnswer - partyAnswer);
+                    const matchPercentage = Math.max(0, 100 - (distance * 25)); // 25% per step difference
+                    
+                    // Apply weighting (same logic as in calculatePartyBreakdown)
+                    let weight = this.priorities[index] ? 3 : 1;
+                    if (this.digitalImportance === 'very-important' && this.isDigitalQuestion(question)) {
+                        weight *= 1.5;
+                    }
+                    
+                    const weightedScore = matchPercentage * weight;
+                    
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${question.question}</td>
                         <td>${userAnswer}</td>
                         <td>${partyAnswer}</td>
+                        <td>${matchPercentage.toFixed(1)}%</td>
                         <td>${difference === 0 ? '✅' : difference === 1 ? '🟡' : '🔴'}</td>
                         <td class="explanation-cell">
                             <button class="explain-icon" aria-label="Toon verklaring" type="button">?</button>
@@ -896,6 +1505,242 @@
                 container.appendChild(table);
             }
 
+            displayCalculationBreakdown(partyName, container) {
+                // Create calculation breakdown section
+                const breakdownDiv = document.createElement('div');
+                breakdownDiv.className = 'calculation-breakdown';
+                
+                const breakdownHeader = document.createElement('h4');
+                breakdownHeader.textContent = 'Berekening van het percentage';
+                breakdownHeader.className = 'breakdown-header';
+                breakdownDiv.appendChild(breakdownHeader);
+
+                // Calculate the breakdown
+                const breakdown = this.calculatePartyBreakdown(partyName);
+                
+                // Create breakdown table
+                const breakdownTable = document.createElement('table');
+                breakdownTable.className = 'breakdown-table';
+                
+                // Table header
+                const thead = document.createElement('thead');
+                thead.innerHTML = `
+                    <tr>
+                        <th>Onderdeel</th>
+                        <th>Score</th>
+                        <th>Gewicht</th>
+                        <th>Totaal</th>
+                    </tr>
+                `;
+                breakdownTable.appendChild(thead);
+
+                // Table body
+                const tbody = document.createElement('tbody');
+                
+                // Regular questions
+                const regularRow = document.createElement('tr');
+                regularRow.innerHTML = `
+                    <td>Standaard vragen (${breakdown.regularQuestions.count} vragen)</td>
+                    <td>${breakdown.regularQuestions.score.toFixed(1)}</td>
+                    <td>× 1</td>
+                    <td>${breakdown.regularQuestions.total.toFixed(1)}</td>
+                `;
+                tbody.appendChild(regularRow);
+
+                // Priority questions
+                if (breakdown.priorityQuestions.count > 0) {
+                    const priorityRow = document.createElement('tr');
+                    priorityRow.innerHTML = `
+                        <td>Belangrijke vragen (${breakdown.priorityQuestions.count} vragen)</td>
+                        <td>${breakdown.priorityQuestions.score.toFixed(1)}</td>
+                        <td>× 3</td>
+                        <td>${breakdown.priorityQuestions.total.toFixed(1)}</td>
+                    `;
+                    tbody.appendChild(priorityRow);
+                }
+
+                // Digital agenda bonus
+                if (breakdown.digitalBonus > 0) {
+                    const digitalRow = document.createElement('tr');
+                    const digitalPercentage = (breakdown.digitalScore / 15) * 100;
+                    digitalRow.innerHTML = `
+                        <td>Digitale agenda bonus</td>
+                        <td>${breakdown.digitalScore}/15</td>
+                        <td>× ${(digitalPercentage / 100).toFixed(1)}</td>
+                        <td>${breakdown.digitalBonus.toFixed(1)}</td>
+                    `;
+                    tbody.appendChild(digitalRow);
+                }
+
+                // Total row
+                const totalRow = document.createElement('tr');
+                totalRow.className = 'breakdown-total';
+                totalRow.innerHTML = `
+                    <td><strong>Totaal</strong></td>
+                    <td><strong>${breakdown.totalScore.toFixed(1)}</strong></td>
+                    <td></td>
+                    <td><strong>${breakdown.totalScore.toFixed(1)}</strong></td>
+                `;
+                tbody.appendChild(totalRow);
+
+                // Max possible score row
+                const maxRow = document.createElement('tr');
+                maxRow.innerHTML = `
+                    <td>Maximaal mogelijk</td>
+                    <td>${breakdown.maxPossibleScore.toFixed(1)}</td>
+                    <td></td>
+                    <td>${breakdown.maxPossibleScore.toFixed(1)}</td>
+                `;
+                tbody.appendChild(maxRow);
+
+                // Percentage row
+                const percentageRow = document.createElement('tr');
+                percentageRow.className = 'breakdown-percentage';
+                const calculatedPercentage = (breakdown.totalScore / breakdown.maxPossibleScore) * 100;
+                percentageRow.innerHTML = `
+                    <td><strong>Percentage</strong></td>
+                    <td><strong>${calculatedPercentage.toFixed(1)}%</strong></td>
+                    <td></td>
+                    <td><strong>${calculatedPercentage.toFixed(1)}%</strong></td>
+                `;
+                tbody.appendChild(percentageRow);
+
+                breakdownTable.appendChild(tbody);
+                breakdownDiv.appendChild(breakdownTable);
+
+                // Add explanation
+                const explanation = document.createElement('div');
+                explanation.className = 'breakdown-explanation';
+                explanation.innerHTML = `
+                    <p><strong>Uitleg:</strong></p>
+                    <ul>
+                        <li>Standaard vragen tellen 1x mee</li>
+                        <li>Belangrijke vragen (die je hebt geselecteerd) tellen 3x mee</li>
+                        ${breakdown.digitalBonus > 0 ? '<li>Digitale agenda bonus wordt toegevoegd omdat je digitale onderwerpen heel belangrijk vindt</li>' : ''}
+                        <li>Het percentage is: (totaal score / maximaal mogelijke score) × 100</li>
+                    </ul>
+                `;
+                breakdownDiv.appendChild(explanation);
+
+                container.appendChild(breakdownDiv);
+            }
+
+            calculatePartyBreakdown(partyName) {
+                let regularMatch = 0;
+                let regularWeight = 0;
+                let regularCount = 0;
+                let priorityMatch = 0;
+                let priorityWeight = 0;
+                let priorityCount = 0;
+                let digitalBonus = 0;
+                let digitalScore = 0;
+
+                // Get priority questions
+                const priorityQuestions = [];
+                this.questions.forEach((question, index) => {
+                    if (this.priorities[index]) {
+                        priorityQuestions.push(index);
+                    }
+                });
+
+                // Calculate maximum possible score based on user settings
+                let maxPossibleScore = 0;
+                this.questions.forEach((question, questionIndex) => {
+                    const isPriority = priorityQuestions.includes(questionIndex);
+                    let weight = isPriority ? 3 : 1;
+                    
+                    // Apply digital agenda weighting to digital-related questions
+                    if (this.digitalImportance === 'very-important' && this.isDigitalQuestion(question)) {
+                        weight *= 1.5;
+                    }
+                    
+                    maxPossibleScore += (100 * weight); // 100% match for each question
+                });
+
+                // Add digital bonus to max possible score if applicable
+                let maxDigitalBonus = 0;
+                if (this.digitalImportance === 'very-important') {
+                    // Digital bonus is calculated as percentage of the base score, not absolute points
+                    maxDigitalBonus = maxPossibleScore * 0.2; // 20% bonus on top of base score
+                }
+                maxPossibleScore += maxDigitalBonus;
+
+                // Calculate match percentages for each question
+                this.questions.forEach((question, questionIndex) => {
+                    const userAnswer = this.answers[questionIndex];
+                    const isPriority = priorityQuestions.includes(questionIndex);
+                    let weight = isPriority ? 3 : 1;
+                    
+                    // Apply digital agenda weighting to digital-related questions
+                    if (this.digitalImportance === 'very-important' && this.isDigitalQuestion(question)) {
+                        weight *= 1.5;
+                    }
+                    
+                    const questionId = question.id.toString();
+                    const partyData = this.partyPositions[questionId]?.positions[partyName];
+                    
+                    if (partyData && partyData.score !== undefined) {
+                        const partyPosition = partyData.score;
+                        
+                        // Calculate match percentage based on distance
+                        const distance = Math.abs(userAnswer - partyPosition);
+                        const matchPercentage = Math.max(0, 100 - (distance * 25)); // 25% per step difference
+                        
+                        if (isPriority) {
+                            priorityMatch += (matchPercentage * weight);
+                            priorityWeight += weight;
+                            priorityCount++;
+                        } else {
+                            regularMatch += (matchPercentage * weight);
+                            regularWeight += weight;
+                            regularCount++;
+                        }
+                    }
+                });
+
+                // Calculate digital bonus if applicable
+                if (this.digitalImportance === 'very-important') {
+                    digitalScore = this.digitalAgendaData[partyName] || 0;
+                    const digitalPercentage = (digitalScore / 15) * 100;
+                    // Calculate base score without digital bonus
+                    const baseMaxScore = maxPossibleScore - (maxPossibleScore * 0.2);
+                    // Apply as percentage of base score
+                    digitalBonus = (digitalPercentage / 100) * (baseMaxScore * 0.2);
+                }
+
+                // Calculate weighted averages and ensure they're between 0 and 100
+                const regularAverage = regularWeight > 0 ? Math.max(0, Math.min(100, regularMatch / regularWeight)) : 0;
+                const priorityAverage = priorityWeight > 0 ? Math.max(0, Math.min(100, priorityMatch / priorityWeight)) : 0;
+                
+                // Calculate total weighted average
+                const totalWeight = regularWeight + priorityWeight;
+                const totalMatch = totalWeight > 0 ? (regularMatch + priorityMatch) / totalWeight : 0;
+                
+                // Calculate total score in points (not percentage)
+                const totalScoreInPoints = regularMatch + priorityMatch + digitalBonus;
+                
+                // Calculate percentage based on dynamic maximum
+                const finalPercentage = (totalScoreInPoints / maxPossibleScore) * 100;
+
+                return {
+                    regularQuestions: {
+                        score: regularAverage,
+                        count: regularCount,
+                        total: regularAverage
+                    },
+                    priorityQuestions: {
+                        score: priorityAverage,
+                        count: priorityCount,
+                        total: priorityAverage
+                    },
+                    digitalScore: digitalScore,
+                    digitalBonus: digitalBonus,
+                    totalScore: totalScoreInPoints,
+                    maxPossibleScore: maxPossibleScore,
+                    percentage: Math.round(finalPercentage * 10) / 10 // Round to 1 decimal place
+                };
+            }
+
 
 
 
@@ -914,6 +1759,9 @@
                         card.className = 'party-card';
                         card.style.cursor = 'pointer';
                         card.dataset.partyName = result.name;
+                        card.tabIndex = 0;
+                        card.setAttribute('role', 'button');
+                        card.setAttribute('aria-label', `Bekijk details voor ${result.name} (${result.percentage.toFixed(1)}% match)`);
                         
                         const rank = index + 5; // Start from 5th place
                         const rankEmoji = `${rank}.`;
@@ -922,7 +1770,7 @@
                         card.innerHTML = `
                             <div class="party-info">
                                 <div class="party-name">${rankEmoji} ${result.name}</div>
-                                <div class="party-score">${result.percentage}%</div>
+                                <div class="party-score">${result.percentage.toFixed(1)}%</div>
                             </div>
                             <div class="party-logo">
                                 <img src="logos/${logoFile}" alt="${result.name} logo" onerror="this.style.display='none'">
@@ -932,6 +1780,14 @@
                         // Add click event
                         card.addEventListener('click', () => {
                             this.showPartyComparison(result.name);
+                        });
+                        
+                        // Add keyboard event
+                        card.addEventListener('keydown', (e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                this.showPartyComparison(result.name);
+                            }
                         });
                         
                         allContainer.appendChild(card);
@@ -1005,7 +1861,7 @@
                 topResults.forEach((result, index) => {
                     const rank = index + 1;
                     const rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : '4️⃣';
-                    shareText += `${rankEmoji} ${result.name}: ${result.percentage}%\n`;
+                    shareText += `${rankEmoji} ${result.name}: ${result.percentage.toFixed(1)}%\n`;
                 });
                 
                 shareText += '\n👉 Doe de test zelf op: nerdwijzer.nl';
@@ -1025,10 +1881,263 @@
                 });
             }
 
+            toggleFormulaExplanation() {
+                const formulaExplanation = document.getElementById('formula-explanation');
+                const formulaBtn = document.getElementById('formula-btn');
+                
+                if (formulaExplanation.style.display === 'none') {
+                    formulaExplanation.style.display = 'block';
+                    formulaBtn.innerHTML = '<span class="btn-icon">📐</span><span>Verberg berekening</span>';
+                } else {
+                    formulaExplanation.style.display = 'none';
+                    formulaBtn.innerHTML = '<span class="btn-icon">📐</span><span>Berekening</span>';
+                }
+            }
+
             restart() {
                 this.currentQuestionIndex = 0;
                 this.answers = {};
+                this.priorities = {};
                 this.showWelcomeScreen();
+                
+                // Set focus to the logo after a short delay to ensure the welcome screen is visible
+                setTimeout(() => {
+                    const logoLink = document.querySelector('.welcome-logo a');
+                    if (logoLink) {
+                        logoLink.focus();
+                    } else {
+                        // Fallback: focus to the start button if logo link is not found
+                        const startBtn = document.getElementById('start-btn');
+                        if (startBtn) {
+                            startBtn.focus();
+                        }
+                    }
+                }, 100);
+            }
+
+            handleKonamiCode(e) {
+                // Only activate on welcome screen
+                const welcomeScreen = document.getElementById('welcome-screen');
+                if (welcomeScreen.style.display !== 'block' || this.konamiActivated) {
+                    return;
+                }
+
+                // Add current key to sequence
+                this.konamiInput.push(e.code);
+                
+                // Keep only the last 10 keys
+                if (this.konamiInput.length > 10) {
+                    this.konamiInput.shift();
+                }
+                
+                // Check if sequence matches Konami code
+                if (this.konamiInput.length === 10) {
+                    const matches = this.konamiInput.every((key, index) => key === this.konamiCode[index]);
+                    if (matches) {
+                        this.activateKonamiCode();
+                    }
+                }
+            }
+
+            activateKonamiCode() {
+                this.konamiActivated = true;
+                this.showKonamiPopup();
+                this.startConfetti();
+            }
+
+            showKonamiPopup() {
+                // Create popup overlay
+                const overlay = document.createElement('div');
+                overlay.id = 'konami-overlay';
+                overlay.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    z-index: 10000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation: fadeIn 0.5s ease-in;
+                `;
+
+                // Create popup content
+                const popup = document.createElement('div');
+                popup.style.cssText = `
+                    background: white;
+                    border-radius: 20px;
+                    padding: 20px;
+                    max-width: 90%;
+                    max-height: 90%;
+                    text-align: center;
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                    animation: scaleIn 0.5s ease-out;
+                `;
+
+                // Create close button
+                const closeBtn = document.createElement('button');
+                closeBtn.innerHTML = '✕';
+                closeBtn.style.cssText = `
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    background: none;
+                    border: none;
+                    font-size: 24px;
+                    cursor: pointer;
+                    color: #666;
+                `;
+                closeBtn.onclick = () => this.closeKonamiPopup();
+
+                // Create Obama meme image
+                const memeImg = document.createElement('img');
+                memeImg.src = 'images/obama-meme.webp';
+                memeImg.alt = 'Obama meme';
+                memeImg.style.cssText = `
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    margin: 10px 0;
+                `;
+
+                // Create title
+                const title = document.createElement('h2');
+                title.textContent = '🎉 Konami Code Geactiveerd! 🎉';
+                title.style.cssText = `
+                    color: #1e3c72;
+                    margin: 0 0 20px 0;
+                    font-family: 'Space Grotesk', sans-serif;
+                `;
+
+                // Create description
+                const description = document.createElement('p');
+                description.textContent = 'Ons advies: alle partijen zouden op jóu moeten stemmen!';
+                description.style.cssText = `
+                    color: #666;
+                    margin: 0 0 20px 0;
+                    font-size: 16px;
+                `;
+
+                // Assemble popup
+                popup.appendChild(closeBtn);
+                popup.appendChild(title);
+                popup.appendChild(memeImg);
+                popup.appendChild(description);
+                overlay.appendChild(popup);
+
+                // Add to page
+                document.body.appendChild(overlay);
+
+                // Add CSS animations
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+                    @keyframes scaleIn {
+                        from { transform: scale(0.8); opacity: 0; }
+                        to { transform: scale(1); opacity: 1; }
+                    }
+                `;
+                document.head.appendChild(style);
+
+                // Close on overlay click
+                overlay.onclick = (e) => {
+                    if (e.target === overlay) {
+                        this.closeKonamiPopup();
+                    }
+                };
+
+                // Close on Escape key
+                const escapeHandler = (e) => {
+                    if (e.key === 'Escape') {
+                        this.closeKonamiPopup();
+                        document.removeEventListener('keydown', escapeHandler);
+                    }
+                };
+                document.addEventListener('keydown', escapeHandler);
+            }
+
+            closeKonamiPopup() {
+                const overlay = document.getElementById('konami-overlay');
+                if (overlay) {
+                    overlay.remove();
+                }
+                this.stopConfetti();
+            }
+
+            startConfetti() {
+                // Create confetti container
+                const confettiContainer = document.createElement('div');
+                confettiContainer.id = 'confetti-container';
+                confettiContainer.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 9999;
+                `;
+                document.body.appendChild(confettiContainer);
+
+                // Create confetti pieces
+                const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#54a0ff'];
+                const confettiCount = 150;
+
+                for (let i = 0; i < confettiCount; i++) {
+                    setTimeout(() => {
+                        const confetti = document.createElement('div');
+                        confetti.style.cssText = `
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            background: ${colors[Math.floor(Math.random() * colors.length)]};
+                            left: ${Math.random() * 100}%;
+                            animation: confettiFall ${3 + Math.random() * 4}s linear forwards;
+                        `;
+
+                        // Random shape
+                        if (Math.random() > 0.5) {
+                            confetti.style.borderRadius = '50%';
+                        }
+
+                        confettiContainer.appendChild(confetti);
+
+                        // Remove after animation
+                        setTimeout(() => {
+                            if (confetti.parentNode) {
+                                confetti.parentNode.removeChild(confetti);
+                            }
+                        }, 7000);
+                    }, i * 20);
+                }
+
+                // Add confetti animation CSS
+                const confettiStyle = document.createElement('style');
+                confettiStyle.textContent = `
+                    @keyframes confettiFall {
+                        0% {
+                            transform: translateY(-100vh) rotate(0deg);
+                            opacity: 1;
+                        }
+                        100% {
+                            transform: translateY(100vh) rotate(720deg);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(confettiStyle);
+            }
+
+            stopConfetti() {
+                const confettiContainer = document.getElementById('confetti-container');
+                if (confettiContainer) {
+                    confettiContainer.remove();
+                }
             }
         }
 

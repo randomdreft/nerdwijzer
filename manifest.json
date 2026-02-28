@@ -7,20 +7,34 @@
   "background_color": "#1e3c72",
   "theme_color": "#1e3c72",
   "orientation": "portrait-primary",
+  "scope": "/",
   "icons": [
     {
-      "src": "nerdwijzer-favicon.svg",
+      "src": "images/nerdwijzer-favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "favicon.ico",
+      "src": "images/favicon.ico",
       "sizes": "16x16 32x32 48x48",
       "type": "image/x-icon"
+    },
+    {
+      "src": "images/nerdwijzer-logo-light.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/nerdwijzer-logo-light.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "categories": ["politics", "education", "utilities"],
   "lang": "nl",
-  "dir": "ltr"
+  "dir": "ltr",
+  "prefer_related_applications": false
 }

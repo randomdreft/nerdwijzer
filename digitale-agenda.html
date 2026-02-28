@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="description" content="Digitale Agenda - Beoordeling van hoe serieus partijen digitale onderwerpen nemen">
+    <meta name="theme-color" content="#1e3c72">
+    <meta name="msapplication-TileColor" content="#1e3c72">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NerdWijzer">
+    <title>NerdWijzer - Digitale Agenda</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/digitale-agenda.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="NerdWijzer - Digitale Agenda">
+    <meta property="og:description" content="Beoordeling van hoe serieus partijen digitale onderwerpen nemen">
+    <meta property="og:image" content="/images/nerdwijzer-logo-light.png">
+    <meta property="og:url" content="/digitale-agenda.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NerdWijzer">
+    
+    <!-- Favicon voor alle apparaten -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/nerdwijzer-favicon.svg">
+    <link rel="apple-touch-icon" href="images/nerdwijzer-favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-attachment: fixed;
+            background-position: top left;
+        }
+        
+        .agenda-container { 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 0 16px; 
+            background: transparent;
+        }
+        .agenda-title { font-size: 28px; margin-bottom: 12px; }
+        .agenda-sub { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+        .agenda-intro { 
+            background: rgba(255,255,255,0.05); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            border-radius: 12px; 
+            padding: 24px; 
+            margin-bottom: 20px; 
+            backdrop-filter: blur(10px);
+        }
+        .agenda-intro h3 { 
+            color: #ffffff; 
+            margin-bottom: 16px; 
+            font-size: 20px; 
+            font-weight: 600;
+        }
+        .agenda-intro p { 
+            color: rgba(255,255,255,0.8); 
+            line-height: 1.6; 
+            margin-bottom: 12px;
+        }
+        
+        /* Table styling */
+        .table-container {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            overflow-x: auto;
+        }
+        
+        .table-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px 16px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+        
+        .search-box input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        
+        .filter-select {
+            padding: 12px 16px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 14px;
+            min-width: 150px;
+        }
+        
+        .filter-select option {
+            background: #1e3c72;
+            color: #ffffff;
+        }
+        
+        .sort-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        
+        .sort-btn {
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .sort-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .sort-btn.active {
+            background: #4a9eff;
+            border-color: #4a9eff;
+        }
+        
+        .agenda-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: transparent;
+            color: #ffffff;
+        }
+        
+        .agenda-table th,
+        .agenda-table td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+        
+        .agenda-table th {
+            background: rgba(255,255,255,0.05);
+            font-weight: 600;
+            color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .agenda-table th.sortable {
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+        
+        .agenda-table th.sortable:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .agenda-table th.sortable::after {
+            content: '↕';
+            position: absolute;
+            right: 8px;
+            opacity: 0.5;
+        }
+        
+        .agenda-table th.sortable.asc::after {
+            content: '↑';
+            opacity: 1;
+        }
+        
+        .agenda-table th.sortable.desc::after {
+            content: '↓';
+            opacity: 1;
+        }
+        
+        .agenda-table tbody tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        .party-name {
+            font-weight: 600;
+            color: #4a9eff;
+        }
+        
+        .score-cell {
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .score-high {
+            color: #4ade80;
+        }
+        
+        .score-medium {
+            color: #fbbf24;
+        }
+        
+        .score-low {
+            color: #f87171;
+        }
+        
+        
+        /* Score color classes */
+        .score-1 { color: #f87171; } /* red - score 1 */
+        .score-2 { color: #fb923c; } /* orange-red - score 2 */
+        .score-3 { color: #fbbf24; } /* orange - score 3 */
+        .score-4 { color: #84cc16; } /* yellow-green - score 4 */
+        .score-5 { color: #4ade80; } /* green - score 5 */
+        
+        /* 📄 link styling */
+        .agenda-table a {
+            color: #4a9eff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(74, 158, 255, 0.3);
+            transition: all 0.2s ease;
+        }
+        
+        .agenda-table a:hover {
+            color: #6bb6ff;
+            border-bottom-color: rgba(107, 182, 255, 0.6);
+        }
+        
+        .table-info {
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .table-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-box {
+                min-width: auto;
+            }
+            
+            .agenda-table {
+                font-size: 12px;
+            }
+            
+            .agenda-table th,
+            .agenda-table td {
+                padding: 8px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="agenda-container">
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/nerdwijzer-logo-dark.png" alt="NerdWijzer" class="header-logo-img"></a>
+            </div>
+        </header>
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="index.html" class="back-button">← Terug naar NerdWijzer</a>
+        </div>
+
+        <h1 class="agenda-title">Digitale Agenda</h1>
+        <p class="agenda-sub">Beoordeling van hoe serieus partijen digitale onderwerpen nemen</p>
+
+        <div class="agenda-intro">
+            <h3>Over deze analyse</h3>
+            <p>Deze tabel toont hoeveel aandacht politieke partijen besteden aan digitale onderwerpen in hun verkiezingsprogramma's. De scores zijn gebaseerd op het aantal woorden en zinnen dat partijen wijden aan vier belangrijke thema's: Privacy & Cybersecurity, AI & Digitalisering, Internet & Rechten, en Klimaat & Transitie.</p>
+            <p>De <strong>Digitale Score</strong> is een samengestelde maat die rekening houdt met zowel de hoeveelheid aandacht als de kwaliteit van de behandeling van deze onderwerpen.</p>
+        </div>
+
+        <div class="table-container">
+            <div class="table-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Zoek partij...">
+                </div>
+                <select id="filterSelect" class="filter-select">
+                    <option value="">Alle partijen</option>
+                    <option value="high">Hoge digitale score (10+)</option>
+                    <option value="medium">Gemiddelde digitale score (5-9)</option>
+                    <option value="low">Lage digitale score (0-4)</option>
+                </select>
+                <div class="sort-controls">
+                    <button class="sort-btn" data-sort="partij">Partij</button>
+                    <button class="sort-btn" data-sort="digitale-score">Digitale Score</button>
+                    <button class="sort-btn" data-sort="relevant">% Relevant</button>
+                </div>
+            </div>
+            
+            <table class="agenda-table" id="agendaTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-sort="partij">Partij</th>
+                        <th class="sortable" data-sort="programma">📄</th>
+                        <th class="sortable" data-sort="privacy">Privacy & Cybersecurity</th>
+                        <th class="sortable" data-sort="ai">AI & Digitalisering</th>
+                        <th class="sortable" data-sort="internet">Internet & Rechten</th>
+                        <th class="sortable" data-sort="klimaat">Klimaat & Transitie</th>
+                        <th class="sortable" data-sort="totaal">Totaal Woorden</th>
+                        <th class="sortable" data-sort="relevant">% Relevant</th>
+                        <th class="sortable" data-sort="digitale-score">Digitale Score</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+            
+            <div class="table-info" id="tableInfo">
+                Toont alle 17 partijen
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-text">
+                Deze website is gemaakt door <a href="https://www.linkedin.com/in/randalpeelen/" target="_blank" rel="noopener noreferrer">Randal Peelen</a> en bedoeld voor vermaak. Hoewel de informatie met zorg is samengesteld, kan deze fouten bevatten en is niet gegarandeerd juist of afgestemd met politieke partijen.
+            </p>
+            <div class="footer-meta">
+                <a href="changelog.html" class="footer-link">Changelog</a>
+                <span class="footer-sep">•</span>
+                <a href="dankwoord.html" class="footer-link">Dankwoord</a>
+                <span class="footer-sep">•</span>
+                <a href="verantwoording.html" class="footer-link">Partijstandpunten</a>
+                <span class="footer-sep">•</span>
+                <a href="digitale-agenda.html" class="footer-link">Digitale Agenda</a>
+                <span class="footer-sep">•</span>
+                <a href="privacy.html" class="footer-link">Privacy</a>
+                <span class="footer-sep">•</span>
+                <span id="app-version">Versie: –</span>
+            </div>
+            <div class="footer-parties">
+                <small>NerdWijzer vergelijkt de standpunten van de volgende partijen: BBB, BIJ1, CDA, CU, D66, Denk, FvD, GL/PvdA, JA21, NSC, Piratenpartij, PvdD, PVV, SGP, SP, Volt, VVD</small>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load data from JSON file
+        let agendaData = [];
+        
+        async function loadAgendaData() {
+            try {
+                const response = await fetch('digitale-agenda-data.json?ts=' + Date.now(), { cache: 'no-store' });
+                const data = await response.json();
+                agendaData = data.digitale_agenda.map(item => ({
+                    ...item,
+                    programma: `<a href="${item.programma_url}" target="_blank" rel="noopener noreferrer">📄</a>`
+                }));
+                return agendaData;
+            } catch (error) {
+                console.error('Error loading agenda data:', error);
+                // Fallback to empty array
+                return [];
+            }
+        }
+        
+        // Original hardcoded data as fallback
+        const fallbackData = [
+            {
+                partij: "BBB",
+                programma: '<a href="https://dnpprepo.ub.rug.nl/88739/" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 50 woorden – 1",
+                ai: "± 50 woorden – 1",
+                internet: "± 50 woorden – 1",
+                klimaat: "± 2.000 woorden – 3",
+                totaal: "± 7.500",
+                relevant: "± 28%",
+                digitaleScore: 3,
+                position: 17
+            },
+            {
+                partij: "BIJ1",
+                programma: '<a href="https://bij1.org/concept-agenda/" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 500 woorden – 4",
+                ai: "± 300 woorden – 3",
+                internet: "± 300 woorden – 3",
+                klimaat: "± 1.000 woorden – 4",
+                totaal: "ca. 20.000",
+                relevant: "± 10%",
+                digitaleScore: 10,
+                position: 7
+            },
+            {
+                partij: "CDA",
+                programma: '<a href="https://d2vs36cx04qmpo.cloudfront.net/files/CDA-Verkiezingsprogramma-TK2025-Digitaal-DEF.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 200 woorden – 2",
+                ai: "± 300 woorden – 3",
+                internet: "± 100 woorden – 2",
+                klimaat: "± 800 woorden – 3",
+                totaal: "ca. 25.000",
+                relevant: "± 5%",
+                digitaleScore: 7,
+                position: 10
+            },
+            {
+                partij: "ChristenUnie",
+                programma: '<a href="https://www.christenunie.nl/wp-content/uploads/2025/09/ChristenUnie_Verkiezingsprogramma_2025.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 300 woorden – 3",
+                ai: "± 300 woorden – 3",
+                internet: "± 200 woorden – 3",
+                klimaat: "± 1.500 woorden – 4",
+                totaal: "ca. 20.000",
+                relevant: "± 11%",
+                digitaleScore: 9,
+                position: 9
+            },
+            {
+                partij: "D66",
+                programma: '<a href="https://d66.nl/wp-content/uploads/2025/09/Verkiezingsprogramma_begrijpelijke_taal_2025-2030.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 800 woorden – 4",
+                ai: "± 1.000 woorden – 5",
+                internet: "± 500 woorden – 4",
+                klimaat: "± 2.000 woorden – 5",
+                totaal: "ca. 30.000",
+                relevant: "± 14%",
+                digitaleScore: 13,
+                position: 2
+            },
+            {
+                partij: "DENK",
+                programma: '<a href="https://www.bewegingdenk.nl/tweede-kamerverkiezingen-2025/" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 300 woorden – 3",
+                ai: "± 50 woorden – 1",
+                internet: "± 200 woorden – 2",
+                klimaat: "± 500 woorden – 3",
+                totaal: "ca. 10.000",
+                relevant: "± 10%",
+                digitaleScore: 5,
+                position: 15
+            },
+            {
+                partij: "FvD",
+                programma: '<a href="https://fvd.nl/verkiezingsprogramma-2025.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 500 woorden – 4",
+                ai: "± 200 woorden – 2",
+                internet: "± 500 woorden – 4",
+                klimaat: "± 1.500 woorden – 2",
+                totaal: "ca. 20.000",
+                relevant: "± 13%",
+                digitaleScore: 10,
+                position: 8
+            },
+            {
+                partij: "GroenLinks–PvdA",
+                programma: '<a href="https://groenlinkspvda.nl/wp-content/uploads/2025/08/Conceptverkiezingsprogramma-GroenLinks-PvdA-2025.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 500 woorden – 4",
+                ai: "± 500 woorden – 4",
+                internet: "± 500 woorden – 4",
+                klimaat: "± 2.500 woorden – 5",
+                totaal: "ca. 40.000",
+                relevant: "± 10%",
+                digitaleScore: 12,
+                position: 3
+            },
+            {
+                partij: "JA21",
+                programma: '<a href="https://ja21.nl/fileadmin/user_upload/CONCEPT_Verkiezingsprogramma_JA21_TK25.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 200 woorden – 2",
+                ai: "± 50 woorden – 1",
+                internet: "± 200 woorden – 2",
+                klimaat: "± 500 woorden – 2",
+                totaal: "ca. 15.000",
+                relevant: "± 6%",
+                digitaleScore: 5,
+                position: 14
+            },
+            {
+                partij: "NSC",
+                programma: '<a href="https://ams3.digitaloceanspaces.com/nsc-multisite/Nieuw_Sociaal_Contract_Concept_Verkiezingsprogramma_2025_16082025_5_e148e7b111.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 600 woorden – 5",
+                ai: "± 400 woorden – 3",
+                internet: "± 300 woorden – 3",
+                klimaat: "± 800 woorden – 3",
+                totaal: "ca. 25.000",
+                relevant: "± 8%",
+                digitaleScore: 11,
+                position: 6
+            },
+            {
+                partij: "Piratenpartij",
+                programma: '<a href="https://wiki.piratenpartij.nl/tk2025:partijprogramma" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 3.000 woorden – 5",
+                ai: "± 2.000 woorden – 5",
+                internet: "± 2.500 woorden – 5",
+                klimaat: "± 1.500 woorden – 3",
+                totaal: "ca. 30.000",
+                relevant: "± 30%",
+                digitaleScore: 15,
+                position: 1
+            },
+            {
+                partij: "PvdD",
+                programma: '<a href="https://assets.partijvoordedieren.nl/assets/algemeen/2.-Documenten/Congresstukken/07-09-2025/7.-Ontwerpverkiezingsprogramma-PvdD-TK25.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 500 woorden – 3",
+                ai: "± 300 woorden – 2",
+                internet: "± 200 woorden – 2",
+                klimaat: "± 5.000 woorden – 5",
+                totaal: "ca. 25.000",
+                relevant: "± 24%",
+                digitaleScore: 7,
+                position: 11
+            },
+            {
+                partij: "PVV",
+                programma: '<a href="https://www.pvv.nl/images/2025/PVV_📄_Digi_2025.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 200 woorden – 2",
+                ai: "± 0–50 woorden – 1",
+                internet: "± 300 woorden – 2",
+                klimaat: "± 500 woorden – 1",
+                totaal: "ca. 10.000",
+                relevant: "± 10%",
+                digitaleScore: 5,
+                position: 16
+            },
+            {
+                partij: "SGP",
+                programma: '<a href="https://sgp.nl/download?docID=bbf8905378f4fd0c076f73deee0dc477e58c738b&name=Concept+verkiezingsprogramma+2025-2029+Opgemaakte+versie+extra+verkleind.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 200 woorden – 2",
+                ai: "± 200 woorden – 2",
+                internet: "± 300 woorden – 3",
+                klimaat: "± 1.000 woorden – 3",
+                totaal: "ca. 15.000",
+                relevant: "± 11%",
+                digitaleScore: 7,
+                position: 12
+            },
+            {
+                partij: "SP",
+                programma: '<a href="https://sp-mediabucket.s3.eu-north-1.amazonaws.com/2025/08/SP_Concept_Verkiezingsprogramma_TK25.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 600 woorden – 4",
+                ai: "± 300 woorden – 3",
+                internet: "± 400 woorden – 4",
+                klimaat: "± 1.500 woorden – 4",
+                totaal: "ca. 20.000",
+                relevant: "± 14%",
+                digitaleScore: 11,
+                position: 5
+            },
+            {
+                partij: "Volt",
+                programma: '<a href="https://voltnederland.org/verkiezingsprogramma-2025" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 800 woorden – 4",
+                ai: "± 800 woorden – 4",
+                internet: "± 800 woorden – 4",
+                klimaat: "± 2.000 woorden – 5",
+                totaal: "ca. 30.000",
+                relevant: "± 15%",
+                digitaleScore: 12,
+                position: 4
+            },
+            {
+                partij: "VVD",
+                programma: '<a href="https://www.vvd.nl/wp-content/uploads/2025/07/Verkiezingsprogramma-TK-VVD-2025.pdf" target="_blank" rel="noopener noreferrer">📄</a>',
+                privacy: "± 200 woorden – 1",
+                ai: "± 600 woorden – 4",
+                internet: "± 100 woorden – 2",
+                klimaat: "± 1.000 woorden – 3",
+                totaal: "ca. 25.000",
+                relevant: "± 8%",
+                digitaleScore: 7,
+                position: 13
+            }
+        ];
+
+        let currentData = [];
+        let currentSort = { column: 'digitale-score', direction: 'asc' };
+
+        function formatScoreCell(text) {
+            // Extract the score from the end of the text (after the last dash)
+            const parts = text.split(' – ');
+            if (parts.length === 2) {
+                const score = parseInt(parts[1]);
+                const baseText = parts[0];
+                
+                // Get color class based on score
+                let colorClass = 'score-1'; // red
+                if (score === 2) colorClass = 'score-2';
+                else if (score === 3) colorClass = 'score-3'; // orange
+                else if (score === 4) colorClass = 'score-4';
+                else if (score === 5) colorClass = 'score-5'; // green
+                
+                return `<span class="${colorClass}">${baseText}</span>`;
+            }
+            return text;
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            currentData.forEach(row => {
+                const tr = document.createElement('tr');
+                
+                // Get score class
+                let scoreClass = 'score-low';
+                if (row.digitaleScore >= 10) scoreClass = 'score-high';
+                else if (row.digitaleScore >= 5) scoreClass = 'score-medium';
+                
+                // Get position badge class
+                let positionClass = 'position-other';
+                if (row.position === 1) positionClass = 'position-1';
+                else if (row.position === 2) positionClass = 'position-2';
+                else if (row.position === 3) positionClass = 'position-3';
+                
+                // Get position emoji for top 3
+                let positionEmoji = '';
+                if (row.position === 1) positionEmoji = '🥇 ';
+                else if (row.position === 2) positionEmoji = '🥈 ';
+                else if (row.position === 3) positionEmoji = '🥉 ';
+                else if (row.digitaleScore === 12) positionEmoji = '🥉 '; // Both 3rd place parties get bronze
+                
+                tr.innerHTML = `
+                    <td class="party-name">${row.partij}</td>
+                    <td>${row.programma}</td>
+                    <td>${formatScoreCell(row.privacy)}</td>
+                    <td>${formatScoreCell(row.ai)}</td>
+                    <td>${formatScoreCell(row.internet)}</td>
+                    <td>${formatScoreCell(row.klimaat)}</td>
+                    <td>${row.totaal}</td>
+                    <td>${row.relevant}</td>
+                    <td class="score-cell ${scoreClass}">
+                        ${positionEmoji}${row.digitaleScore}
+                    </td>
+                `;
+                
+                tbody.appendChild(tr);
+            });
+            
+            updateTableInfo();
+        }
+
+        function updateTableInfo() {
+            const info = document.getElementById('tableInfo');
+            const total = agendaData.length;
+            const shown = currentData.length;
+            
+            if (shown === total) {
+                info.textContent = `Toont alle ${total} partijen`;
+            } else {
+                info.textContent = `Toont ${shown} van ${total} partijen`;
+            }
+        }
+
+        function sortTable(column) {
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'asc';
+            }
+            
+            currentData.sort((a, b) => {
+                let aVal, bVal;
+                
+                switch (column) {
+                    case 'digitale-score':
+                        aVal = a.digitaleScore;
+                        bVal = b.digitaleScore;
+                        break;
+                    case 'relevant':
+                        aVal = parseFloat(a.relevant.replace('%', ''));
+                        bVal = parseFloat(b.relevant.replace('%', ''));
+                        break;
+                    case 'totaal':
+                        aVal = parseInt(a.totaal.replace(/[^\d]/g, ''));
+                        bVal = parseInt(b.totaal.replace(/[^\d]/g, ''));
+                        break;
+                    default:
+                        aVal = a[column] || '';
+                        bVal = b[column] || '';
+                }
+                
+                if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                }
+                
+                if (currentSort.direction === 'asc') {
+                    return aVal < bVal ? -1 : 1;
+                } else {
+                    return aVal > bVal ? -1 : 1;
+                }
+            });
+            
+            updateSortButtons();
+            renderTable();
+        }
+
+        function updateSortButtons() {
+            document.querySelectorAll('.sort-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.sort === currentSort.column) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            document.querySelectorAll('.sortable').forEach(th => {
+                th.classList.remove('asc', 'desc');
+                if (th.dataset.sort === currentSort.column) {
+                    th.classList.add(currentSort.direction);
+                }
+            });
+        }
+
+        function filterTable() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const filterValue = document.getElementById('filterSelect').value;
+            
+            currentData = agendaData.filter(row => {
+                const matchesSearch = row.partij.toLowerCase().includes(searchTerm) ||
+                                    row.programma.toLowerCase().includes(searchTerm);
+                
+                let matchesFilter = true;
+                if (filterValue === 'high') {
+                    matchesFilter = row.digitaleScore >= 10;
+                } else if (filterValue === 'medium') {
+                    matchesFilter = row.digitaleScore >= 5 && row.digitaleScore < 10;
+                } else if (filterValue === 'low') {
+                    matchesFilter = row.digitaleScore < 5;
+                }
+                
+                return matchesSearch && matchesFilter;
+            });
+            
+            renderTable();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterTable);
+        document.getElementById('filterSelect').addEventListener('change', filterTable);
+
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                sortTable(btn.dataset.sort);
+            });
+        });
+
+        document.querySelectorAll('.sortable').forEach(th => {
+            th.addEventListener('click', () => {
+                sortTable(th.dataset.sort);
+            });
+        });
+
+        // Load version info for footer
+        async function loadVersionInfo() {
+            try {
+                const response = await fetch(`version.json?ts=${Date.now()}`, { cache: 'no-store' });
+                const data = await response.json();
+                const el = document.getElementById('app-version');
+                if (el && data && data.version) {
+                    el.textContent = `Versie: ${data.version} (${data.date || ''})`.trim();
+                }
+            } catch (e) {
+                // Stil falen; footer is niet kritisch
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            loadVersionInfo();
+            
+            // Load agenda data
+            const loadedData = await loadAgendaData();
+            if (loadedData.length === 0) {
+                // Use fallback data if JSON loading fails
+                agendaData = fallbackData;
+            }
+            
+            currentData = [...agendaData];
+            sortTable('digitale-score'); // Default sort by digital score
+        });
+
+        // Service Worker registratie voor PWA functionaliteit
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

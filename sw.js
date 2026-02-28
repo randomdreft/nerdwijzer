@@ -1,16 +1,14 @@
-const CACHE_NAME = 'nerdwijzer-v1';
+const CACHE_NAME = 'nerdwijzer-v2';
 const urlsToCache = [
   '/',
   '/index.html',
   '/verantwoording.html',
   '/changelog.html',
   '/style.css',
-  '/favicon.ico',
-  '/nerdwijzer-favicon.svg',
-  '/manifest.json',
-  '/questions.json',
-  '/party_positions.json',
-  '/version.json'
+  '/images/favicon.ico',
+  '/images/nerdwijzer-favicon.svg',
+  '/manifest.json'
+  // JSON bestanden worden niet gecached om cachebuster te laten werken
 ];
 
 // Install event - cache resources
@@ -24,12 +22,20 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch event - serve from cache when offline
+// Fetch event - serve from cache when offline, but always fetch JSON files fresh
 self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+  
+  // Voor JSON bestanden: altijd van de server halen (cachebuster)
+  if (url.pathname.endsWith('.json')) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+  
+  // Voor andere bestanden: eerst cache, dan netwerk
   event.respondWith(
     caches.match(event.request)
       .then(response => {
-        // Return cached version or fetch from network
         return response || fetch(event.request);
       })
   );

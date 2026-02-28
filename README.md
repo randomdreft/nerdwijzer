@@ -1,81 +1,123 @@
-# NerdWijzer - Stemwijzer voor Nerds
+# NerdWijzer
 
-Een moderne stemwijzer speciaal ontwikkeld voor tech-savvy burgers, met vragen over IT, privacy, mensenrechten, auto's, klimaat en energie.
+**De nerdy stemhulp over IT, privacy en technologie.**
+
+[nerdwijzer.nl](https://nerdwijzer.nl)
+
+![NerdWijzer](images/nerdwijzer-logo-light.png)
+
+NerdWijzer helpt je in een paar minuten de politieke partij te vinden die het beste past bij jouw standpunten over digitale onderwerpen. Van chatcontrol tot open source, van AI-regulering tot digitale soevereiniteit.
+
+> *Let op: dit is een onafhankelijke, nerdy stemhulp. Handig, geen bindend advies.*
+
+## Wat maakt NerdWijzer anders?
+
+Waar traditionele stemwijzers breed gaan, gaat NerdWijzer diep. Alle 30+ stellingen gaan over onderwerpen die er voor nerds toe doen:
+
+- Ministerie van Digitale Zaken
+- Open source bij de overheid
+- EU-datahosting en digitale soevereiniteit
+- Big Tech regulering en opsplitsing
+- Chatcontrol en scannen van privéberichten
+- Bulkinterceptie (Sleepwet)
+- Hackbevoegdheden van de politie
+- Bescherming van ethische hackers
+- Gezichtsherkenning en biometrie
+- Netneutraliteit
+- AI-regulering en transparantie
+- Recht op reparatie en encryptie
+- En meer...
+
+## Partijen
+
+Standpunten van 18 Nederlandse politieke partijen, elk onderbouwd met bronvermeldingen uit verkiezingsprogramma's, Kamerdebatten en publieke uitspraken:
+
+BBB, BIJ1, CDA, ChristenUnie, D66, DENK, FvD, GroenLinks-PvdA, JA21, NSC, Piratenpartij, PvdD, PVV, SGP, SP, Volt, VVD, 50PLUS
 
 ## Features
 
-- 🚀 Moderne, responsive interface
-- 🎯 20 willekeurige vragen per sessie
-- 📊 Slider-based antwoorden (1-5 schaal)
-- 🏆 Resultaten met alle Nederlandse politieke partijen
-- 📱 Mobile-friendly design
-- 🎨 Mooie animaties en moderne styling
+- **30+ stellingen** met uitgebreide toelichting
+- **18 partijen** met onderbouwde standpunten en bronvermelding
+- **Slider-interface** (1-5 schaal) voor genuanceerde antwoorden
+- **Onderwerpweging** — geef meer gewicht aan thema's die je belangrijk vindt
+- **Verantwoording** — elke partijpositie is onderbouwd met bronnen
+- **Digitale Agenda** — overzicht van digitale beleidsplannen per partij
+- **Progressive Web App** — installeerbaar op je telefoon, werkt offline
+- **Responsive design** — optimaal op desktop, tablet en mobiel
+- **Privacy-first** — geen tracking, geen cookies, alle data blijft lokaal
 
-## Installatie
+## Zelf draaien
 
-1. Zorg ervoor dat PHP geïnstalleerd is op je systeem
-2. Clone of download dit project
-3. Navigeer naar de project directory
+NerdWijzer is een volledig statische site. Geen backend, geen database, geen build tools.
 
-## Gebruik
+### Optie 1: gewoon openen
 
-### Optie 1: PHP Development Server
+Open `index.html` in je browser. Klaar.
+
+### Optie 2: lokale server
+
 ```bash
+# Python
+python3 -m http.server 8000
+
+# PHP
 php -S localhost:8000
+
+# Node.js (npx)
+npx serve .
 ```
 
-### Optie 2: Via server.php script
+### Optie 3: Docker
+
 ```bash
-php server.php
+docker run -d -p 8080:80 -v $(pwd):/usr/share/nginx/html:ro nginx:alpine
 ```
 
-### Optie 3: Apache/Nginx
-Plaats de bestanden in je web server directory en open `index.html`
+Open daarna [localhost:8080](http://localhost:8080).
 
-## Bestanden
+## Bestandsstructuur
 
-- `index.html` - Hoofdpagina met alle JavaScript functionaliteit
-- `style.css` - Moderne styling met dark theme
-- `questions.json` - Database met vragen en partijposities
-- `server.php` - Eenvoudige PHP server (optioneel)
+```
+nerdwijzer/
+├── index.html              # Hoofdpagina (stemwijzer interface)
+├── style.css               # Volledige styling (dark theme, responsive)
+├── questions.json          # 30+ stellingen met toelichtingen
+├── party_positions.json    # Partijstandpunten met bronvermeldingen
+├── verantwoording.html     # Bronverantwoording per stelling
+├── digitale-agenda.html    # Digitale beleidsagenda per partij
+├── digitale-agenda-data.json
+├── privacy.html            # Privacyverklaring
+├── changelog.html          # Versiegeschiedenis
+├── dankwoord.html          # Credits
+├── manifest.json           # PWA manifest
+├── sw.js                   # Service worker (offline support)
+├── sitemap.xml
+├── robots.txt
+├── version.json
+├── images/                 # Logo's en favicons
+└── logos/                  # Partijlogo's (18 partijen)
+```
 
-## Vragen Database
+## Bijdragen
 
-Het `questions.json` bestand bevat:
-- 20 voorbeeldvragen over nerd-gerelateerde onderwerpen
-- Partijposities voor alle 15 Nederlandse politieke partijen
-- Uitleg bij elke vraag
+Feedback, correcties en suggesties zijn welkom! Het liefst via:
 
-## Politieke Partijen
+- Een [GitHub issue](https://github.com/randomdreft/nerdwijzer/issues) aanmaken
+- Het [#nerdwijzer-feedback](https://metnerdsomtafel.nl/slack) kanaal op de Slack van Met Nerds om Tafel
 
-De stemwijzer bevat alle relevante Nederlandse politieke partijen:
-- PVV, GL/PvdA, VVD, NSC, D66, BBB, CDA, SP, Denk, PvdD, FvD, SGP, CU, Volt, JA21
+Vooral welkom:
+- Feitelijke correcties op partijstandpunten (graag met bron)
+- Suggesties voor nieuwe stellingen
+- Bugs en UX-verbeteringen
 
-## Technische Details
+## Verantwoording
 
-- **Frontend**: Vanilla JavaScript, HTML5, CSS3
-- **Backend**: Geen server-side processing nodig (statische bestanden)
-- **Data**: JSON-formatted vragen en antwoorden
-- **Styling**: CSS Grid, Flexbox, CSS Animations
-- **Compatibiliteit**: Moderne browsers (Chrome, Firefox, Safari, Edge)
-
-## Aanpassen
-
-### Nieuwe vragen toevoegen
-Bewerk `questions.json` en voeg nieuwe vragen toe aan de `questions` array. Elke vraag moet:
-- Een unieke `id` hebben
-- Een `question` tekst bevatten
-- Een `explanation` hebben
-- `type: "scale"` zijn
-- `party_positions` voor alle partijen bevatten (1-5 schaal)
-
-### Styling aanpassen
-Bewerk `style.css` voor custom styling. De interface gebruikt CSS custom properties en moderne CSS features.
+Alle partijposities zijn gebaseerd op verkiezingsprogramma's, Kamerdebatten, moties en publieke uitspraken. Zie [verantwoording](https://nerdwijzer.nl/verantwoording.html) voor de volledige bronnenlijst.
 
 ## Licentie
 
 Dit project is open source en vrij te gebruiken en aan te passen.
 
-## Contact
+## Credits
 
-Voor vragen of suggesties, open een issue op GitHub of neem contact op.
+Gebouwd door [Met Nerds om Tafel](https://metnerdsomtafel.nl) — een podcast en community voor nerds die meer willen weten over technologie, privacy en digitale rechten.
